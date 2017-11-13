@@ -1,0 +1,64 @@
+---
+title: "PowerApps のパーツ | Microsoft Docs"
+description: "PowerApps のさまざまなパーツとそれらの関連を確認します"
+services: 
+suite: powerapps
+documentationcenter: na
+author: mgblythe
+manager: anneta
+editor: 
+tags: 
+featuredvideoid: r6mowYePq1Q
+courseduration: 6m
+ms.service: powerapps
+ms.devlang: na
+ms.topic: get-started-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 12/09/2016
+ms.author: mblythe
+ms.openlocfilehash: c10b65e14792a1cd7bee9227bf5720a3312a572c
+ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/07/2017
+---
+# <a name="the-parts-of-powerapps"></a>PowerApps のパーツ
+ガイド学習の最初のトピックでは、PowerApps の主要なパーツについて説明しました。 ここでは、各パーツをより詳細に説明します。 PowerApps は連動するソフトウェア サービスとアプリのセットです。また、この優れたエコシステムをサポートする関連テクノロジがあります。 PowerApps コンポーネントは次のとおりです。
+
+* **web.powerapps.com** - 構築したアプリを管理および共有します
+* **PowerApps Studio** - 使いやすいビジュアル ツールを使用して強力なアプリを構築します
+* **PowerApps Mobile** - Windows、iOS、および Android デバイスでアプリを実行します
+* **PowerApps 管理センター** - PowerApps 環境とその他のコンポーネントを管理します
+
+PowerApps が*何であるか*を学習するためだけに多くの時間を費やす必要はありませんが、少し詳しく知っておくことをお勧めします。
+
+## <a name="webpowerappscom"></a>web.powerapps.com
+アプリを構築する場合は、ほとんどの時間をここで費やすことになります。 ここでは、入手できる**サンプル アプリとテンプレート**を学習して、作成したすべてのアプリを確認します。 アプリは **PowerApps Studio for web** または **PowerApps Studio for Windows** で作成し、作成したアプリを個人や組織と共有します。 データ (**接続**、**ゲートウェイ**、**エンティティ**) を管理します (これらはすべて後ほど説明します)。**flows.microsoft.com** で作成したすべての**フロー**を確認します。フローはアプリと統合することができます。
+
+![web.powerapps.com サイト](./media/learning-powerapps-parts/powerapps-web-site.png)
+
+## <a name="powerapps-studio"></a>PowerApps Studio
+**PowerApps Studio** は、最新の任意のブラウザーで使用できる Web アプリケーションとして、また Windows アプリケーションとして利用できます。 PowerApps Studio は 3 つのウィンドウとリボンで構成されるため、アプリの作成が **Powerpoint でスライド デッキを構築するのと**似たように感じられます。
+
+1. **左側のナビゲーション バー**。アプリの各画面のサムネイルを表示したり、各画面上のすべてのコントロールの階層を表示したりできます
+2. **中央のウィンドウ**。作業中の画面が表示されます
+3. **右側のウィンドウ**。レイアウトやデータ ソースなどのオプションを設定します
+4. **プロパティ** ドロップダウン リスト。数式を適用するプロパティを選択します
+5. **数式バー**。アプリの動作を定義する数式を (Excel のように) 追加します
+6. **リボン**。コントロールを追加し、デザイン要素をカスタマイズします
+
+![PowerApps Studio](./media/learning-powerapps-parts/powerapps-studio.png)
+
+## <a name="powerapps-mobile"></a>PowerApps Mobile
+**Windows、iOS、および Android 用 PowerApps Mobile** は、アプリを見つけて使用できる環境を提供します。 個別のアプリ ストアを使わなくても、PowerApps 内に留まって、作成したすべてのアプリと、他のユーザーと共有しているすべてのアプリにアクセスできます。 PowerApps Mobile でアプリを使用すると、カメラのコントロール、GPS の位置情報など、デバイスの機能を最大限に活用できます。
+
+![PowerApps Mobile](./media/learning-powerapps-parts/powerapps-mobile.png)
+
+## <a name="admin-center"></a>管理センター
+**PowerApps 管理センター**は、組織で PowerApps を管理するための、一元管理された場所です。 ここで、アプリ、データ接続、およびその他の要素を格納するさまざまな**環境**を定義します。 管理センターは、Common Data Service データベースを作成して、アクセス許可とデータ ポリシーを管理する場所でもあります。
+
+![PowerApps 管理センター](./media/learning-powerapps-parts/powerapps-admin-center.png)
+
+次のトピックでは、アプリ開発用の優れたエコシステムを構築するために PowerApps が連動する一連の関連テクノロジについて説明します。
+

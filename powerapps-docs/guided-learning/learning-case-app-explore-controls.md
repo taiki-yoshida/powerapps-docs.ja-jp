@@ -1,0 +1,63 @@
+---
+title: "アプリの生成 (Common Data Service) | Microsoft Docs"
+description: "Common Data Service から 3 画面アプリを作成します"
+services: 
+suite: powerapps
+documentationcenter: na
+author: mgblythe
+manager: anneta
+editor: 
+tags: 
+featuredvideoid: 98d6SZueEek
+courseduration: 5m
+ms.service: powerapps
+ms.devlang: na
+ms.topic: get-started-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 12/09/2016
+ms.author: mblythe
+ms.openlocfilehash: e73e73f02a4db11e62af48b21188c6c9a719c4e3
+ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/07/2017
+---
+# <a name="explore-the-generated-app-common-data-service"></a>生成されたアプリの詳細 (Common Data Service)
+このトピックでは、生成されたアプリをさらに詳しく説明します。画面とアプリの動作を定義するコントロールを確認しましょう。 すべての詳細は確認しませんが、このアプリの仕組みを詳しく確認しておくと、独自のアプリを構築する際に役立ちます。 この後のトピックで、画面とコントロールを操作する数式について説明します。
+
+## <a name="run-the-app-in-preview-mode"></a>アプリをプレビュー モードで実行する
+右上にある ![アプリのプレビューを開始する矢印を](./media/learning-case-app-explore-controls/f5-arrow-sm.png) クリックまたはタップしてアプリを実行します。 アプリ全体を移動すると、アプリにエンティティのデータが含まれていて、アプリが適切な既定のエクスペリエンスを提供していることが分かります。
+
+![アプリをプレビュー モードで実行する](./media/learning-case-app-explore-controls/run-app.png)
+
+## <a name="understanding-controls-in-powerapps"></a>PowerApps のコントロールの詳細
+コントロールは、動作が関連付けられている UI 要素にすぎません。 PowerApps のコントロールの多くは、ラベル、テキスト入力ボックス、ドロップダウン リスト、ナビゲーション要素など、他のアプリで使用したことのあるコントロールと同じです。 ただし、PowerApps には、**ギャラリー** (要約データを表示します) や**フォーム** (詳細データを表示して項目を作成および編集できるようにします) などのより特殊なコントロールがあります。 他にも、**イメージ**、**カメラ**、**バーコード**など非常に優れたコントロールもいくつかあります。 利用可能なコントロールを確認するには、リボンの **[挿入]** をクリックまたはタップして、**[テキスト]** から **[アイコン]** までの各オプションをクリックまたはタップします。
+
+![PowerApps Studio のリボンの [Controls] (コントロール) タブ](./media/learning-case-app-explore-controls/ribbon-controls.png)
+
+## <a name="explore-the-browse-screen"></a>ブラウズ画面の詳細
+アプリの 3 つの画面それぞれには、メインのコントロールとその他の追加コントロールが含まれています。 アプリの最初の画面は、既定で **BrowseScreen1** という名前のブラウズ画面です。 この画面のメインのコントロールは、**BrowseGallery1** という名前のギャラリーです。 **BrowseGallery1** には、**NextArrow1** (アイコン コントロール。クリックまたはタップすると詳細画面に移動します) のような他のコントロールが含まれています。 この画面には、**IconNewItem1** (アイコン コントロール。クリックまたはタップすると編集/作成画面で項目を作成できます) のような別のコントロールも含まれています。
+
+![複数のコントロールで構成されるブラウズ画面](./media/learning-case-app-explore-controls/browse-screen.png)
+
+PowerApps にはさまざまなタイプのギャラリーがあり、アプリのレイアウト要件に最適なものを使用することができます。 レイアウトを制御する他の方法については、このセクションの後半で説明します。
+
+![PowerApps のギャラリーのオプション](./media/learning-case-app-explore-controls/insert-gallery.png)
+
+## <a name="explore-the-details-screen"></a>詳細画面の詳細
+次は、既定で **DetailScreen1** という名前の詳細画面です。 この画面のメインのコントロールは、**DetailForm1** という名前の表示フォームです。 **DetailForm1** には、**DataCard1** (カード コントロール。ここでは質問のカテゴリを表示します) のような他のコントロールが含まれています。 この画面には、**IconEdit1** (アイコン コントロール。クリックまたはタップすると編集/作成画面で現在の項目を編集できます) のような別のコントロールも含まれています。
+
+![複数のコントロールで構成される詳細画面](./media/learning-case-app-explore-controls/details-screen.png)
+
+ギャラリーには多くのオプションがありますが、フォームはもっとわかりやすく、編集フォームか表示フォームのどちらかです。
+
+![PowerApps のフォームのオプション](./media/learning-case-app-explore-controls/forms.png)
+
+## <a name="explore-the-editcreate-screen"></a>編集/作成画面の詳細
+アプリの 3 番目の画面は、既定で **EditScreen1** という名前の編集/作成画面です。 この画面のメインのコントロールは、**EditForm1** という名前の編集フォームです。 **EditForm1** には、**DataCard8** (カード コントロール。ここでは質問のカテゴリを編集できます) のような他のコントロールが含まれています。 この画面には、**IconAccept1** (アイコン コントロール。クリックまたはタップすると編集/作成画面で行った変更を保存できます) のような別のコントロールも含まれています。
+
+![複数のコントロールで構成される編集画面](./media/learning-case-app-explore-controls/edit-screen.png)
+
+アプリが画面とコントロールで構成される仕組みを理解したところで、次のトピックでは、アプリをカスタマイズする方法を見てみましょう。
+
