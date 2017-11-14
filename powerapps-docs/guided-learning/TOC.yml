@@ -1,0 +1,10 @@
+- name: 概要
+  href: 'get-started.yml#step-1'
+- name: SharePoint からアプリを作成
+  href: 'create-app-sharepoint.yml#step-1'
+- name: Common Data Service からアプリを作成
+  href: 'create-app-cds.yml#step-1'
+- name: アプリの管理
+  href: 'manage-apps.yml#step-1'
+- name: データの管理
+  href: 'manage-data.yml#step-1'

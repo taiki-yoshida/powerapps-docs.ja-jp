@@ -1,0 +1,256 @@
+- name: はじめる
+  items:
+    - name: はじめに
+      href: getting-started.md
+    - name: サインアップ (ユーザー用)
+      href: signup-for-powerapps.md
+    - name: Community Plan へのサインアップ
+      href: dev-community-plan.md
+    - name: 購入 (管理者用)
+      href: signup-for-powerapps-admin.md
+    - name: 環境を使用
+      href: working-with-environments.md
+    - name: 新機能
+      href: release-notes.md
+    - name: お問い合わせの多い問題と解決方法
+      href: common-issues-and-resolutions.md
+    - name: 開催予定および最近のウェビナー
+      href: webinars-listing.md
+- name: 既存のアプリを実行する
+  items:
+    - name: アプリをブラウザーで使用
+      href: run-app-browser.md
+    - name: アプリをスマートフォンまたはタブレットで使用
+      href: run-app-client.md
+    - name: AppSource からさらにアプリを入手
+      href: app-source.md
+    - name: SharePoint でアプリを開く
+      href: open-app-embedded-in-sharepoint.md
+    - name: チームでアプリを開く
+      href: open-app-embedded-in-teams.md
+    - name: サンプル アプリを使用する
+      href: open-and-run-a-sample-app.md
+    - name: テンプレートを使用
+      href: get-started-test-drive.md
+- name: SharePoint からアプリを作成
+  items:
+    - name: SharePoint から始める
+      href: generate-app-from-sharepoint-list-interface.md
+    - name: PowerApps から始める
+      href: app-from-sharepoint.md
+    - name: 接続を作成する
+      href: connect-to-sharepoint.md
+    - name: レイアウトをカスタマイズ
+      href: customize-layout-sharepoint.md
+    - name: フォームをカスタマイズ
+      href: customize-forms-sharepoint.md
+    - name: カードをカスタマイズ
+      href: customize-card.md
+    - name: ルックアップ フィールドの追加
+      href: sharepoint-lookup-fields.md
+- name: 別のデータ ソースからアプリを作成
+  items:
+    - name: エンティティから
+      href: data-platform-create-app.md
+    - name: Excel データから
+      href: get-started-create-from-data.md
+    - name: 数式の使用を開始
+      href: working-with-formulas.md
+    - name: アプリをゼロから作成
+      href: get-started-create-from-blank.md
+- name: アプリをカスタマイズする
+  items:
+    - name: コントロールの追加と構成
+      href: add-configure-controls.md
+    - name: スクリーンを追加
+      href: add-screen-context-variables.md
+    - name: データ接続を追加
+      href: add-data-connection.md
+    - name: アイテムのリストを表示
+      href: add-gallery.md
+    - name: 異なる高さのアイテムを表示
+      href: gallery-dynamic-sizing.md
+    - name: フォームを追加する
+      href: add-form.md
+    - name: 現在のユーザーを表示
+      href: show-current-user.md
+    - name: リスト コントロールを追加
+      href: add-list-box-drop-down-list-radio-button.md
+    - name: 表を追加
+      href: use-line-pie-bar-chart.md
+    - name: マルチメディアを追加
+      href: add-images-pictures-audio-video.md
+    - name: バーコードをスキャン
+      href: scan-barcode.md
+    - name: フローを追加
+      href: using-logic-flows.md
+    - name: スクロール スクリーンを追加
+      href: add-scrolling-screen.md
+    - name: グローバルなアプリを構築
+      href: global-apps.md
+- name: アプリを管理する
+  items:
+    - name: powerapps.com について
+      href: intro-maker-portal.md
+    - name: アプリを編集
+      href: edit-app.md
+    - name: スクリーンのサイズと向きを変更する
+      href: set-aspect-ratio-portrait-landscape.md
+    - name: アプリ名とタイルを変更する
+      href: set-name-tile.md
+    - name: アプリを保存して公開
+      href: save-publish-app.md
+    - name: アプリを共有する
+      href: share-app.md
+    - name: アプリを削除する
+      href: delete-app.md
+    - name: アプリを以前のバージョンに復元
+      href: restore-an-app.md
+- name: データに接続する
+  items:
+    - name: コネクタの概要
+      href: connections-list.md
+    - name: データ接続を管理
+      href: add-manage-connections.md
+    - name: 委任
+      href: delegation-overview.md
+    - name: 委任可能なデータ ソース
+      href: delegation-list.md
+    - name: ゲートウェイの管理
+      href: gateway-management.md
+    - name: ゲートウェイについて
+      href: gateway-reference.md
+- name: エンティティ内のデータの管理
+  items:
+    - name: エンティティについて
+      href: data-platform-intro.md
+    - name: カスタム エンティティの作成
+      href: data-platform-create-entity.md
+    - name: データからのカスタム エンティティの作成
+      href: data-platform-cds-newentity-pq.md
+    - name: フィールドの管理
+      href: data-platform-manage-fields.md
+    - name: フィールド グループを使う
+      href: field-groups.md
+    - name: カスタム ピックリストの作成
+      href: custom-picklists.md
+    - name: リレーションシップの作成
+      href: data-platform-entity-lookup.md
+    - name: エンティティを使用したアプリの作成
+      href: data-platform-create-app.md
+    - name: カスタム エンティティの削除
+      href: data-platform-delete-entity.md
+    - name: データのインポートまたはエクスポート
+      href: data-platform-export-data.md
+    - name: Excel でのデータ管理
+      href: data-platform-interactive-excel.md
+    - name: サンプルおよびリソース
+      href: samples-resources.md
+- name: 統合シナリオ
+  items:
+    - name: SharePoint Online との統合 (チュートリアル シリーズ)
+      href: sharepoint-scenario-intro.md
+    - name: SharePoint Online リストの設定
+      href: sharepoint-scenario-setup.md
+    - name: アプリを生成する
+      href: sharepoint-scenario-generate-app.md
+    - name: 承認用のフローを作成する
+      href: sharepoint-scenario-approval-flow.md
+    - name: アプリを最初から作成する
+      href: sharepoint-scenario-build-app.md
+    - name: Power BI レポートを作成する
+      href: sharepoint-scenario-build-report.md
+    - name: Power BI レポートの公開
+      href: sharepoint-scenario-publish-report.md
+    - name: 埋め込み Power BI レポート
+      href: sharepoint-scenario-embed-report.md
+    - name: アラート用のフローを作成する
+      href: sharepoint-scenario-alerts-flow.md
+    - name: 完了済みシナリオの検証
+      href: sharepoint-scenario-summary.md
+    - name: Cognitive Services の統合
+      href: cognitive-services-api.md
+- name: '開発: 企業開発者'
+  items:
+    - name: 企業開発者向け PowerApps
+      href: dev-enterprise-intro.md
+    - name: カスタム コネクタの登録と使用
+      href: register-custom-api.md
+    - name: Postman でのカスタム コネクタの説明
+      href: postman-collection.md
+    - name: カスタム コネクタを使用した Azure Active Directory の使用
+      href: customapi-azure-resource-manager-tutorial.md
+    - name: Web API 用カスタム コネクタの構築
+      href: customapi-web-api-tutorial.md
+    - name: Web サイトやその他の技術との統合
+      href: embed-apps-dev.md
+    - name: オフラインでも利用可能なアプリの開発
+      href: offline-apps.md
+- name: '開発: パートナーおよび ISV'
+  items:
+    - name: Microsoft のパートナーおよび ISV 向け PowerApps
+      href: dev-isv-partner-intro.md
+    - name: API コネクタの認定の概要
+      href: api-connector-overview.md
+    - name: 認定に向けた API コネクタの開発
+      href: api-connector-dev.md
+    - name: API コネクタの認定の申請
+      href: api-connector-submission.md
+    - name: API コネクタの認定に関する FAQ
+      href: api-connector-faq.md
+    - name: ユーザーにアプリの体験版を配布する
+      href: dev-appsource-test-drive.md
+- name: 管理および ALM
+  items:
+    - name: PowerApps in your organization Q&A (組織における PowerApps の Q&A)
+      href: signup-question-and-answer.md
+    - name: 価格情報
+      href: pricing-billing-skus.md
+    - name: 試用版のプラン
+      href: trial-plan.md
+    - name: 管理センターの概要
+      href: introduction-to-the-admin-center.md
+    - name: 環境の概要
+      href: environments-overview.md
+    - name: 環境の管理
+      href: environments-administration.md
+    - name: データ損失を防ぐためにポリシーを設定
+      href: prevent-data-loss.md
+    - name: データ グループについて
+      href: introduction-to-data-groups.md
+    - name: データベースの作成
+      href: create-database.md
+    - name: データベース セキュリティを構成
+      href: database-security.md
+    - name: テナントまたは環境間でアプリを移動
+      href: environment-and-tenant-migration.md
+    - name: リソースのエクスポートとインポート
+      href: export-import-packages.md
+    - name: リージョン概要
+      href: regions-overview.md
+    - name: 組織内の PowerApps ユーザーの識別
+      href: admin-view-user-licenses.md
+- name: リファレンス
+  items:
+    - name: 数式のリファレンス
+      href: formula-reference.md
+    - name: コントロールのリファレンス
+      href: reference-properties.md
+    - name: テーブルとレコードについて
+      href: working-with-tables.md
+    - name: データ フォームについて
+      href: working-with-forms.md
+    - name: データ フォームのレイアウトについて
+      href: working-with-form-layout.md
+    - name: データ カードについて
+      href: working-with-cards.md
+    - name: 変数について
+      href: working-with-variables.md
+    - name: 数式について
+      href: working-with-formulas-in-depth.md
+    - name: 日付/時刻について
+      href: show-text-dates-times.md
+    - name: データ ソースについて
+      href: working-with-data-sources.md
+    - name: 制限と構成
+      href: limits-and-config.md
