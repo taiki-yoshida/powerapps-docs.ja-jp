@@ -1,0 +1,58 @@
+documentType: Tutorial
+title: "データの管理"
+metadata:
+  title: "データの管理 | Microsoft PowerApps"
+  description: "Common Data Service でデータを格納、モデル化、拡張、および保護する方法を理解します。"
+  audience: Business User
+  level: Beginner
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+- durationInMinutes: 1
+  content: "Common Data Service でデータを格納およびモデル化する方法を理解します。 ビジネス データとプロセスにマップされるエンティティを定義して使用し、カスタム エンティティで共通のデータ モデルを拡張します。 ロール ベースのセキュリティを使用してエンティティへのアクセスを制御します。 サービスと Excel でデータを直接操作します。\n"
+  ms.openlocfilehash: 78638bd391ae00e2305b5be8b37a078296d98401
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/12/2017
+- title: Common Data Service
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/os33pHQ9jSU?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service.md)]
+- title: "Common Data Service エンティティの詳細"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/JJa6n_YaD-w?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-entities.md)]
+- title: "カスタム エンティティの作成"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/qg25q3MjFBo?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-custom-entities.md)]
+- title: "エンティティ データの管理"
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/n6RizzixvxM?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-manage.md)]
+- title: "Common Data Service セキュリティ"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/uwm8ghMUCeI?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-security.md)]
+- content: "Microsoft PowerApps のガイド付き学習の「**データの管理**」セクションは以上です。\0"

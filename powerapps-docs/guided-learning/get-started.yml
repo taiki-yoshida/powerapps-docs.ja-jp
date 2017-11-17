@@ -1,0 +1,64 @@
+documentType: Tutorial
+title: "概要"
+metadata:
+  title: "はじめに | Microsoft PowerApps"
+  description: "PowerApps について - そのソフトウェア要素と関連テクノロジです。"
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: create-app-sharepoint
+  nextTutorialTitle: "SharePoint からアプリを作成"
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+- durationInMinutes: 1
+  content: "PowerApps について - そのソフトウェア要素と関連テクノロジです。 アプリを作成するさまざまな方法を確認し、SharePoint リストからアプリを作成します。\n"
+  ms.openlocfilehash: 7e100c074c273d34c4adcaad4f291cc35949d05c
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/12/2017
+- title: "PowerApps の概要"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/n9fkvkekINE?rel=0]
+
+
+    [!INCLUDE [](includes/learning-introducing-powerapps.md)]
+- title: "PowerApps のパーツ"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/r6mowYePq1Q?rel=0]
+
+
+    [!INCLUDE [](includes/learning-powerapps-parts.md)]
+- title: "関連テクノロジ"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/C81IfqIn9LI?rel=0]
+
+
+    [!INCLUDE [](includes/learning-related-technologies.md)]
+- title: "アプリ作成の概要"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/NOv3kacXqho?rel=0]
+
+
+    [!INCLUDE [](includes/learning-quick-look-powerapps.md)]
+- title: "最初のアプリを作成する"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/ixRpT48Z6IQ?rel=0]
+
+
+    [!INCLUDE [](includes/learning-create-first-app-powerapps.md)]
+- title: "このセクションのまとめ"
+  durationInMinutes: 2
+  content: >
+    [!INCLUDE [](includes/learning-review-section-one.md)]
+- content: "Microsoft PowerApps のガイド付き学習の「**はじめに**」セクションは以上です。\0"

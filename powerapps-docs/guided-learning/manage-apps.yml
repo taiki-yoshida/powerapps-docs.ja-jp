@@ -1,0 +1,43 @@
+documentType: Tutorial
+title: "アプリの管理"
+metadata:
+  title: "アプリの管理 | Microsoft PowerApps"
+  description: "アプリを共有し、使用および共有するアプリのバージョンを制御し、コンテナーを操作します。"
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: manage-data
+  nextTutorialTitle: "データの管理"
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+- durationInMinutes: 1
+  content: "同僚や他のユーザーとアプリを共有し、使用および共有するアプリのバージョンを制御します。 アプリ、接続、およびその他のリソースのコンテナーを操作します。\n"
+  ms.openlocfilehash: 706c686d84b520e2366e1fe8152ad9021949b0fe
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/12/2017
+- title: "アプリの共有"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/_nUU7oOy4oU?rel=0]
+
+
+    [!INCLUDE [](includes/learning-manage-share-apps.md)]
+- title: "アプリのバージョン管理"
+  durationInMinutes: 1
+  content: >
+    [!INCLUDE [](includes/learning-manage-version-apps.md)]
+- title: "環境"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/32olG9uCmBU?rel=0]
+
+
+    [!INCLUDE [](includes/learning-manage-environments.md)]
+- content: "Microsoft PowerApps のガイド付き学習の「**アプリの管理**」セクションは以上です。\0"
