@@ -32,27 +32,31 @@
       href: open-and-run-a-sample-app.md
     - name: テンプレートを使用
       href: get-started-test-drive.md
-- name: SharePoint からアプリを作成
+- name: SharePoint リストで開始
   items:
-    - name: SharePoint から始める
+    - name: SharePoint からアプリを作成
       href: generate-app-from-sharepoint-list-interface.md
-    - name: PowerApps から始める
+    - name: PowerApps からのアプリの作成
       href: app-from-sharepoint.md
+    - name: PowerApps のリスト フォームのカスタマイズ
+      href: customize-list-form.md
+    - name: SharePoint フォームの統合について
+      href: sharepoint-form-integration.md
     - name: 接続を作成する
       href: connect-to-sharepoint.md
-    - name: レイアウトをカスタマイズ
+    - name: ギャラリー レイアウトのカスタマイズ
       href: customize-layout-sharepoint.md
-    - name: フォームをカスタマイズ
+    - name: PowerApps フォームのカスタマイズ
       href: customize-forms-sharepoint.md
     - name: カードをカスタマイズ
       href: customize-card.md
-    - name: ルックアップ フィールドの追加
+    - name: ルックアップを使用してリストに接続する
       href: sharepoint-lookup-fields.md
-- name: 別のデータ ソースからアプリを作成
+- name: 別のデータ ソースで開始
   items:
-    - name: エンティティから
+    - name: アプリをエンティティから作成する
       href: data-platform-create-app.md
-    - name: Excel データから
+    - name: Excel データからアプリを作成する
       href: get-started-create-from-data.md
     - name: 数式の使用を開始
       href: working-with-formulas.md
