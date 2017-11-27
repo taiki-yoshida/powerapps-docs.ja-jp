@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 2bb6aae9ab460e4fc03f6c7e3243f47da0ffe455
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: 2a5fd3cb6805f5e22fe6d4bc7fba0de64df8afd2
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
 PowerApps で[あらゆる SharePoint リスト フォームを簡単にカスタマイズ](customize-list-form.md)できるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
@@ -70,7 +70,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
         **SubmitForm(SharePointForm1)**
 
-これらの既定値により、SharePoint 内で実行されたときにフォームが確実に動作します。 これらによって、ユーザーが SharePoint でフォームと対話したときに PowerApps フォーム モードが変更され、変更内容が SharePoint に確実に送信されます。
+これらの既定値によって、SharePoint 内で実行したときにフォームが機能し、ユーザーが SharePoint でフォームと対話したときに PowerApps フォーム モードが変更され、変更内容が SharePoint に確実に送信されます。
 
 ## <a name="understand-the-sharepointintegration-control"></a>SharePointIntegration コントロールについて
 **SharePointIntegration** コントロールは、SharePoint と PowerApps の間でユーザー アクションを伝達します。
@@ -99,7 +99,6 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 **Data Source** – フォームが表示、編集、または作成するレコードが含まれるリストです。 このプロパティを変更すると、**Selected** プロパティと **SelectedItemID** プロパティが無効になる可能性があることに注意してください。
 
 ## <a name="customize-the-default-form"></a>既定のフォームをカスタマイズする
-
 既定の生成されたフォームと **SharePointIntegration** コントロールを理解したら、数式を変更して、フォームをさらにカスタマイズすることができます。 フォームをカスタマイズするときの注意事項をいくつか次に示します。
 
 * アイテムを作成、表示、または編集するための個別のカスタム エクスペリエンスを作成するには、**SharePointIntegration** コントロールの **OnNew**、**OnView**、または **OnEdit** 式を、変数を設定するか別の画面に移動するように設定します。
@@ -109,6 +108,6 @@ SharePoint リストのフォームをカスタマイズしたことがある方
     >[!TIP]
      **OnNew**、**OnView**、および **OnEdit** 式の変数には異なる値を設定します。 **OnSave** 式でこの変数を使用すると、使用されているフォームを指定できます。
 
-* すべてのフォームの **OnSuccess** にかならず **RequestHide()** を含めてください。 これを忘れると、SharePoint はフォームを非表示にするタイミングを認識できません。
+* すべてのフォームの **OnSuccess** 式に必ず **RequestHide()** を含めてください。 これを忘れると、SharePoint はフォームを非表示にするタイミングを認識できません。
 
 * SharePoint でユーザーが **[キャンセル]** をクリックまたはタップしたときのフォームの非表示は制御できないので、**SharePointIntegration** コントロールの **OnCancel** 式でかならずフォームをリセットしてください。

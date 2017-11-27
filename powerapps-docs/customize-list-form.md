@@ -1,5 +1,5 @@
 ---
-title: "PowerApps を使用した SharePoint リスト フォームのカスタマイズ |Microsoft Docs"
+title: "PowerApps を使用した SharePoint リスト フォームのカスタマイズ | Microsoft Docs"
 description: "PowerApps を使用して、SharePoint のリスト フォームをカスタマイズします。"
 services: 
 suite: powerapps
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/13/2017
 ms.author: sharik
-ms.openlocfilehash: 162314b1bb94e8358e5ddb290adf9db9f43950a0
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -47,9 +47,16 @@ SharePoint リスト内で、コマンド バーの **[PowerApps]**、**[アプ�
 
 ## <a name="customize-the-list-form"></a>リスト フォームをカスタマイズする
 
-PowerApps には、フォームをカスタマイズする多くの方法が用意されています。 たとえば、レイアウトの変更、テキストの書式設定、画像やグラフの追加、カスタム データ検証の追加、ルールの追加、追加のビューの作成を行えます。
+PowerApps には、フォームをカスタマイズする多くの方法が用意されています。 次に例をいくつか示します。
 
-では、フォームに表示したくない **[AccountID]** フィールドがあるとします。
+* [サイズと向きを変更する](set-aspect-ratio-portrait-landscape.md)
+* [テキストの書式を設定する](controls/properties-text.md)
+* [イメージ](add-images-pictures-audio-video.md)または[グラフを追加する](use-line-pie-bar-chart.md)
+* [カスタムのデータ検証を追加する](functions/function-validate.md)
+* [ルールを追加する](working-with-rules.md)
+* [追加のビューを作成する](https://powerapps.microsoft.com/blog/separate-custom-forms/)
+
+例を挙げて説明します。お使いのフォームに **[AccountID]** というフィールドがあり、表示させたくないと思っているとします。
 
 ![[AccountID] フィールドを選択](./media/customize-list-form/select-card.png)
 
@@ -57,7 +64,7 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 
 ![[AccountID] のチェックボックスをオフ](./media/customize-list-form/checkbox.png)
 
-フィールドを非表示にし、他のフォーム変更を行う詳しい手順については、「[PowerApps でのフォームのカスタマイズ](customize-forms-sharepoint.md)」をご覧ください。
+フィールドを非表示にし、他のフォーム変更を行う詳しい手順については、「[PowerApps でのフォームのカスタマイズ](customize-forms-sharepoint.md)」をご覧ください。 全リソースの一覧については、「[Microsoft PowerApps docs (Microsoft PowerApps のドキュメント)](https://docs.microsoft.com/powerapps/)」をご覧ください。
 
 ## <a name="save-and-publish-the-list-form-back-to-sharepoint"></a>リスト フォームを保存して SharePoint に発行しなおす
 
