@@ -48,8 +48,8 @@ PowerApps の主な利点の 1 つは従来のアプリケーション コード
 
 これで SharePoint のアプリ セクションが終了しました。ここからは学習内容をお選びいただけます。
 
-* [アプリの管理](../manage-apps#step-1)
-* [Common Data Service からのアプリの作成とカスタマイズ](../create-app-cds#step-1)
+* [アプリの管理](https://docs.microsoft.com/powerapps/guided-learning/manage-apps#step-1)
+* [Common Data Service からのアプリの作成とカスタマイズ](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1)
 
 管理のセクションでは、アプリを共有しバージョン管理する方法を示し、アプリ、データ、およびその他のリソースのコンテナーとなる環境について説明します。 管理のセクションには、ある時点ですべての方が目を通すことをお勧めしますが、Common Data Service のセクションにもアプリのカスタマイズの詳細など多くの情報があります。 
 
