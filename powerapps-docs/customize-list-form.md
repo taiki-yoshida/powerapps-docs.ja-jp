@@ -1,5 +1,5 @@
 ---
-title: "PowerApps を使用した SharePoint リスト フォームのカスタマイズ | Microsoft Docs"
+title: "PowerApps を使用した SharePoint リスト フォームのカスタマイズ |Microsoft Docs"
 description: "PowerApps を使用して、SharePoint のリスト フォームをカスタマイズします。"
 services: 
 suite: powerapps
@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/13/2017
+ms.date: 01/02/2018
 ms.author: sharik
-ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
-ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
+ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
+ms.sourcegitcommit: 1083f55a35cee22920460d3d91d3ccae306a5754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -164,7 +164,7 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 
 **A:** いいえ。 この機能は現在サポートされていません。
 
-### <a name="administering-your-custom-list-form"></a>カスタム リスト フォームの管理
+### <a name="administering-custom-list-forms"></a>カスタム リスト フォームの管理
 
 **Q:** 他のユーザーとカスタム リスト フォームを共有する方法を教えてください。
 
@@ -173,6 +173,10 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 **Q:** 誰がリスト フォームをカスタマイズできるのですか?
 
 **A:** 関連リストを管理、設計、または編集する SharePoint アクセス許可を持つ任意のユーザーです。
+
+**Q:** カスタム リスト フォームの作成や使用に、PowerApps のライセンスは必要ですか?
+
+**A:** [PowerApps が含まれている Office 365 プラン](pricing-billing-skus.md#licenses)をご利用の場合は、カスタム リスト フォームの作成および使用が可能です。
 
 **Q:** ゲスト ユーザーがカスタム フォームを含むリストにアクセスするとどうなりますか?
 
