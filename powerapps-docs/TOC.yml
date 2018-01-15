@@ -150,29 +150,31 @@
       href: data-platform-interactive-excel.md
     - name: サンプルおよびリソース
       href: samples-resources.md
-- name: 統合シナリオ
+- name: その他のテクノロジとの統合
   items:
-    - name: SharePoint Online との統合 (チュートリアル シリーズ)
-      href: sharepoint-scenario-intro.md
-    - name: SharePoint Online リストの設定
-      href: sharepoint-scenario-setup.md
-    - name: アプリを生成する
-      href: sharepoint-scenario-generate-app.md
-    - name: 承認用のフローを作成する
-      href: sharepoint-scenario-approval-flow.md
-    - name: アプリを最初から作成する
-      href: sharepoint-scenario-build-app.md
-    - name: Power BI レポートを作成する
-      href: sharepoint-scenario-build-report.md
-    - name: Power BI レポートの公開
-      href: sharepoint-scenario-publish-report.md
-    - name: 埋め込み Power BI レポート
-      href: sharepoint-scenario-embed-report.md
-    - name: アラート用のフローを作成する
-      href: sharepoint-scenario-alerts-flow.md
-    - name: 完了済みシナリオの検証
-      href: sharepoint-scenario-summary.md
-    - name: Cognitive Services の統合
+    - name: SharePoint Online との統合
+      items:
+        - name: SharePoint Online との統合の概要
+          href: sharepoint-scenario-intro.md
+        - name: SharePoint Online リストの設定
+          href: sharepoint-scenario-setup.md
+        - name: アプリを生成する
+          href: sharepoint-scenario-generate-app.md
+        - name: 承認用のフローを作成する
+          href: sharepoint-scenario-approval-flow.md
+        - name: アプリを最初から作成する
+          href: sharepoint-scenario-build-app.md
+        - name: Power BI レポートを作成する
+          href: sharepoint-scenario-build-report.md
+        - name: Power BI レポートの公開
+          href: sharepoint-scenario-publish-report.md
+        - name: 埋め込み Power BI レポート
+          href: sharepoint-scenario-embed-report.md
+        - name: アラート用のフローを作成する
+          href: sharepoint-scenario-alerts-flow.md
+        - name: 完了済みシナリオの検証
+          href: sharepoint-scenario-summary.md
+    - name: Cognitive Services との統合
       href: cognitive-services-api.md
 - name: '開発: 企業開発者'
   items:
