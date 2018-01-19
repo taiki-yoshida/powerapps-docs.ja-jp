@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
 ms.openlocfilehash: a2224d97c9cfc1261e43f7d30c8d8bdd2dd6e86b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Common Data Service データベースの作成
 データベースの作成とアプリの構築には、Common Data Service をデータ ストアとして使用できます。 独自のカスタム エンティティを作成することも、事前定義されたエンティティを使用することもできます。 データベースを作成するには、まず環境を作成するか、管理者として既存の環境に割り当てられる必要があります。 さらに、適切なライセンスが割り当てられている必要があります。 Common Data Service を使用するためのプランの購入については、[価格情報](pricing-billing-skus.md)に関するページを参照してください。

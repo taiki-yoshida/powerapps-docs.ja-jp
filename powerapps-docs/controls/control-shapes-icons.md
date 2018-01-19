@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 7a71695460453816dd5c63dad8477cb7ccc703d7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps のシェイプ コントロールとアイコン コントロール
 見た目と動作のプロパティが構成できるグラフィックスです。
@@ -57,7 +57,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="example"></a>例
 1. 既定の**[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、**[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
    
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 2. **[スクリーン](control-screen.md)** コントロールを追加し、**Source** という名前を付けます。
 3. **Source** に **シェイプ** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティに次の式を設定します。
    <br>**Navigate(Target, ScreenTransition.Fade)**

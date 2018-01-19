@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 68514c498e4737fdc5a8b78ea6bdfbb16811ba65
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps の Day、Month、Year、Hour、Minute、Second、および Weekday 関数
 Date/Time 値の個々の要素を返します。

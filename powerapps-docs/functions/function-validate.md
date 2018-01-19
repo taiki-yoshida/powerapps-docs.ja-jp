@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/01/2015
 ms.author: gregli
 ms.openlocfilehash: 933e97d569eb1be173dac7e609fa1a7151df1e18
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps の Validate 関数
 **Validate** 関数は、特定の[データ ソース](../working-with-data-sources.md)について、単一の[列](../working-with-tables.md#columns)または[レコード](../working-with-tables.md#records)全体の値が有効であるかどうかを確認するものです。  

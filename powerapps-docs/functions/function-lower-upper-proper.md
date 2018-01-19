@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 2ed6a9f1d52da1818eaaec50194740fb55a09f8e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps の Lower 関数、Upper 関数、Proper 関数
 テキストの文字列中の文字をすべて大文字か小文字に変換します。または、テキストの文字列中の文字を適切なケースに変換します。
@@ -68,7 +68,7 @@ ms.lasthandoff: 11/07/2017
 | **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |単語の先頭の文字が小文字であれば大文字に変換します。また、その他の文字が大文字であれば小文字に変換します。 |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>ステップバイステップの例
-1. **[テキスト入力](../controls/control-text-input.md)**コントロールを追加し、**Source** という名前を付けます。
+1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、 **Source** という名前を付けます。
 2. ラベルを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の関数に設定します。<br>**Proper(Source.Text)**
 3. F5 キーを押し、**Source** ボックスに 「**WE ARE THE BEST!**」と入力します。<br>ラベルには **We Are The Best!** と表示されます。
 

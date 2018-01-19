@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/02/2015
 ms.author: lonu
 ms.openlocfilehash: 4c4c859afe5591bc317064d662e4a1da96412b81
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>PowerApps ギャラリーでのデータの表示、並べ替え、およびフィルター
 さまざまな製品についての画像やテキストを表示して、その情報を並べ替えたりフィルター処理したりするためのギャラリーを作成します。
@@ -36,7 +36,7 @@ PowerApps では、ちょうどカタログで商品を見るときのように�
 * [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
 * これらの手順では、[CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をサンプルの入力データとして使用します (.jpg 画像が含まれています)。 この zip ファイルには、Excel に変換できる XML ファイルが含まれています。 変換できなくても、.zip ファイル内のファイルは PowerApps によって自動的に読み取られ、正常にインポートされます。 このサンプル データをダウンロードして使用することも、独自のデータをインポートすることもできます。
 
-## <a name="show-data-in-a-gallery"></a>ギャラリーにデータを表示する
+## <a name="show-data-in-a-gallery"></a>ギャラリーのデータの表示
 1. サンプル データを使用して、**Inventory** という名前のコレクションを作成します。 手順を次に示します。  
    
    1. **[挿入]** タブで **[コントロール]** を選択し、**[インポート]** を選択します。

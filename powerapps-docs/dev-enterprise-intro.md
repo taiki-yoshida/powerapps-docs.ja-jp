@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 7dcc4a37ac8b3ba00d03baac58c9a12b388860bb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="powerapps-for-enterprise-developers"></a>企業開発者向け PowerApps
 企業開発者は、企業向けに調整した堅牢なソリューションを PowerApps で開発することで、組織の力を高めることができます。 データと Web サービスに接続するカスタム コネクタを使用し、組織の Web サイトにアプリを埋め込み、Common Data Service でデータを操作できます。

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 672caee3b683bb0222b15a65cdad4edce78c4fe4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="shuffle-function-in-powerapps"></a>PowerApps の Shuffle 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)をランダムに並べ替えます。
