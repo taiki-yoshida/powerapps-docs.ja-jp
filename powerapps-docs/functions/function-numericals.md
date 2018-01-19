@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 25d9b49c7f527d7510e31dd937e1d8a580bb31cf
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps の Abs、Exp、Ln、Power および Sqrt 関数
 絶対値、自然対数、平方根、および *e* または任意の数の指定した累乗の結果を計算します。
@@ -76,7 +76,7 @@ ms.lasthandoff: 11/07/2017
 | **Sqrt(&nbsp;ValueTable&nbsp;)** |テーブルの各数値の平方根を返します。 |![](media/function-numericals/values-sqrt.png) |
 
 ### <a name="step-by-step-example"></a>ステップバイステップの例
-1. **[テキスト入力](../controls/control-text-input.md)**コントロールを追加し、**Source** という名前を付けます。
+1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、 **Source** という名前を付けます。
 2. **ラベル** コントロールを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>
    **Sqrt( Value( Source.Text ) )**

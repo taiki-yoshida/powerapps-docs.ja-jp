@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3ffede0018a371b3c3a4cf4a3a1f9fc8115140de
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps のマイク コントロール
 ユーザーがサウンドを録音できるコントロールです。
@@ -75,7 +75,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
