@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 4082034d843765025bb6e40cab83705582417d51
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -151,7 +151,7 @@ ms.lasthandoff: 11/07/2017
 2. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
    
-    **[If](../functions/function-if.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
+    **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 3. F5 キーを押し、**inputPassword** に **P@ssw0rd** と入力します。
    
     パスワードの入力が完了すると、ラベルの **Access denied** の表示が停止し、**Access granted** の表示が開始されます。
