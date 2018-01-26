@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: fb1154a80bc60b8d645fdeef8c40dcdb2d2b4baf
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: c08776071e694bfe1a9b4a8263ab9eead2547024
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="reset-function-in-powerapps"></a>PowerApps の Reset 関数
 ユーザーによる変更を破棄して、コントロールを既定値にリセットします。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/07/2017
 
 **Default** プロパティが変更されると、入力コントロールもリセットされます。
 
-**Reset** には戻り値が存在せず、[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)内でのみ使用できます。
+**Reset** には戻り値が存在せず、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **Reset**( *Control* )

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: fc575ff16f190f85b50ef056430354e32d0ab907
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2ffc183221e399ee978ac9a600b400e96a00f704
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 
 どちらの関数も、大文字と小文字を区別してテストします。  どちらの戻り値も、ブール値の **true** または **false** です。  
 
-アプリ内でデータを検索するには、**[Filter](function-filter-lookup.md)** 関数と共に **EndsWith** および **StartsWith** を使用します。 また、**[in](operators.md#in-and-exactin-operators)** 演算子または **[Search](function-fitler-lookup.md)** 関数を使用すると、先頭や末尾だけでなく、テキスト文字列の中も検索できます。  アプリのニーズや、特定のデータ ソースで[委任](../delegation-overview.md)できる関数に応じて、関数を選ぶことができます。  これらの関数のいずれかを委任できない場合は、作成時に青い点が表示され、この制限に関する警告が表示されます。
+アプリ内でデータを検索するには、**[Filter](function-filter-lookup.md)** 関数と共に **EndsWith** および **StartsWith** を使用します。 また、**[in](operators.md#in-and-exactin-operators)** 演算子または **[Search](function-filter-lookup.md)** 関数を使用すると、先頭や末尾だけでなく、テキスト文字列の中も検索できます。  アプリのニーズや、特定のデータ ソースで[委任](../delegation-overview.md)できる関数に応じて、関数を選ぶことができます。  これらの関数のいずれかを委任できない場合は、作成時に青い点が表示され、この制限に関する警告が表示されます。
 
 ## <a name="syntax"></a>構文
 **EndsWith**(*Text*, *EndText*)

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 6b969ca59f28abfefe91c887c2755ee7a7d28ed4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 9254eaf63d816fc8ac9890026f74bdeaeaa9b1a4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps の If および Switch 関数
 セット内の条件が true かどうか (**If**)、または数式の結果がセット内のいずれかの値に一致するかどうか (**Switch**) を判断し、結果を返すかアクションを実行します。
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/07/2017
 * 関連性のない複数の条件を評価する場合は、**If** を使用します。 PowerApps では (Microsoft Excel とは異なり)、**If** の数式を入れ子にすることなく、複数の条件を指定できます。
 * 可能な複数の一致を求めて単一の条件を評価する場合は、**Switch** を使用します。 この場合、**If** も使用できますが、可能なそれぞれの一致について数式を繰り返す必要があります。
 
-これらの関数は両方とも、2 つ以上のアクション間で分岐するために、[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)で使用できます。 アクションをトリガーする分岐は 1 つだけです。 条件と一致が順番に評価され、条件が **true** になるか一致が見つかった時点で停止します。
+これらの関数は両方とも、2 つ以上のアクション間で分岐するために、[動作の数式](../working-with-formulas-in-depth.md)で使用できます。 アクションをトリガーする分岐は 1 つだけです。 条件と一致が順番に評価され、条件が **true** になるか一致が見つかった時点で停止します。
 
 どの条件も *true* にならなかった場合、一致が見つからなかった場合、既定の結果を指定しなかった場合は、"**空白**" が返されます。
 

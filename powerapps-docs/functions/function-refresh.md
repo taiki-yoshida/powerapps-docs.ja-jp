@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 57c591e134eafeae422289ad47afc8952ff67110
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 631b0c8fbfc98d73cf1d944c2a0f3933f8f10c11
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="refresh-function-in-powerapps"></a>PowerApps の Refresh 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新します。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="description"></a>説明
 **Refresh** 関数は、データ ソースの新しいコピーを取得します。  他のユーザーが加えた変更が表示されます。
 
-**Refresh** には戻り値が存在せず、[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)内でのみ使用できます。
+**Refresh** には戻り値が存在せず、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **Refresh**( *DataSource* )

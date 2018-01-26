@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
-ms.openlocfilehash: 94e4eaa5209bbcaf6cd191ed2dfdf27d9eab1d5f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delegable-data-sources"></a>委任可能なデータ ソース
 「[委任について](delegation-overview.md)」で詳しく説明しているように、委任とは、PowerApps がデータをアプリに移動してローカルで処理せずに、データの処理をデータ ソースに委任することです。
@@ -31,7 +31,6 @@ ms.lasthandoff: 11/07/2017
 * SQL Server - **サポート**
 * Dynamics 365 - **サポート**
 * Salesforce - **サポート**
-* Excel - **近日サポート予定**
 * Dynamics 365 for Operations - 未サポート
 * Dynamics 365 for Financials - 未サポート
 * Dynamics NAV - 未サポート
@@ -41,7 +40,7 @@ ms.lasthandoff: 11/07/2017
 
 このドキュメントでは、データ ソースごとにサポートされている委任の現在の状態を示します。
 
-**前提条件**
+## <a name="prerequisites"></a>前提条件
 
 * 「[委任について](delegation-overview.md)」の内容を理解しておく
 
@@ -77,4 +76,3 @@ ms.lasthandoff: 11/07/2017
 | StartsWith |いいえ |はい |いいえ |いいえ |いいえ |
 
 <sup>2</sup>演算子のみ。 And/Or/Not 関数は委任されません。
-

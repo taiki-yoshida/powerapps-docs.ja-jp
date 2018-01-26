@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/03/2016
 ms.author: sharik
-ms.openlocfilehash: 8af2017bb77c68316c643dd95a18d051fa5942a7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e9023c75dab32b59fb86e1fea4a2a89dd0e4454f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint への接続を作成する
 アプリを自動的に生成したりゼロから構築したりすることができるように、SharePoint Online またはオンプレミス SharePoint への接続を作成しましょう。
@@ -30,46 +30,55 @@ PowerApps の基本的な事柄については、「[PowerApps の概要](gettin
 
 ## <a name="specify-a-sharepoint-connection"></a>SharePoint 接続の指定
 1. まだサインアップが済んでいない場合は、[PowerApps にサインアップ](signup-for-powerapps.md)します。
+
 2. サインアップに使用した資格情報で [powerapps.com](https://web.powerapps.com) にサインインします。
+
 3. 左側のナビゲーション バーで、**[Mangage (管理)]** をクリックまたはタップし、**[Connections (接続)]** をクリックまたはタップします。
-   
-    ![[File (ファイル)] メニューの [New (新規)] オプション](./media/connect-to-sharepoint/manage-connections.png)
+
+    ![[ファイル] メニューの [新規] オプション](./media/connect-to-sharepoint/manage-connections.png)
+
 4. 右上隅にある **[New connection (新しい接続)]** をクリックまたはタップします。
-   
+
     ![[New connection (新しい接続)] ボタン](./media/connect-to-sharepoint/new-connection.png)
+
 5. 接続の一覧で **[SharePoint]** をクリックまたはタップします。
-   
+
     ![SharePoint 接続の追加](./media/connect-to-sharepoint/add-sp-portal.png)
+
 6. 次のいずれかの手順に従います。各手順については、このトピックの中で後述します。
-   
+
    * [SharePoint Online サイトに接続する](connect-to-sharepoint.md#connect-to-a-sharepoint-online-site)。
    * [オンプレミス SharePoint サイトに接続する](connect-to-sharepoint.md#connect-to-an-on-premises-sharepoint-site)。
 
 ## <a name="connect-to-a-sharepoint-online-site"></a>SharePoint Online サイトに接続する
 1. **[Connect directly (cloud services) (直接接続 (クラウド サービス))]** をクリックまたはタップし、**[Add connection (接続の追加)]** をクリックまたはタップします。
-   
+
     ![SharePoint Online を選択](./media/connect-to-sharepoint/choose-online.png)
+
 2. このトピックの最後にある「[次の手順](connect-to-sharepoint.md#next-steps)」に進みます。
 
 ## <a name="connect-to-an-on-premises-sharepoint-site"></a>オンプレミス SharePoint サイトに接続する
 1. **[Connect using on-premises data gateway (オンプレミスのデータ ゲートウェイを使用して接続)]** をクリックまたはタップします。
-   
+
     ![オンプレミスの SharePoint を選択](./media/connect-to-sharepoint/choose-onprem.png)
-   
-    **注**: ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](working-with-environments.md)でのみ作成し、使用することができます。
+
+    > [!NOTE]
+> ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](working-with-environments.md)でのみ作成し、使用できます。
+
 2. ユーザー名とパスワードを指定します。
-   
+
     資格情報にドメイン名が含まれる場合は、*<ドメイン>\<エイリアス>* 形式で指定してください。
-   
+
     ![資格情報を指定](./media/connect-to-sharepoint/specify-credentials.png)
+
 3. オンプレミスのデータ ゲートウェイがインストールされていない場合は、[ゲートウェイをインストール](gateway-reference.md)し、アイコンをクリックまたはタップしてゲートウェイの一覧を最新の情報に更新します。
-   
+
     ![ゲートウェイのインストール](./media/connect-to-sharepoint/install-gateway.png)
+
 4. **[Choose a gateway (ゲートウェイを選択する)]** で、使用するゲートウェイをクリックまたはタップし、**[Add connection (接続の追加)]** をクリックまたはタップします。
-   
+
     ![ゲートウェイを選択](./media/connect-to-sharepoint/choose-gateway.png)
 
 ## <a name="next-steps"></a>次の手順
 * 指定したリストに基づいて[アプリを自動的に生成](app-from-sharepoint.md)する。 生成されたアプリには、レコードの閲覧用、単一レコードに関する詳細の表示用、レコードの作成/更新用の 3 つの画面が既定で存在します。
 * [アプリをゼロから作成する](get-started-create-from-blank.md)。 このトピックは Excel 向けに作成されていますが、SharePoint の場合も基本的な手順は同じです。
-

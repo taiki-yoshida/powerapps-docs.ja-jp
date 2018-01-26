@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 710e48f8619c44082d81907e64896b15425e4531
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 58f8c4bf55167e7c891a614a2bfb98ef20dcfd7c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>PowerApps の Back および Navigate 関数
 表示する画面を変更します。
@@ -53,7 +53,7 @@ ms.lasthandoff: 11/07/2017
 
 **Back** は通常は **true** を返しますが、ユーザーが最初の画面を表示していて前の画面が存在しない場合は、**false** を返します。  **Navigate** は通常は **true** を返しますが、いずれかの引数に問題がある場合は、**false** を返します。
 
-これらの関数は、[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)内でのみ使用できます。
+これらの関数は、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **Back**()

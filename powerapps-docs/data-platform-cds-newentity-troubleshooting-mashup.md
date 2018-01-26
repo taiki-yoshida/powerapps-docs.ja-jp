@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 230ad9f61185caff93fb3a5f56c62176b4f78c16
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b534400317e39dffec30f185c180de34098a378f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="troubleshooting---unable-to-create-or-retrieve-a-mashup-for-this-database"></a>トラブルシューティング - このデータベースの Mashup を作成または取得できない
 **データの新しいエンティティ (Technical Preview)** の機能を使用するときに、次のようなエラーが発生する場合があります。
@@ -31,7 +31,6 @@ ms.lasthandoff: 11/07/2017
 * **Azure Active Directory** (AAD) テナント管理者が、ユーザーの代わりにアプリが会社のデータにアクセスすることにユーザーが同意する権限を許可していない。
 * 管理対象外の Active Directory テナントを使用している。 管理対象外のテナントは、セルフ サービス サインアップ オファーを完了するために作成されたディレクトリであり、グローバル管理者は割り当てられていません。 このシナリオを修正するには、ユーザーは*最初に*管理対象のテナントに変換してから、次のセクションで説明するこの問題の 2 つのソリューションのいずれかに従う必要があります。
 
-## <a name="how-to-fix-the-issue"></a>問題を解決する方法
 上記で説明した問題を解決する方法は、2 つあります。
 
 * AAD の管理者に依頼して、会社のデータにアプリがアクセスすることをユーザーが承認することを許可する手順を実行する
@@ -39,7 +38,8 @@ ms.lasthandoff: 11/07/2017
 
 次に、これらのソリューションに必要な各手順について説明します。
 
-### <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>会社のデータにアプリがアクセスすることをユーザーが承認することを許可する
+## <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>会社のデータにアプリがアクセスすることをユーザーが承認することを許可する
+
 AAD テナントの管理者に連絡して、次の手順を実行して、会社のデータにアプリがアクセスすることをユーザーが承認できるようにしてもらいます。
 
 1. [https://portal.azure.com](https://portal.azure.com) にアクセスします。
@@ -50,7 +50,7 @@ AAD テナントの管理者に連絡して、次の手順を実行して、会�
 
 これがおそらく最も簡単な方法ですが、次のオプションよりも幅広いアクセスを許可することになります。
 
-### <a name="allowing-power-query-to-access-company-data"></a>Power Query が会社のデータにアクセスすることを許可する
+## <a name="allowing-power-query-to-access-company-data"></a>Power Query が会社のデータにアクセスすることを許可する
 もう 1 つのソリューションは、テナント管理者がテナント全体のアクセス許可を変更することなく **Power Query** が会社のデータにアクセスすることに同意することです。 テナント管理者に依頼して、以下の手順を実行してください。
 
 1. [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps) のインストール

@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2016
-ms.author: kuntalme
-ms.openlocfilehash: da8b5bc5f71a3d0c52ad9a0e41a28aeb50841a6b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: edbf16982dfff5c8bda8abe314a8f211af362093
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Microsoft PowerApps から Dynamics AX に接続する
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
@@ -36,7 +36,7 @@ Dynamics AX から既存のアプリにデータを追加する方法につい�
 
 [使用できる接続の一覧](../connections-list.md)を参照し、PowerApps で[接続を管理する](../add-manage-connections.md)方法を学習してください。
 
-## <a name="next-steps"></a>次の手順
+### <a name="next-steps"></a>次の手順
 * [データ ソースからデータを表示する方法](../add-gallery.md)を学習する。
 * [詳細を表示する方法とレコードを作成または更新する方法](../add-form.md)を学習する。
 

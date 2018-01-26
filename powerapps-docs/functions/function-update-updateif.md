@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 36f259989c01d295dd1e6d3894032748133483d3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 71732f7d2785dba42ba2a6e05b70ce16d3f017a5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps の Update および UpdateIf 関数
 [データ ソース](../working-with-data-sources.md)内の[レコード](../working-with-tables.md#records)を更新します。
@@ -39,10 +39,10 @@ ms.lasthandoff: 11/07/2017
 
 特定の列だけを変更し、他の列はそのまま維持する場合には、**UpdateIf** のほかに **[Patch](function-patch.md)** 関数も使用できます。
 
-**Update** と **UpdateIf** のどちらも、変更後のデータ ソースを[テーブル](../working-with-tables.md)として返します。 [動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)では、どちらかの関数を使用する必要があります。
+**Update** と **UpdateIf** のどちらも、変更後のデータ ソースを[テーブル](../working-with-tables.md)として返します。 [動作の数式](../working-with-formulas-in-depth.md)では、どちらかの関数を使用する必要があります。
 
 ### <a name="delegation"></a>委任
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>構文
 **Update**( *DataSource*, *OldRecord*, *NewRecord* [, **All** ] )

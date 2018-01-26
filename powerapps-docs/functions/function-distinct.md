@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 2e114671869659c598c81f6069b668449b783f65
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b4e2a7c44696a57d01db5ac39da65ad782f0edac
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="distinct-function-in-powerapps"></a>PowerApps の Distinct 関数
 重複を削除して、[テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)を要約します。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="description"></a>説明
 **Distinct** 関数は、テーブルの各レコードで数式を評価します。 **Distinct** は、重複する値が削除された結果を含む 1 列のテーブルを返します。  
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 ## <a name="syntax"></a>構文
 **Distinct**( *Table*, *Formula* )

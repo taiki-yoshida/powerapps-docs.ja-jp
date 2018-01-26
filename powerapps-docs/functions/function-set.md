@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: ddd772b8db016c69001d2d19f33863fe65fbd25a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ef44d704d16892c7c37ac4fbf7c3eebc0ffcb966
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps の Set 関数
 グローバル変数の値を設定します。
@@ -32,9 +32,9 @@ ms.lasthandoff: 11/07/2017
 PowerApps では基本的に、ユーザーがアプリを操作すると、数式が自動的に再計算されます。  グローバル変数ではこの効果は得られません。そのため、グローバル変数を使うとアプリの作成が難しく、わかりにくくなる場合があります。  変数を使用する前に、[変数の利用](../working-with-variables.md)に関するページを確認してください。
 
 ## <a name="description"></a>説明
-グローバル変数は **Set** 関数を使用して暗黙的に作成されます。  明示的な宣言は必要ありません。  グローバル変数から **Set** 関数をすべて削除すると、そのグローバル変数は存在しなくなります。  変数をクリアするには、その値を [**Blank** 関数](function-blank.md)の結果に設定します。 
+グローバル変数は **Set** 関数を使用して暗黙的に作成されます。  明示的な宣言は必要ありません。  グローバル変数から **Set** 関数をすべて削除すると、そのグローバル変数は存在しなくなります。  変数をクリアするには、その値を [**Blank** 関数](function-isblank-isempty.md)の結果に設定します。
 
-作成環境の [ファイル] メニューの [変数] ビューで、変数の値、定義、使用について確認できます。 
+作成環境の [ファイル] メニューの [変数] ビューで、変数の値、定義、使用について確認できます。
 
 具体例はこのトピックで後ほど紹介しますが、グローバル変数には以下をはじめとするさまざまな情報を格納できます。
 
@@ -48,7 +48,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 グローバル変数には既存のコレクションやコントロールと同じ名前は使用できません。  同じ名前がコンテキスト変数として使用されることがあります。  この 2 つの間の曖昧さを解消するには、[曖昧性除去演算子](operators.md#disambiguation-operator)を使用します。
 
-**Set** には戻り値がないため、[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas) の中でのみ使用できます。
+**Set** には戻り値がないため、[動作の数式](../working-with-formulas-in-depth.md) の中でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **Set**( *VariableName*, *Value* )

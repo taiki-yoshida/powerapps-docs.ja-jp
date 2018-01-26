@@ -15,18 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 8441ac93c1d3f96e0316ff1f044dc58b800d4dd5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 02e45c98aa991c14ad99d3bf3f11d02dbc0752aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-a-scrolling-screen-in-powerapps"></a>PowerApps でスクロール画面を追加する
 スクロールするとさまざまな項目が表示される画面を作成します。 たとえば、縦棒グラフや折れ線グラフにデータを表示するアプリを作成するとします。 スクロール画面を追加すると、スクロールしたときに表示されるように複数のコントロールを追加できます。
 
 1 つのセクションに複数のコントロールを追加すると、それがスマートフォン アプリであるか、タブレット アプリであるかに関係なく、そのセクション内でコントロールの相対位置が維持されます。 画面のサイズと方向によりセクションの配置が決まることがあります。  
-
-&nbsp;
 
 [!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
 

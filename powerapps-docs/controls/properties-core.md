@@ -15,17 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 25094d77809e754afbc54fe5e7b2cd644497ff3e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps のコアのプロパティ
-## <a name="overview"></a>概要
 ユーザーがコントロールを見て操作できるかどうかを構成します。
 
-## <a name="properties"></a>プロパティ
+### <a name="properties"></a>プロパティ
 **Default** – ユーザーが変更する前のコントロールの初期値です。
 
 * **[カード](control-card.md)**、**[チェック ボックス](control-check-box.md)**、**[ドロップ ダウン](control-drop-down.md)**、**[ギャラリー](control-gallery.md)**、**[リスト ボックス](control-list-box.md)**、**[ラジオ](control-radio.md)**、**[評価](control-rating.md)**、**[スライダー](control-slider.md)**、**[テキスト入力](control-text-input.md)**、および**[トグル](control-toggle.md)**の各コントロールに適用されます。

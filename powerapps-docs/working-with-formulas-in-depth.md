@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 69e2252b60b559e68191399196b4957f77e51ee4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7bb0d9f3db9353511e8a5ed85f016049a96f7dae
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-behavior-formulas-in-powerapps"></a>PowerApps の動作の数式について
-## <a name="behavior-formulas"></a>動作の数式
+
 ほとんどの数式は、値を計算するために使用します。  Excel のスプレッドシートと同様に、値が変わると再計算が自動的に行われます。  たとえば、**[ラベル](controls/control-text-box.md)** コントロールの値が 0 未満の場合は値を赤で表示し、それ以外の場合は値を黒で表示することができます。 そのためには、そのコントロールの **[Color](controls/properties-color-border.md)** プロパティを次の数式に設定します。
 <br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 

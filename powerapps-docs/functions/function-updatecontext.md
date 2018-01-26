@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 16d2ed94b44b8b0e521aa5690885fcd1617dc024
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bcade879bfad04a50f80c26638f994897d9b42c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
 現在の画面の[コンテキスト変数](../working-with-variables.md#create-a-context-variable)を作成または更新します。
@@ -38,9 +38,9 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 * まだ存在しない変数の名前を指定した場合には、**UpdateContext** ではその名前の変数を作成したうえで、その変数に対して指定された値を設定します。
 * 以前に変数を定義していたものの、**UpdateContext** の数式の中でその変数を指定しなかった場合には、その変数の値は以前と同じになります。
 
-コンテキスト変数は、**UpdateContext** または [**Navigate** 関数](function-navigate.md)を使用すると暗黙的に作成されます。  明示的な宣言は必要ありません。  **UpdateContext** と **Navigate** のコンテキスト変数への参照をすべて削除すると、コンテキスト変数は存在しなくなります。  変数をクリアするには、その値を [**Blank** 関数](function-blank.md)の結果に設定します。 
+コンテキスト変数は、**UpdateContext** または [**Navigate** 関数](function-navigate.md)を使用すると暗黙的に作成されます。  明示的な宣言は必要ありません。  **UpdateContext** と **Navigate** のコンテキスト変数への参照をすべて削除すると、コンテキスト変数は存在しなくなります。  変数をクリアするには、その値を [**Blank** 関数](function-isblank-isempty.md)の結果に設定します。
 
-作成環境の [ファイル] メニューの [変数] ビューで、変数の値、定義、使用について確認できます。 
+作成環境の [ファイル] メニューの [変数] ビューで、変数の値、定義、使用について確認できます。
 
 数式でコンテキスト変数を参照するときは、その変数の列名を使用します。 たとえば、**UpdateContext( { ShowLogo: true } )** では、**ShowLogo** というコンテキスト変数を作成したうえで、値 **true** を設定します。 この関数を実行した後は、数式でこの **ShowLogo** という名前を指定することによって、このコンテキスト変数の値を使用できます。  **ShowLogo** を画像コントロールの **Visible** プロパティの数式として記述した場合には、このコンテキスト変数の値が **true** と **false** のどちらであるかに応じてコントロールの表示と非表示を切り替えることができます。
 
@@ -56,7 +56,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 コンテキスト変数はいずれも、そのスコープが 1 画面だけにとどまります。 ある画面についてコンテキスト変数を定義し、その値を別の画面から変更する場合には、 **[Navigate](function-navigate.md)** 関数に基づく数式を作成する必要があります。  または、グローバル変数を使用します。
 
-**UpdateContext** には戻り値がないため、[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas) の中でのみ使用できます。
+**UpdateContext** には戻り値がないため、[動作の数式](../working-with-formulas-in-depth.md) の中でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **UpdateContext**( *UpdateRecord* )

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 76b41c6dc3b23a3d1f30425b9eac1011406a8757
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 736d634e9db5bc97ceb69852c59b229c7478863b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps の Remove および RemoveIf 関数
 [データ ソース](../working-with-tables.md#records)から[レコード](../working-with-data-sources.md)を削除します。
@@ -33,12 +33,12 @@ ms.lasthandoff: 11/07/2017
 ### <a name="removeif-function"></a>RemoveIf 関数
 **RemoveIf** 関数を使用して、1 つの条件または一連の条件に基づき、1 つまたは複数のレコードを削除します。 各条件には、結果が **true** または **false** になるものであれば、どのような数式でも指定できます。また、データ ソースの[列](../working-with-tables.md#columns)を、名前を使って参照することもできます。 各条件はレコードごとに個別に評価され、すべての条件が **true** と評価された場合にそのレコードが削除されます。
 
-**Remove** と **RemoveIf** は、変更後のデータ ソースを[テーブル](../working-with-tables.md)として返します。 これらの関数は、いずれも[動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)内でのみ使用できます。
+**Remove** と **RemoveIf** は、変更後のデータ ソースを[テーブル](../working-with-tables.md)として返します。 これらの関数は、いずれも[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 
 また、**[Clear](function-clear-collect-clearcollect.md)** 関数を使用して、データ ソースのすべてのレコードを削除することもできます。
 
 ### <a name="delegation"></a>委任
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>構文
 **Remove**( *DataSource*, *Record1* [, *Record2*, ... ] [, **All** ] )

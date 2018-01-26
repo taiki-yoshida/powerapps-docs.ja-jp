@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 0fcfb90de55c0504a7a7ff5e7d75cd782b8f56e6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f87b952378c64ec7c67d98b5dfc194cb62be767
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>PowerApps でのテキストの表示と日時の書式設定
 日付や時間を追加し、その書式を設定することによって、必要な部分だけを表示したりロケールを反映したりすることができます。 また、2 つの日付間の時間を計算したり、指定した日付から一定時間前または後の日付を計算したりすることも可能です。 さらに、日付を変換して年と月と日の要素に分解したり、逆に年と月と日の要素から日付に変換したりすることができます。時刻も同様です。時と分と秒の要素に分解したり、時と分と秒の要素から時刻に変換したりすることができます。
 
 たとえば、株式取引やクライアントとのミーティングに関するデータを追加するとしましょう。データは、ユーザーや外部ソースから取得する場合もあれば、PowerApps で作成された別のアプリから取得する場合もあります。 そのデータにミリ秒単位の時刻が含まれていれば、わかりやすくするために、最も近い分単位に丸めることができます。 重要なマイルストーンまでの残り日数を計算するとします。 クライアントとのミーティングを 5 日おきにスケジューリングする場合は、それらの日付を自動的に計算できます。 1985 年 5 月 10 日という日付について、年と月と日の要素がそれぞれ異なるフィールドに格納されていれば、それらを 1 つの値に統合することができます。 日付の構成要素を個別に扱うアプリであれば、逆に日付を個々の構成要素に分解することもできます。
 
-**前提条件**
+## <a name="prerequisites"></a>前提条件
 
 * PowerApps に[サインアップ](signup-for-powerapps.md)し、[インストール](http://aka.ms/powerappsinstall)して開きます。その後、サインアップに使用したのと同じ資格情報を入力してサインインします。
 * PowerApps で、アプリを作成するか既存のアプリを開きます。
@@ -56,7 +56,9 @@ ms.lasthandoff: 11/07/2017
    * **Today**。その時点の日付を値として計算します。
    * **DateValue**。二重引用符で囲まれたリテラル文字列を、計算の適用対象として使用できる値に変換します。
 3. **BirthDate** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、**ShowText** の下に移動します。
+
 4. **BirthDate** に、自分が生まれた月と日 (例: **05/18**) を入力します。
+
 5. **ShowText** の **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateDiff(Today(), DateValue(BirthDate.Text))**
    
@@ -122,7 +124,9 @@ ms.lasthandoff: 11/07/2017
    > 
 
 ## <a name="format-a-date-by-using-datevalue"></a>DateValue を使用して日付の書式を設定する
+
 1. **ArrivalDate** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、そこに日付を入力します (例: **5/10/85**)。
+
 2. **FormatDate** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateValue(ArrivalDate.Text)**
    
@@ -141,8 +145,11 @@ ms.lasthandoff: 11/07/2017
     **FormatDate** には、指定した書式で日付が表示されます。
 
 ## <a name="format-a-time-using-datetimevalue"></a>DateTimeValue を使用して時刻の書式を設定する
+
 1. **ArrivalTime** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、そこに「**6:15 AM**」と入力します。
+
 2. **ShowTime** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加します。
+
 3. 組み込みの書式のいずれかを使用するには、**ShowTime** の **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
    
@@ -158,8 +165,11 @@ ms.lasthandoff: 11/07/2017
    > 
 
 ## <a name="show-the-time-between-dates"></a>日付間の時間を表示する
+
 1. **Start** と **End** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)**コントロールを追加します。
+
 2. **Start** には「**4/1/2015**」と入力し、**End** には「**1/1/2016**」と入力します。
+
 3. **DateDiff** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
    
@@ -171,7 +181,9 @@ ms.lasthandoff: 11/07/2017
     **DateDiff** には、2015 年 4 月 1 日から 2016 年 1 月 1 日までの月数である "**9**" が表示されます。 **Months** を **Quarters** または **Years** に置き換えると、時間が四半期単位や年単位で表示されます。
 
 ## <a name="identify-a-date-before-or-after-another-date"></a>特定の日付から前後した日付を特定する
+
 1. **Start** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、そこに「**5/10/1985**」と入力します。
+
 2. **DateAdd** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateAdd(DateValue(Start.Text), 3)**
    
@@ -192,13 +204,18 @@ ms.lasthandoff: 11/07/2017
     このラベルには、**Start** の日付の 3 か月後である "**8/10/1985**" が表示されます。 **Months** を **Quarters** または **Years** に置き換えると、**Start** の日付から指定した四半期数または年数だけ前または後の日付が特定されます。
 
 ## <a name="calculate-dates-based-on-years-months-and-days"></a>年、月、日に基づいて日付を計算する
+
 1. **Year**、**Month**、**Day** という名前の 3 つの**[ドロップダウン](controls/control-drop-down.md)** コントロールを追加します。
+
 2. **Year** の **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
+
 3. **Month** の **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Table({Month:"1"}, {Month:"2"}, {Month:"3"}, {Month:"4"}, {Month:"5"}, {Month:"6"}, {Month:"7"}, {Month:"8"}, {Month:"9"}, {Month:"10"}, {Month:"11"}, {Month:"12"})**
+
 4. **Day** の **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
+
 5. **[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
@@ -215,13 +232,18 @@ ms.lasthandoff: 11/07/2017
 * 日の値が 1 未満の場合は、その日数に 1 を加えた数が、指定された月の初日から減算されます。
 
 ## <a name="calculate-times-based-on-hours-minutes-and-seconds"></a>時、分、秒に基づいて時刻を計算する
+
 1. **Hour** と **Minute** という名前の 2 つの**ドロップダウン** リストを追加します。
+
 2. **Hour** の **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Table({Hour:"9"}, {Hour:"10"}, {Hour:"11"}, {Hour:"12"}, {Hour:"13"}, {Hour:"14"}, {Hour:"15"}, {Hour:"16"}, {Hour:"17"})**
+
 3. **Minute** の **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
+
 4. **[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。  
    <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
+
 5. **[Hour]** で **15** を、**[Minute]** で **45** を選択します。
    
     **[ラベル](controls/control-text-box.md)** コントロールに "**3:45 PM**" と表示されます。

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: b589a03f592c02547dce0e74a5c4d3ac74c436a1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a1966016b07a79a23880511a5cc0d6da8643adbc
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>ルックアップ フィールドを使用して SharePoint リストをリンクする方法
 このチュートリアルでは、ルックアップ フィールドを使用して 2 つの SharePoint リストを関連付ける方法について説明します。
@@ -58,58 +58,77 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 この作業を最初に行っておくことで、**Assets** リストにデータを追加すると、**RepairShop** のエントリを *Assets.RepairShop* ルックアップ フィールドから選択することができます。
 
 1. SharePoint サイトで、新しい **RepairShop** リストを作成します。
-   
+
     ![](./media/sharepoint-lookup-fields/new-list.png)
+
 2. **1 行テキスト**という種類の *ContactEmail* フィールドを追加します。
-   
+
     ![](./media/sharepoint-lookup-fields/add-email-field.png)
+
 3. 他にも必要なフィールドがあれば追加します。
+
 4. **[+ 新規]** をクリックまたはタップして、サンプル データをリストに入力します。少なくとも 3 行は追加しましょう。*ContactEmail* の値が重複しないようにしてください。 資産を修理する必要が生じたとき、このいずれかを選択することになります。
-   
+
     ![](./media/sharepoint-lookup-fields/add-repair-shops.png)
 
 ### <a name="define-the-assets-list"></a>Assets リストの定義
 1. SharePoint サイトで、新しい **Assets** リストを作成します。
+
 2. プラス記号をクリックまたはタップし、**[展開表示]** を選択します。
-   
+
     ![](./media/sharepoint-lookup-fields/choose-more-type.png)
+
 3. **選択肢**という種類の *AssetType* フィールドを追加し、選択肢メニューに表示する値を **[それぞれの行に選択肢を入力してください]** ボックスに入力します。 その後、**[OK]** をクリックまたはタップしてください。
-   ![](./media/sharepoint-lookup-fields/define-choice-column.png)
+
+    ![](./media/sharepoint-lookup-fields/define-choice-column.png)
+
 4. さらにもう 1 つのフィールドを追加します。手順 2. と同様、プラス記号をクリックまたはタップし、**[展開表示]** を選択します。
+
 5. **ルックアップ**という種類の *RepairShop* フィールドを追加し、**[情報の取得先]** ボックスから **[RepairShop]** を選択して、**[この列]** ボックスから *[ContactEmail]* を選択します。 その後、**[OK]** をクリックまたはタップしてください。
-   ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
+
+    ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
+
 6. 他にも必要なフィールドがあれば追加します。
 
 ## <a name="create-an-app-from-the-assets-list"></a>Assets リストからアプリを作成する
 このアプリを使用して **Assets** リストにデータを追加します。
 
 1. PowerApps Studio を開きます。 PowerApps を初めてご利用になる場合は、所属組織の電子メール アドレスを使って[無料でサインアップ](https://powerapps.microsoft.com)し、指示に従って Windows ストアから PowerApps Studio をダウンロードしてください。
+
 2. **[ファイル]** メニュー (画面左側) の **[新規]** をクリックまたはタップし、**[SharePoint]** をクリックまたはタップします。
 
-![](./media/sharepoint-lookup-fields/create-app.png)
+    ![](./media/sharepoint-lookup-fields/create-app.png)
 
 1. **[最近利用したサイト]** の一覧から SharePoint サイトを選択するか、該当するサイトの URL を直接テキスト ボックスに入力します。 **[移動]** をクリックまたはタップします。
 
-![](./media/sharepoint-lookup-fields/choose-sharepoint-site.png)
+    ![](./media/sharepoint-lookup-fields/choose-sharepoint-site.png)
 
 1. SharePoint サイトからメインのリスト (この例では **Assets**) を選択します。 右下隅の **[接続]** ボタンをクリックまたはタップします。
 
-![](./media/sharepoint-lookup-fields/choose-main-list.png)
+    ![](./media/sharepoint-lookup-fields/choose-main-list.png)
+
 
 ## <a name="add-data-to-the-assets-list"></a>Assets リストにデータを追加する
 ここで、アプリを実行し、詳細の表示画面でルックアップ フィールドがどのように表示されるかを確認することができます。
 
 1. F5 キーを押すか、[プレビュー]\(![](./media/sharepoint-lookup-fields/preview.png)) を選択します。
+
 2. 右上隅にある **+** 記号をクリックまたはタップしてエントリを追加します。
+
 3. この資産の**タイトル**を入力します。
+
 4. **[AssetType]** のドロップダウン矢印をクリックまたはタップします。 表示される値は、このフィールドの作成時に入力した値です。 いずれかのエントリを選択します。
-   
+
     ![](./media/sharepoint-lookup-fields/fill-asset-type-3.png)
+
 5. **[RepairShop]** のドロップダウン矢印をクリックまたはタップします。 いずれかのエントリを選択します。
-   
+
     ![](./media/sharepoint-lookup-fields/fill-repair-shop-3.png)
+
 6. 右上隅にあるチェック マークをクリックまたはタップして新しいエントリを保存します。
+
 7. (省略可能) この手順を繰り返して、必要な数だけ項目をリストに追加します。
+
 8. Esc キーを押して既定のワークスペースに戻ります。
 
 ## <a name="for-more-information"></a>BLOB の詳細については、
@@ -117,4 +136,3 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 * [パフォーマンス、更新ボタン、ForAll、複数のフィールド ルックアップ](https://powerapps.microsoft.com/blog/performance-refresh-forall-multiple-field-lookups-531/)
 * [Common Data Service データベースを使用してアプリを生成する](data-platform-create-app.md)
 * [Common Data Service データベースを使用してアプリを最初から作成する](data-platform-create-app-scratch.md)
-

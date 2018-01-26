@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/29/2017
 ms.author: jamesol
-ms.openlocfilehash: e64f345adb40147eec98f091023ae6a5a7e6a5a3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e66978f6134919b18f4cfba913f1bb34394d8832
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-analytics-reports-for-your-app"></a>アプリの分析レポートを表示する
 アプリを構築して、ご自分の組織で共有されていますか?  何人の同僚がそのアプリを日常的に使用しているのか気になりますか?
 
-現在、[web.powerapps.com](1.md) でプレビューで提供されている最初の PowerApps 分析レポートをご紹介します。**アプリの使用状況レポート**です。
+現在、[web.powerapps.com](https://web.powerapps.com) で提供されている最初の PowerApps 分析レポートをご紹介します。**アプリの使用状況レポート**です。
 
 アプリの使用状況レポートでは、日ごと、デバイス プラットフォームごと、場所ごとに、過去 30 日間にアプリを使用したユーザー数を追跡できます。
 
@@ -33,12 +33,10 @@ ms.lasthandoff: 11/07/2017
 ## <a name="how-do-i-get-access-to-my-apps-reports"></a>自分のアプリのレポートにはどのようにアクセスできますか?
 アプリの ”編集が可能” なアクセス許可を持つユーザーであればすべてのレポートを利用できますが、レポートにアクセスするには、PowerApps Plan 2 または PowerApps Plan 2 の試用版ライセンスを持っている必要があります。
 
-*注: 分析レポートがプレビューで提供されている間は、有効な PowerApps ライセンスを持つユーザーであれば誰でも、レポートにアクセスして試用できます。*
-
 ## <a name="where-do-i-find-my-apps-reports"></a>アプリのレポートはどこにありますか?
 アプリのレポートを見るには、次の手順に従ってください。
 
-1. [web.powerapps.com](1.md) にアクセスします。
+1. [web.powerapps.com](https://web.powerapps.com) にアクセスします。
 2. 左側のナビゲーション バーで **[アプリ]** を選択します。
    
     ![左側のナビゲーション バー](./media/app-analytics/left-nav.png)
@@ -57,7 +55,5 @@ ms.lasthandoff: 11/07/2017
 ## <a name="are-there-going-to-be-any-other-reports"></a>今後、他のレポートも追加されますか?
 はい。 アプリのパフォーマンスやエラーの報告に関しても、同様のレポートの開発を予定しています。
 
-具体的なフィードバックや質問、またはリクエストがある場合は、ぜひ [PowerApps Ideas フォーラム](2.md)にお寄せください。
+具体的なフィードバックや質問、またはリクエストがある場合は、ぜひ [PowerApps Ideas フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)にお寄せください。
 
-[1]: https://web.powerapps.com
-[2]: https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas

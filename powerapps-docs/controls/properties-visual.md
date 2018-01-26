@@ -15,14 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: a5dbc7be8840e1fa596594262cf03de358a14225
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 56cfcc2e19620f5acd8c0fcc4c207020f1a453c1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-properties-in-powerapps"></a>PowerApps のビジュアルのプロパティ
-## <a name="overview"></a>概要
 画像、写真、ペン コントロールの要素などのアプリのグラフィック要素を構成します。
 
 **BackgroundImage** – 画面の背景に表示される画像ファイルの名前です。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 11eb01c2476d06f11299bd91e34f353f5b1075d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="global-support"></a>グローバル サポート
 PowerApps はグローバル製品です。  さまざまな言語や地域でアプリをビルドおよび使用できます。
@@ -79,11 +79,11 @@ PowerApps リスト区切り記号の変更は、Excel リスト区切り記号�
 
 たとえば、"en-US"に次の数式があるとします。
 
-* **If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
 
 小数点に "," が使用される言語では、これはオーサリング環境で次のように表示されます。
 
-* **If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
 
 プロパティ選択演算子に注意してください**。** **Slider1.Value** は、小数点が何であろうと常に同じです。
 
@@ -101,7 +101,7 @@ PowerApps リスト区切り記号の変更は、Excel リスト区切り記号�
 
 その後、次のような数式を使用して、テーブルから翻訳された文字列をプルします。
 
-* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+**LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 その他の言語に翻訳された文字列は、お使いの言語での文字列よりもはるかに長くなる可能性があることに注意してください。  多くの場合、ユーザー インターフェイスでこれらの文字列を表示するラベルやその他の要素を、大きくして適応させる必要があります。
 
@@ -153,4 +153,3 @@ Excel を使用したことがある場合、これらの関数はすべて単�
 特に、これらの関数を使用すると、選択肢が一覧表示された**ドロップダウン**コントロールが提供されます。  
 
 詳細については、**[Calendar](functions/function-clock-calendar.md)** 関数および **[Clock](functions/function-clock-calendar.md)** 関数のドキュメントを参照してください。
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 95dad93f75503415f714cc36c0f9413b66223353
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0c06b24c0ed253a6589c4eb073a6d01595ed5b59
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>PowerApps でオフライン対応アプリを開発する
 モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。
@@ -59,8 +59,11 @@ PowerApps の最も興味深い側面の 1 つは、データのフィルター�
     ![空のアプリ, 電話レイアウト](media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>手順 2: Twitter 接続を追加する
+
 1. **[コンテンツ]** > **[データ ソース]** をクリックするかタップし、**[データ ソース]** パネルで **[データ ソースの追加]** を選択します。
+
 2. **[新しい接続]** をクリックするかタップし、**[Twitter]** を選択し、**[作成]** をクリックするかタップします。
+
 3. 資格情報を入力し、接続を作成します。
    
     ![Twitter 接続の追加](media/offline-apps/twitter-connection.png)
@@ -96,8 +99,11 @@ SaveData(LocalTweets, "Tweets")
 * デバイスがオフラインの場合は、"Tweets" という名前のファイルからローカル キャッシュを読み込みます (使用できる場合)。
 
 ### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>手順 4: ギャラリーを追加して LocalTweets コレクションにバインドする
+
 1. 高さを柔軟に変更できる新しいギャラリーを挿入します (**[挿入]** > **[ギャラリー]** > **[変更可能な高さ (空)]**)。
+
 2. **Items** プロパティを **LocalTweets** に設定します。
+
 3. 各ツイートのデータを表示する 4 つの**ラベル** コントロールを追加し、次の **Text** プロパティを設定します。
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " @" & ThisItem.UserDetails.UserName**
@@ -115,7 +121,9 @@ If (Connection.Connected, "Connected", "Offline")
 この数式は、デバイスがオンラインかどうかをチェックします。 オンラインの場合、ラベルのテキストは [接続中] になり、それ以外の場合は [オフライン] になります。
 
 ### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>手順 6: 新しいツイートを作成するためのテキスト入力を追加する
+
 1. "NewTweetTextInput" という名前の新しい**テキスト入力**コントロールを挿入します。
+
 2. テキスト入力の **Reset** プロパティを **resetNewTweet** に設定します。
 
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>手順 7: ツイートを投稿するためのボタンを追加する
@@ -149,7 +157,9 @@ If (Connection.Connected, "Connected", "Offline")
 新しい**タイマー** コントロールを追加します。
 
 * **Duration** プロパティを 300000 に設定します。
+
 * **AutoStart** プロパティを true に設定します。
+
 * **OnTimerEnd** を次の数式に設定します。
   
     ```
@@ -176,16 +186,12 @@ If (Connection.Connected, "Connected", "Offline")
 ## <a name="testing-the-app"></a>アプリのテスト
 次の手順でアプリをテストします。
 
-1. モバイル デバイスがオンラインのときに PowerApps を実行します。
-   
-    オンライン中に少なくとも 1 回アプリを実行して、アプリをデバイスにダウンロードする必要があります。
+1. モバイル デバイスがオンラインのときに PowerApps を実行します。 オンライン中に少なくとも 1 回アプリを実行して、アプリをデバイスにダウンロードする必要があります。
 2. Twitter アプリを起動します。
 3. ツイートが読み込まれ、状態に **[接続中]**が表示されます。
 4. PowerApps を完全に閉じます。
 5. デバイスを機内モードに設定して、確実にオフラインにします。
-6. PowerApps を実行します。
-   
-    Twitter アプリをオフラインで実行でき、このデバイスがオンライン状態のときに実行していたその他のアプリにアクセスできます (つまり、PowerApps は、デバイスにまだダウンロードされていないすべてのアプリを非表示にします)。
+6. PowerApps を実行します。 Twitter アプリをオフラインで実行でき、このデバイスがオンライン状態のときに実行していたその他のアプリにアクセスできます (つまり、PowerApps は、デバイスにまだダウンロードされていないすべてのアプリを非表示にします)。
 7. アプリをもう一度実行します。
 8. 接続状態が正しく反映されていることを確認してください (**[オフライン]**)。
 9. 新しいツイートを書きます。 それは、**LocalTweetsToPost** コレクション内にローカルに格納されます。
