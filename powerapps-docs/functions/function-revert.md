@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 4a0b39a9b247a6d410ac1a705234f90833ec707a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps の Revert 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新し、エラーをクリアします。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Patch](function-patch.md)** またはその他のデータ操作の後に **[Errors](function-errors.md)** 関数で競合がレポートされた場合は、競合するバージョンのあるレコードを **Revert** で元に戻したうえで、変更を再適用してください。
 
-**Revert** には、戻り値はありません。 [動作の数式](../working-with-formulas-in-depth.md#behavior-formulas)内でのみ使用できます。
+**Revert** には、戻り値はありません。 [動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **Revert**( *DataSource* [, *Record* ] )
