@@ -8,11 +8,11 @@ ms.service: powerapps
 ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: mblythe
-ms.openlocfilehash: 40d2849e0ba4ed664d8099bae335717841e1eac2
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 6da595d920e7911f6b776a628b3f8d91ccf3a0ca
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -37,27 +37,27 @@ ms.lasthandoff: 01/12/2018
 作業の開始 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-1">PowerApps の概要</a>
+                                <a class="barLink" href="get-started.yml#step-1">PowerApps の概要</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-2">PowerApps のパーツ</a>
+                                <a class="barLink" href="get-started.yml#step-2">PowerApps のパーツ</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-3">関連テクノロジ</a>
+                                <a class="barLink" href="get-started.yml#step-3">関連テクノロジ</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-4">アプリ作成の概要</a>
+                                <a class="barLink" href="get-started.yml#step-4">アプリ作成の概要</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-5">最初のアプリを作成する</a>
+                                <a class="barLink" href="get-started.yml#step-5">最初のアプリを作成する</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started#step-6">このセクションのまとめ</a>
+                                <a class="barLink" href="get-started.yml#step-6">このセクションのまとめ</a>
                                 <span style="margin-left: 32px; align-self: center;">2 分</span>
                               </li>
                           </ul>
@@ -80,19 +80,19 @@ ms.lasthandoff: 01/12/2018
 SharePoint からアプリを作成 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-1">アプリを生成する</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-1">アプリを生成する</a>
                                 <span style="margin-left: 32px; align-self: center;">3 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-2">生成されたアプリの詳細</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-2">生成されたアプリの詳細</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-3">アプリをカスタマイズする</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-3">アプリをカスタマイズする</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint#step-4">アプリの数式の詳細</a>
+                                <a class="barLink" href="create-app-sharepoint.yml#step-4">アプリの数式の詳細</a>
                                 <span style="margin-left: 32px; align-self: center;">9 分</span>
                               </li>
                             </ul>
@@ -115,19 +115,19 @@ SharePoint からアプリを作成 </h3>
 Common Data Service からアプリを作成 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-1">アプリを生成する</a>
+                                <a class="barLink" href="create-app-cds.yml#step-1">アプリを生成する</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-2">生成されたアプリの詳細</a>
+                                <a class="barLink" href="create-app-cds.yml#step-2">生成されたアプリの詳細</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-3">アプリをカスタマイズする</a>
+                                <a class="barLink" href="create-app-cds.yml#step-3">アプリをカスタマイズする</a>
                                 <span style="margin-left: 32px; align-self: center;">12 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-cds#step-4">データ ソースとフローを追加する</a>
+                                <a class="barLink" href="create-app-cds.yml#step-4">データ ソースとフローを追加する</a>
                                 <span style="margin-left: 32px; align-self: center;">11 分</span>
                               </li>
                           </ul>
@@ -150,15 +150,15 @@ Common Data Service からアプリを作成 </h3>
 アプリの管理 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps#step-1">データを共有する</a>
+                                <a class="barLink" href="manage-apps.yml#step-1">データを共有する</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps#step-2">アプリをバージョン管理する</a>
+                                <a class="barLink" href="manage-apps.yml#step-2">アプリをバージョン管理する</a>
                                 <span style="margin-left: 32px; align-self: center;">1 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps#step-3">環境</a>
+                                <a class="barLink" href="manage-apps.yml#step-3">環境</a>
                                 <span style="margin-left: 32px; align-self: center;">8 分</span>
                               </li>
                           </ul>
@@ -181,23 +181,23 @@ Common Data Service からアプリを作成 </h3>
 データの管理 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-1">Common Data Service</a>
+                                <a class="barLink" href="manage-data.yml#step-1">Common Data Service</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-2">Common Data Service エンティティの詳細</a>
+                                <a class="barLink" href="manage-data.yml#step-2">Common Data Service エンティティの詳細</a>
                                 <span style="margin-left: 32px; align-self: center;">8 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-3">カスタム エンティティを作成する</a>
+                                <a class="barLink" href="manage-data.yml#step-3">カスタム エンティティを作成する</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-4">エンティティ データを管理する</a>
+                                <a class="barLink" href="manage-data.yml#step-4">エンティティ データを管理する</a>
                                 <span style="margin-left: 32px; align-self: center;">7 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-data#step-5">Common Data Service セキュリティ</a>
+                                <a class="barLink" href="manage-data.yml#step-5">Common Data Service セキュリティ</a>
                                 <span style="margin-left: 32px; align-self: center;">8 分</span>
                               </li>
                           </ul>
