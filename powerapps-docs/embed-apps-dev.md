@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 541de1bcea9b76262d4f2d1cbe79c76b1c117245
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>PowerApps を Web サイトなどのサービスに統合する
 多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 次の制限事項を考慮してください。
 
 * 埋め込みアプリにアクセスできるのは、同じテナント内の PowerApps ユーザーだけです。
-* PowerApps で Internet Explorer 11 がサポートされるのは、互換表示がオフになっている場合のみです。
+* Internet Explorer 11 を使用して PowerApps にアクセスするには、互換表示をオフにする必要があります。
 
 (iframe を使用せずに) SharePoint Online に PowerApps を統合することもできます。 詳しくは、「[PowerApps を使用して、SharePoint 内からアプリを生成する](generate-app-from-sharepoint-list-interface.md)」をご覧ください。
 
@@ -43,7 +43,8 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 &appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
-**注**: URI がページ上で見やすいように、改行を追加しています。
+> [!NOTE]
+> URI がページ上で見やすいように、改行を追加しています。
 
 この URI の [AppID]\('[' と ']' を含む) を、対象のアプリの ID に置き換えるだけです。 ID を調べる方法は後で説明しますが、その前に、URI で使用できるすべてのパラメーターを以下に示します。
 

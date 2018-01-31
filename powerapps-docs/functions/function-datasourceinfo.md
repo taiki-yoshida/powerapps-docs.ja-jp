@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 51608399a03716972a02d414d47dad46a8676bef
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2c45649938ad769203cbcab25c8b81689c633657
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps の DataSourceInfo 関数
 [データ ソース](../working-with-data-sources.md)に関する情報を返します。
@@ -65,7 +65,8 @@ ms.lasthandoff: 11/07/2017
 * *Information* – 必須。 取得する情報の種類。
 * *ColumnName* – 省略可能。 列レベルの情報の場合は、列名 (文字列)。 **Phone** は、**"Phone"** として渡されます (二重引用符が含まれます)。 データ ソース レベルの情報の場合は、*ColumnName* 引数を使用することはできません。
   
-    **注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+    > [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 このセクションの例では、**IceCream** という名前のデータ ソースを使用します。

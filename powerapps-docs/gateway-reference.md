@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/01/2016
+ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 5ca84afd86144bec23c66825e72ef72694428df1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Microsoft PowerApps のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
@@ -44,27 +44,33 @@ ms.lasthandoff: 11/07/2017
 **ゲートウェイのインストール**
 
 1. [インストーラーをダウンロード](http://go.microsoft.com/fwlink/?LinkID=820931)し、実行します。
-   
+
     ![インストーラーの実行](./media/gateway-reference/run-installer.png)
+
 2. インストール ウィザードの最初の画面で、ノート PC へのゲートウェイのインストールに関する注意事項を確認の上、**[次へ]** をクリックまたはタップします。
-   
+
     ![確認画面](./media/gateway-reference/laptop-reminder.png)
+
 3. ゲートウェイをインストールする場所を指定し、使用条件とプライバシーに関する声明に同意するチェック ボックスをオンにして、**[インストール]** をクリックまたはタップします。
+
 4. **[ユーザー アカウント制御]**ダイアログ ボックスで、**[はい]** をクリックまたはタップして続行します。
+
 5. ウィザードの次の画面で、**[サインイン]** をクリックまたはタップします。
-   
+
     ![サインイン](./media/gateway-reference/sign-in.png)
+
 6. 新しいゲートウェイを登録するか、それとも既存のゲートウェイを移行、復元、置き換えるかを選ぶオプションをクリックまたはタップし、**[次へ]** をクリックまたはタップします。
-   
+
     ![新規または既存の選択](./media/gateway-reference/new-existing.png)
-   
+
    * ゲートウェイを構成するには、その**名前**と**回復キー**を入力し、**[構成]** をクリックまたはタップしてから、**[閉じる]** をクリックまたはタップします。
-     
+
        ![新しいゲートウェイの構成](./media/gateway-reference/configure-new.png)
-     
+
        8 文字以上の回復キーを指定し、安全な場所に保存しておきます。 このキーは、ゲートウェイを移行、復元、置き換える場合に必要になります。
+
    * 既存のゲートウェイを移行、復元、置き換えるには、ゲートウェイの名前と回復キーを指定し、**[構成]** をクリックまたはタップして、追加の指示に従います。
-     
+
        ![既存のゲートウェイの回復](./media/gateway-reference/recover-existing.png)
 
 **ゲートウェイの再起動**
@@ -73,6 +79,7 @@ ms.lasthandoff: 11/07/2017
 
 * サービスを停止するには、次のコマンドを実行します。<br>
   **net stop PBIEgwService**
+
 * サービスを開始するには、次のコマンドを実行します。<br>
   **net start PBIEgwService**
 
@@ -82,7 +89,7 @@ ms.lasthandoff: 11/07/2017
 
 PowerShell プロンプトから次のコマンドを実行することで、ファイアウォールまたはプロキシが接続をブロックしている可能性があるかどうかを確認できます。 これにより、Azure Service Bus への接続がテストされます。 これはネットワーク接続をテストするだけで、クラウド サーバー サービスまたはゲートウェイとは関係ありません。 マシンが実際にインターネットに接続できるかどうかを確認する際に役立ちます。
 
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+**Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350**
 
 結果は、次の例のようになります。 **TcpTestSucceeded** が **True** ではない場合は、ファイアウォールによってブロックされている可能性があります。
 
@@ -107,7 +114,8 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 ファイアウォールでは、データ リージョンの IP アドレスをホワイトリスト登録しておくことをお勧めします。 [Microsoft Azure データセンター IP 一覧](https://www.microsoft.com/download/details.aspx?id=41653)をダウンロードできます。これは毎週更新されています。
 
-**注:** Azure データセンター IP 一覧では、アドレスは [CIDR 表記法](http://whatismyipaddress.com/cidr)で表示されます。 たとえば、10.0.0.0/24 は 10.0.0.0 から 10.0.0.24 を意味していません。
+> [!NOTE]
+> Azure データセンター IP 一覧では、アドレスは [CIDR 表記法](http://whatismyipaddress.com/cidr)で表示されます。 たとえば、10.0.0.0/24 は 10.0.0.0 から 10.0.0.24 を意味していません。
 
 ここで、ゲートウェイで使用される完全修飾ドメイン名の一覧を示します。
 
@@ -156,7 +164,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 **回答:** いいえ。 ゲートウェイは、Azure Service Bus への送信接続を使用します。
 
 **質問:** 送信接続をブロックしたらどうなりますか。 何を開く必要がありますか。  
-**回答:** ゲートウェイで使用する[ポート](gateway-reference.md#ports)とホストをご確認ください。
+**回答:** ゲートウェイが使用するポートとホストの一覧 (上記) を参照してください。
 
 **質問:** ゲートウェイをデータ ソースと同じマシンにインストールする必要がありますか。  
 **回答:** いいえ。 ゲートウェイは、指定された接続情報を使用してデータ ソースに接続します。 この意味では、ゲートウェイをクライアント アプリケーションと考えてください。 ゲートウェイで必要なのは、指定されたサーバー名に接続できることだけです。
@@ -206,10 +214,15 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 オンプレミスのデータ ソースに接続されている要素をユーザーが操作すると、次のようになります。  
 
 1. クラウド サービスによってデータ ソース用に暗号化された資格情報と共にクエリが作成され、ゲートウェイで処理するためにキューに送信されます。
+
 2. ゲートウェイ クラウド サービスは、クエリを分析し、要求を [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/) にプッシュします。
+
 3. オンプレミス データ ゲートウェイは、Azure Service Bus へのポーリングを実行して保留中の要求があるかどうかを確認します。
+
 4. ゲートウェイはクエリを取得して、資格情報の暗号化を解除し、その資格情報を使用してデータ ソースに接続します。
+
 5. ゲートウェイは、クエリを実行するためにデータ ソースに送信します。
+
 6. 結果は、データ ソースからゲートウェイに返され、さらにクラウド サービスに送信されます。 その後、その結果がサービスで使用されます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
@@ -225,15 +238,15 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 **インストーラーのログ**
 
-    %localappdata%\Temp\On-premises_data_gateway_*.log
+%localappdata%\Temp\On-premises_data_gateway_*.log
 
 **構成のログ**
 
-    %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
+%localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
 **エンタープライズ ゲートウェイ サービスのログ**
 
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
+C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 **イベント ログ**
 
@@ -243,4 +256,3 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 #### <a name="fiddler-trace"></a>Fiddler のトレース
 [Fiddler](http://www.telerik.com/fiddler) は、HTTP トラフィックを監視する Telerik 提供の無償ツールです。  クライアント マシンから、Power BI サービスとのやりとりを確認できます。 これにより、エラーやその他の関連情報が表示される場合もあります。
-

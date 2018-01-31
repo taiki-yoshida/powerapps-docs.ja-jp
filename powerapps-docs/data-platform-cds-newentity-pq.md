@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 834e05a89fff2142bc38b359ea5b6bccc08894aa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 18f580c06412968b27a279a526b562e27cb89e26
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-new-entities-in-the-common-data-service-cds-using-power-query"></a>Power Query を使用して Common Data Service (CDS) で新しいエンティティを作成する
 **Power Query** の統合を使用すると、ビジネス アプリ開発者は Common Data Service (CDS) で幅広いデータソースから新しいエンティティを作成できます。
@@ -33,12 +33,15 @@ ms.lasthandoff: 11/07/2017
 ## <a name="enabling-the-cds-new-entities-from-power-query-feature"></a>Power Query の機能を使用して CDS の新しいエンティティを有効にする
 この機能は PowerApps テナントで利用できますが、既定ではオンになっていません。 [web.powerapps.com](https://aka.ms/pqocds) で有効にすることができます。
 
-**注:** 自分で作成したデータベースでのみ、新しいカスタム エンティティを作成できます。
+> [!NOTE]
+> 自分で作成したデータベースでのみ、新しいカスタム エンティティを作成できます。
 
 この機能を有効にするには、PowerApps ポータルで次の手順を実行します。
 
 1. 左側のナビゲーション ウィンドウで、**[Common Data Service] > [エンティティ]** タブを参照します。
+
 2. **エンティティ**一覧から、**[新しいエンティティ]** のドロップダウンを選択します。
+
 3. ドロップダウン メニューに表示される一覧から、次の図のように **[データからの新しいエンティティ (Technical Preview)]** を選択します。
    
     ![データからの新しいエンティティ](media/data-platform-cds-newentity-pq/data-platform-cds-pq-02.jpg)

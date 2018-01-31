@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: fc64817566f30f0370538c6e5d1619a1d54c0be3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f75eeddf5a3a7b693e81f561ffd227f95e41cc5f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォーム レイアウトについて
 PowerApps では、魅力的で使い勝手の良いフォームを簡単に作成できます。 たとえば、販売注文を記録する基本的なフォームについて考えてみましょう。
@@ -59,12 +59,17 @@ PowerApps を使用するのが初めての場合 (またはアプリの自動�
     ラベルには、ギャラリーで選択したレコードの販売注文番号が表示されます。
 3. (省略可能) ラベルの書式設定を次のようにします。
    
-   1. その **Align** プロパティを **Center** に設定します。
-   2. その **Size** プロパティを **20** に設定します。
-   3. その **Fill** プロパティを **Navy** に設定します。
-   4. その **Color** プロパティを **White** に設定します。
-   5. その **Width** プロパティを **Parent.Width** に設定します。
-   6. その **X** および **Y** プロパティを **0** に設定します。
+    1. その **Align** プロパティを **Center** に設定します。
+   
+    2. その **Size** プロパティを **20** に設定します。
+   
+    3. その **Fill** プロパティを **Navy** に設定します。
+   
+    4. その **Color** プロパティを **White** に設定します。
+   
+    5. その **Width** プロパティを **Parent.Width** に設定します。
+   
+    6. その **X** および **Y** プロパティを **0** に設定します。
       
       ![タイトル バー](media/working-with-form-layout/title-bar.png)
 
@@ -97,7 +102,8 @@ PowerApps を使用するのが初めての場合 (またはアプリの自動�
 
 ![データのカードの選択](media/working-with-form-layout/sales-order-data-card-selection.png)
 
-**注**: カードを非表示にするだけでなく削除する場合は、選択して [削除] をクリックします。
+> [!NOTE]
+> カードを非表示にするだけでなく削除する場合は、カードを選択して [削除] をクリックします。
 
 ## <a name="arrange-cards-in-columns"></a>列にカードを配置する
 既定では、タブレット アプリのフォームには 3 つの列が、電話アプリのフォームには 1 つの列があります。 フォームの列の数を指定できるだけでなく、列の境界内にすべてのカードを収めるかどうかを指定できます。
@@ -124,7 +130,9 @@ PowerApps を使用するのが初めての場合 (またはアプリの自動�
 3. **Order status** カードと **Customer purchase order reference** カードを使用して、上述の手順を繰り返します。
    
     ![最初の行に 3 つのカード](media/working-with-form-layout/card-resize-2.png)
+
 4. **Name** (名前) カードと **Description** (説明) カードの幅を広げて 6 列 (フォームの 1/2) にします。
+
 5. Delivery address (配送先住所) の最初の 2 行の幅を、フォームの全体に広がるように広げます。
 
 これで完了です。 目的のフォームが完成し、複数の列に広がる行を混在させることができました。

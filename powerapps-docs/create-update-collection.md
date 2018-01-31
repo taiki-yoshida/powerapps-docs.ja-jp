@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: f0fc171930e190e9530782ee93b27644e36a5978
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c77ce03c92925225f8b16bd1d3bbb7083749cc9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>アプリのコレクションの作成と更新
 コレクションを使用すると、アプリで使用できるデータを格納できます。 コレクションとは、類似の項目で構成されるグループです。 たとえば、MyImages というコレクションを作成して、企業が販売する製品の画像をすべてそこに格納することができます。 PowerApps では、MyImages コレクションを追加できるほか、これらの製品の画像をすべて表示するアプリを作成することができます。 別の例では、製品と各製品の価格を一覧表示する PriceList コレクションを作成できます。
@@ -85,14 +85,16 @@ ms.lasthandoff: 11/07/2017
 5. City と States の両方のテキスト コントロールを見やすいように移動します。  
    ![][10]  
    
-    **注**: "Text Input (テキスト入力)" は、画像のように "City" または "State" などに置き換えることができます。  
+    > [!NOTE]
+> "Text Input (テキスト入力)" は、画像のように "City" または "State" などに置き換えることができます。  
 6. **[挿入]** タブの **[ボタン]** を選択します。 その **[OnSelect](controls/properties-core.md)** プロパティを次の関数に設定します。  
    ```Collect(Destinations, {Cities:City!Text, States:States!Text})```  
    
     これは次のようになります。  
     ![][11]  
    
-    **注**: この関数は、このコレクションに列を追加する際にも使用できます。 たとえば、国を表すテキスト入力コントロールをもう 1 つ追加して、Countries 列を追加することができます。
+    > [!NOTE]
+> この関数は、このコレクションに列を追加する際にも使用できます。 たとえば、国を表すテキスト入力コントロールをもう 1 つ追加して、Countries 列を追加することができます。
    
     `Collect(Destinations, {Cities:City!Text, States:States!Text}, {Countries:Country!Text})`
 7. ボタン コントロールの名前を「**AddCityStateButton**」に変更し、その **[Text](controls/properties-core.md)** プロパティを **Add City and State** に設定します。  
@@ -154,7 +156,8 @@ ms.lasthandoff: 11/07/2017
    
     ```Collect(OrderList, {Name:PriceGallery!Selected!Name, Qty:OrderQty!Value, Cost:OrderQty!Value*LookUp(PriceList, PriceGallery!Selected!Name in Name, Price)});SaveData(OrderList, "orderfile")```  
    
-    **注**: 後でこのボタンを選択し、**OrderList** という名前のコレクションを作成して保存します。 このコレクションには、ギャラリーに入力する製品名、スライダーで選択する数量、その数量と製品の価格を掛けて計算される総コストが含まれます。
+    > [!NOTE]
+> 後でこのボタンを選択し、**OrderList** という名前のコレクションを作成して保存します。 このコレクションには、ギャラリーに入力する製品名、スライダーで選択する数量、その数量と製品の価格を掛けて計算される総コストが含まれます。
 4. **[画面]** タブを選択し、**[OnVisible](controls/control-screen.md)** プロパティを次の式に設定します。  
    
     ```If(IsEmpty(PriceList), LoadData(PriceList, "pricefile"));If(IsEmpty(OrderList), LoadData(OrderList, "orderfile"))```

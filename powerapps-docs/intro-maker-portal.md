@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 0d580471b5dc70852468f6571d356dddd5ca172c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a6ec814d057f85b39f794bd7c0c100c5a28f652f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com について
-11 月に入り、PowerApps チームはアプリ作成者の新しいホームとして [powerapps.com](http://web.powerapps.com) を再度ご紹介します。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。
+PowerApps チームは、アプリ作成者用の新しいホームとして [powerapps.com](http://web.powerapps.com) を再導入しています。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。
 
 * ヘッダー
 * ホーム ページ
@@ -111,7 +111,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
 
 リスト ビューでは、選択した環境のアプリのみが表示されることに注意してください。 別の環境のアプリを表示するには、ヘッダーで環境のスイッチャーを使用して、その環境に切り替えます。 [環境の切り替えに関する詳細](working-with-environments.md)
 
-新機能
+## <a name="whats-new"></a>新機能
 
 * アプリをクリックまたはタップすると、PowerApps Studio for web の新しいタブでそのアプリが開きます。
 * 既定では、"**アプリ**" ページには編集するアクセス許可があるすべてのアプリが表示されます。 (使用のみ可能なアプリを含む) **すべてのアプリ**を表示するには、**[すべてのアプリ]** フィルターを選択します。

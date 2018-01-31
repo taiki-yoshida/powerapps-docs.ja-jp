@@ -13,20 +13,22 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: c576f71532049405b879cc904c4232e297478cac
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
-**注:** この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> [!NOTE]
+> この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、2 つの SharePoint リストをベースに Power BI レポートを作成します。 リストのデータを Power BI Desktop に取り込み、少し修正を加えたり、基本的なデータ モデリングを行ったりします。その後、データの分析に役立つ視覚エフェクトを作成します。
 
-**ヒント:** このシナリオの[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このレポートの完成版 (project-analysis.pbix) が含まれています。
+> [!TIP]
+> このシナリオの[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このレポートの完成版 (project-analysis.pbix) が含まれています。
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Power BI Desktop の復習
 レポートの作成に進む前に、Power BI Desktop について復習しましょう。 Power BI Desktop は多くの機能を備えた強力なツールであるため、このタスクで使用する領域の概要に的をしぼって説明します。 Power BI Desktop には、**レポート** ビュー、**データ** ビュー、**リレーションシップ** ビューという 3 つの主な作業領域または *ビュー* があります。 Power BI Desktop には、別のウィンドウで開く**クエリ エディター**も含まれています。
@@ -93,11 +95,13 @@ ms.lasthandoff: 11/07/2017
 2. 中央のウィンドウで、**[FileSystemObjectType]** 列を選択し、**[列の削除]** をクリックまたはタップします。
    
     ![列の削除](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. **[Id]** 列の後ろにある 2 つの列 (**[ServerRedirectedEmbedURL]** と **[ContentTypeId]**) を削除します。 ヒント: Shift キーを使用して両方の列を選択し、**[列の削除]** をクリックまたはタップします。
+3. **[Id]** 列の後ろにある 2 つの列 (**[ServerRedirectedEmbedURL]** と **[ContentTypeId]**) を削除します。 
+> [!TIP]
+> Shift キーを使用して両方の列を選択し、**[列の削除]** をクリックまたはタップします。
 4. **[PMAssigned]** 列の右側にあるすべての列 (合計 22 列) を削除します。 テーブルは次の画像のようになります。
    
     ![クエリ エディターの Project Details テーブル](./media/sharepoint-scenario-build-report/05-01-08-table-details.png)
-5. **Project Details** でのプロセスを繰り返し、**[Approved]** 列の右側にあるすべての列 (合計 22 列) を削除します。 テーブルは次の画像のようになります。
+5. 今度は **Project Requests** でこのプロセスを最後まで繰り返します。**[FileSystemObjectType]**、**[ServerRedirectedEmbedURL]**、**[ContentTypeId]**、および右側にあるすべての **[承認済み]** 列 (合計 22 列) を削除します。 テーブルは次の画像のようになります。
    
     ![ クエリ エディターの Project Requests テーブル](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
@@ -109,16 +113,21 @@ ms.lasthandoff: 11/07/2017
 3. **[ApprovedDate]** 列を選択し、**[データ型: すべて]** 、**[日付]** の順にクリックまたはタップします。
    
     ![ データ型を日付に変更](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
+
 4. 前述の手順を **[ProjectedStartDate]** 列と **[ProjectedEndDate]** 列でも繰り返します。
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Project Requests 列のデータ型を変更する
+
 1. **[EstimatedDays]** 列を選択し、**[データ型: すべて]**、**[整数]** の順にクリックまたはタップします。
+
 2. **[RequestDate]** 列を選択し、**[データ型: すべて]**、**[日付]** の順にクリックまたはタップします。
 
 ### <a name="apply-and-save-changes"></a>変更を適用して保存する
+
 1. **[ホーム]** タブで **[閉じて適用]** をクリックしてクエリ エディターを閉じ、Power BI Desktop のメイン ウィンドウに戻ります。
    
     ![変更を閉じて適用](./media/sharepoint-scenario-build-report/05-01-12-close-apply.png)
+
 2. **[ファイル]**、**[保存]** の順にクリックまたはタップし、“project-analysis.pbix” というファイル名で保存します。
 
 ## <a name="step-2-improve-the-data-model"></a>手順 2: データ モデルを改善する
@@ -137,18 +146,24 @@ Power BI Desktop でリストを取り込むと、両方のテーブルの **[Id
 1. **データ ビュー** アイコンをクリックまたはタップします。
    
     ![データ ビュー](./media/sharepoint-scenario-build-report/05-02-01-data-view.png)
+
 2. **[モデリング]** タブで、**[リレーションシップの管理]** をクリックまたはタップします。 データ モデリングの手順では、最後まで**データ** ビューのこのタブ上で作業を行います。
    
     ![リレーションシップの管理](./media/sharepoint-scenario-build-report/05-02-02-manage-relationships.png)
+
 3. 既存のリレーションシップが選択されていることを確認し、**[削除]** をクリックまたはタップします。その後、確認のためにもう一度 **[削除]** をクリックまたはタップします。
    
     ![リレーションシップの削除](./media/sharepoint-scenario-build-report/05-02-03-delete-relationship.png)
+
 4. **[新規]** をクリックして、別のリレーションシップを作成します。
+
 5. **[リレーションシップの作成]** ダイアログ ボックスで次の作業を行います。
    
    1. 最初のテーブルで、**[Project Requests]** を選択して **[Id]** 列を選択します。
+   
    2. 2 つ目のテーブルで、**[Project Details]** を選択して **[RequestId]** 列を選択します。
-   3. 画面は次の画像のように表示されます。 準備ができたら **[OK]** をクリックまたはタップします。
+   
+   3. 画面は次の画像のように表示されます。 準備ができたら **[OK]**、**[閉じる]** の順にクリックまたはタップします。
       
        ![リレーションシップの削除](./media/sharepoint-scenario-build-report/05-02-04-create-relationship.png)
 
@@ -160,7 +175,7 @@ Power BI Desktop でリストを取り込むと、両方のテーブルの **[Id
    
     ![Dates = CALENDARAUTO() と入力された数式バー](./media/sharepoint-scenario-build-report/05-02-06-formula-bar.png)
    
-    この数式は、日付列 1 つを含む "**Dates**" というテーブルを作成します。 このテーブルには、ご使用の他のテーブルのすべての日付が含まれています。また、日付が追加された場合 (データが更新された場合) は、自動で更新されます。
+    この数式は、日付列 1 つを含む "**Dates**" というテーブルを作成します。 このテーブルには、お使いの他のテーブルのすべての日付が含まれています。また、日付が追加された場合 (データが更新された場合) は、自動で更新されます。
    
     この数式とこのセクションのその他の数式では、Power BI や他のテクノロジで使用されている数式言語の Data Analysis Expressions (DAX) を使用します。 詳細については、「[Power BI Desktop における DAX の基本事項](https://powerbi.microsoft.com/documentation/powerbi-desktop-quickstart-learn-dax-basics/)」をご覧ください。
 3. Enter キーを押して、**[Dates]** テーブルを作成します。
@@ -363,16 +378,16 @@ Power BI Desktop でこれらのレポートの視覚エフェクトを作成し
 4. **[フィールド]** ウィンドウの **[Project Details]** から **[ProjectedStartDate]** をドラッグし、**[視覚化]** ウィンドウの **[フィルター]** 領域にドロップし、**[(空白)]** 以外のすべての日付を選択します。
    
     ![[ProjectedStartDate] によるフィルター](./media/sharepoint-scenario-build-report/05-03-17-filters-diff.png)
-5. テーブルの列のサイズを変更して、すべてのデータが表示されるようにします。 視覚エフェクトは次の画像のように表示されます。
+5. すべてのデータが表示されるようにテーブルの列のサイズを調整し、**[ApprovedStartDiff]** で降順に並び替えます。 視覚エフェクトは次の画像のように表示されます。
    
     ![[ApprovedStartDiff] の値が表示されたテーブル](./media/sharepoint-scenario-build-report/05-03-18-chart-diff.png)
-6. **[ApprovedStartDiff]** の下矢印をクリックまたはタップして、**[平均]** をクリックまたはタップします。プロジェクトの承認日から開始予定日までの平均期間を表示できます。
+6. **[値]** の領域で、**[ApprovedStartDiff]** の下矢印をクリックまたはタップしてから、**[平均]** をクリックまたはタップします。 これで、プロジェクトの承認日から開始予定日までにかかった平均日数を確認できるようになりました。
    
     ![平均の計算](./media/sharepoint-scenario-build-report/05-03-20a-average-menu.png)
-7. **[ApprovedStartDiff]** の下矢印をもう一度クリックまたはタップし、**[条件付き書式]** をクリックまたはタップします。
+7. **[ApprovedStartDiff]** の下矢印をもう一度クリックまたはタップし、**[条件付き書式]**、**[バックグラウンドのカラー スケール]** の順にクリックまたはタップします。
    
    ![条件付き書式](./media/sharepoint-scenario-build-report/05-03-20b-conditional-menu.png)
-8. 既定の設定を使用して **[OK]** をクリックします。
+8. 次に示すように **[最小]** と **[最大]** フィールドの色を設定し、**[OK]** をクリックまたはタップします。
    
    ![条件付き書式のオプション](./media/sharepoint-scenario-build-report/05-03-21-conditional-dialog.png)
    

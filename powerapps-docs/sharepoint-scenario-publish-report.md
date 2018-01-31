@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 5e229e8767d4fdc16d37a69d82766af48a414686
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Power BI プロジェクト レポートの発行とダッシュボードの作成
-**注:** この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> [!NOTE]
+> この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、データセットとレポートを Power BI サービスに発行します。その後、レポートに基づくダッシュボードを作成します。 多くの場合、レポートには多数の視覚エフェクトが含まれますが、ダッシュボードではその一部しか使用されません。 ここでは、ダッシュボードに 4 つの視覚エフェクトをすべて追加します。
 
@@ -48,7 +49,8 @@ ms.lasthandoff: 11/07/2017
    
     発行したときに、Power BI Desktop にデータセット **(d)** とレポート **(c)** がアップロードされたことがわかります。 Power BI Desktop ではなくサービスでダッシュボードを作成しますが、このワークスペースにはまだダッシュボードがありません **(b)**. 後の手順で作成します。
    
-    **注:** Power BI では新しいナビゲーション エクスペリエンスの提供を開始しており、お使いのサイトで有効になっている場合があります。 左側のナビゲーション ウィンドウの表示が上記の画像と異なる場合は、「[新しい Power BI ナビゲーション体験](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience)」で詳細情報をご覧ください。
+    > [!NOTE]
+> Power BI では新しいナビゲーション エクスペリエンスの提供を開始しており、お使いのサイトで有効になっている場合があります。 左側のナビゲーション ウィンドウの表示が上記の画像と異なる場合は、「[新しい Power BI ナビゲーション体験](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience)」で詳細情報をご覧ください。
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>手順 2: 更新のための資格情報を構成する
 1. サービスで、右上隅の![ギア アイコン](./media/sharepoint-scenario-publish-report/icon-gear.png)をクリックまたはタップし、**[設定]** をクリックまたはタップします。
@@ -82,10 +84,13 @@ ms.lasthandoff: 11/07/2017
 4. 既存のダッシュボードを選択し、**[ピン留め]** をクリックまたはタップします。
    
     ![既存のダッシュボードにグラフをピン留め](./media/sharepoint-scenario-publish-report/06-01-15-pin-existing.png)
+
 5. 残り 2 つの視覚エフェクトについても、ピン留めのプロセスを繰り返します。
+
 6. 左側のナビゲーション ウィンドウで、ダッシュボード名をクリックまたはタップします。
    
     ![サイトのナビゲーション ウィンドウの新しいダッシュボード](./media/sharepoint-scenario-publish-report/06-01-16-dashboard-menu.png)
+
 7. ダッシュボードを確認します。 タイルをクリックすると、レポートに戻ります。
    
     ![完成したダッシュボード](./media/sharepoint-scenario-publish-report/06-01-17-dashboard-completed.png)

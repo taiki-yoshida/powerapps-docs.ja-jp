@@ -13,30 +13,31 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 01/16/2018
 ms.author: litran
-ms.openlocfilehash: 1cdd7fbf5b5940550e6e7c98ecaf2262940baa1c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0aff680aa5b8840330ee3a1758a895785f05da6f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-powerapps-in-a-web-browser"></a>Web ブラウザーでの PowerApps の使用
 PowerApps でアプリを作成すると、そのアプリをブラウザーで実行できます。これには、[Dynamics 365](https://home.dynamics.com) を開き、ホーム ページでアプリのタイルをクリックするかタップします。
 
-**注**: [Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/) に関する全般的な情報を参照するか、Sales などの Dynamics 365 アプリについて質問がある場合は[サポートにお問い合わせ](https://www.microsoft.com/en-us/dynamics365/contact-us)ください。
+> [!NOTE]
+> Sales などの Dynamics 365 アプリについて質問がありましたら、[Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/) に関する全般的な情報を参照するか、[サポートにお問い合わせ](https://www.microsoft.com/en-us/dynamics365/contact-us)ください。
 
 サポートされているブラウザーとオペレーティング システムは次のとおりです。
 
 | **ブラウザー** | **オペレーティング システム** |
 | --- | --- |
-| Google Chrome (最新バージョン) |Windows 7 SP1、8.1、および 10 <br>macOS <br>iOS 8 以降<br>Android |
-| Microsoft Edge |Windows 10 |
+| Google Chrome (最新バージョン)<br>(推奨) |Windows 7 SP1、8.1、および 10 <br>macOS <br>iOS 8 以降<br>Android |
+| Microsoft Edge (最新バージョン)<br>(推奨) |Windows 10 |
 | Microsoft Internet Explorer 11 (互換表示オフ) |Windows 7 SP1、8.1、および 10 |
 | Mozilla Firefox (最新バージョン) |Windows 7 SP1、8.1、および 10 <br> Android <br>macOS |
 | Apple Safari (最新バージョン) |macOS <br> iOS 8 以降 |
 
-アプリで使用されているコントロールにブラウザーでサポートされていないものがある場合は、iOS、Android、または Windows 用 PowerApps Mobile をダウンロードし、モバイル デバイス (スマートフォンなど) でそのアプリを使用してください。
+アプリで使用されているコントロールにブラウザーでサポートされていないものがある場合は、iOS または Android 用 PowerApps をダウンロードし、モバイル デバイス (スマートフォンなど) でそのアプリを使用してください。
 
 ## <a name="find-an-app-on-the-home-page"></a>ホーム ページでアプリを探す
 ホーム ページには、複数の種類のビジネス アプリが表示される場合がありますが、検索ボックスにアプリ名の一部を入力すると特定のアプリを見つけることができます。 また、PowerApps で作成されたアプリのみを表示するように一覧をフィルター処理することもできます。
@@ -68,4 +69,3 @@ PowerApps でアプリを作成すると、そのアプリをブラウザーで�
 
 ## <a name="close-an-app"></a>アプリを閉じる
 アプリを閉じるには、Dynamics 365 ホーム ページからサインアウトするか、別のアプリを開きます。
-

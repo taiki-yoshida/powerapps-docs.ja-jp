@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/19/2017
-ms.author: karthikb
-ms.openlocfilehash: 7015a224d2ed914f84d4b56c58addd5f0fd88f8b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: daa1aa994f13c9e79171b4c34101e397aaf5eff7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-an-app-in-powerapps"></a>PowerApps でのアプリの編集
 自分で作成したアプリ、所有しているアプリ、または "**編集可能**" アクセス許可を持っているアプリを編集できます。 アプリの編集は、Web 用の PowerApps Studio または Windows 用の PowerApps Studio で行うことができます。 別の場所で編集するために開かれているアプリを編集しようとすると、自分または別のユーザーがそのアプリを既に開いているという通知メッセージが表示されます。
@@ -34,7 +34,8 @@ ms.lasthandoff: 11/07/2017
    
     表示された一覧にある任意のアプリを編集することができます。 また、右上隅の近くにある検索ボックスに 1 つ以上の文字を入力して、アプリを検索することもできます。
    
-    **注**: 編集するアプリがまだ表示されない場合は、右上隅の近くで、正しい環境を選択していることを確認してください。
+    > [!NOTE]
+> 編集するアプリがまだ表示されない場合は、右上隅の近くで、正しい環境を選択していることを確認してください。
    
     ![環境の一覧](./media/edit-app/environment-list.png)
 

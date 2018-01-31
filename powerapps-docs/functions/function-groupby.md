@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: a3f2698eb0df8861bccf3221f53f5458f6e1b307
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7f7a3f1add6f91d920ed38308e577d14386f81ec
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps の GroupBy 関数と Ungroup 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
@@ -52,14 +52,16 @@ ms.lasthandoff: 11/07/2017
 * *ColumnName(s)* - 必須。  レコードをグループ化する基準となる、*Table* 内の列名。  これらの列は、返されるテーブルで列になります。
 * *GroupColumnName* - 必須。  *ColumnName(s)* 内にないレコード データが格納される列の名前。
   
-    **注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+    > [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **Ungroup**( *Table*, *GroupColumnName* )
 
 * *Table* - 必須。 グループ化を解除するテーブル。
 * *GroupColumnName* - 必須。 **GroupBy** 関数によって設定されたレコード データを含む列。
   
-    **注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+    > [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 ### <a name="create-a-collection"></a>コレクションの作成

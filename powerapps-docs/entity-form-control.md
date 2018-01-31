@@ -14,24 +14,26 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: f8962ea7ea89892b834541aba25653759212a652
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 33c113441bd9842ec267cc658ffd955decde86c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-the-entity-form-control"></a>エンティティ フォーム コントロールの使用
-**エンティティ フォーム** コントロールを使用して、[Common Data Service エンティティ](guided-learning/learning-common-data-service-entities.md)に豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
+**エンティティ フォーム** コントロールを使用して、[Common Data Service エンティティ](guided-learning/manage-data.yml#step-2)に豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
 
 **エンティティ フォーム** コントロールの概要については、「[New Entity form control (experimental feature) for Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)」 (Common Data Service の新しいエンティティ フォーム コントロール (試験的機能)) のブログ投稿をご覧ください。
 
-**重要**: このブログ投稿で記載されているとおり、**エンティティ フォーム** コントロールの試験的な性質に注意してください。また、少なくとも現時点では、**エンティティ フォーム** コントロールの実稼働アプリでの使用については慎重に検討してください。
+> [!IMPORTANT]
+> このブログ投稿で記載されているとおり、**エンティティ フォーム** コントロールの試験的な性質に注意してください。また、少なくとも現時点では、**エンティティ フォーム** コントロールの実稼働アプリでの使用については慎重に検討してください。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **エンティティ フォーム** コントロールの主要なプロパティは次のとおりです。
 
 **DataSource** – 表示するレコードを含むデータ ソースを指定します。   
-**注**: 現在、Common Data Service 内のエンティティのみが**エンティティ フォーム** コントロールのデータ ソースとしてサポートされています。  
+> [!NOTE]
+> 現在、Common Data Service 内のエンティティのみが**エンティティ フォーム** コントロールのデータ ソースとしてサポートされています。  
 
 **Pattern** – **エンティティ フォーム** コントロールで表示するフォームのスタイルを指定します。 **FormPattern** 列挙型を使用して、このプロパティを設定します。
 
@@ -82,7 +84,8 @@ ms.lasthandoff: 11/07/2017
 
 さまざまなプロパティや関数の概要を説明しました。これ以降では、これらの操作について説明します。
 
-**注**: Common Data Service データベースへのアクセス権がない場合は、以下の手順を行う前に[アクセス権を取得](guided-learning/learning-common-data-service.md)してください。
+> [!NOTE]
+> Common Data Service データベースへのアクセス権がない場合は、以下の手順を行う前に[アクセス権を取得](guided-learning/manage-data.yml#step-1)してください。
 
 ## <a name="display-a-list-of-records"></a>レコードの一覧を表示する
 次の 5 つの手順では、単一の、エンド ツー エンドの**エンティティ フォーム** コントロール使用方法の例を提供します。 この手順では、販売注文の一覧を表示するフォームを追加します。  
@@ -125,7 +128,7 @@ ms.lasthandoff: 11/07/2017
       
       ![](media/entity-form-control/entityform-tutorial-01-08.png)   
       
-      **Common Data Service** で、([標準エンティティ](guided-learning/learning-common-data-service-entities.md)ではなく) カスタム エンティティの[フィールド グループを変更](field-groups.md)して、**エンティティ フォーム** コントロールに表示される、対応するフォーム上のフィールドを変更することができます。 特に、フィールド グループへの変更は自動的に、**エンティティ フォーム** コントロールを使用するすべてのアプリに反映されます。
+      **Common Data Service** で、([標準エンティティ](guided-learning/manage-data.yml#step-2)ではなく) カスタム エンティティの[フィールド グループを変更](field-groups.md)して、**エンティティ フォーム** コントロールに表示される、対応するフォーム上のフィールドを変更することができます。 特に、フィールド グループへの変更は自動的に、**エンティティ フォーム** コントロールを使用するすべてのアプリに反映されます。
 
 ## <a name="display-the-details-of-a-record"></a>レコードの詳細を表示する
 別の**エンティティ フォーム** コントロールを追加して、前に作成した一覧で選択されている販売注文の詳細を表示しましょう。  
@@ -165,7 +168,7 @@ ms.lasthandoff: 11/07/2017
    
     ![](media/entity-form-control/entityform-tutorial-01-15.png)
    
-    **エンティティ フォーム** コントロールが **SalesOrderId** フィールド (一覧の最初の列) の値ををリンクとして表示します。
+    **エンティティ フォーム** コントロールが **SalesOrderId** フィールド (一覧の最初の列) の値をリンクとして表示します。
    
     ![](media/entity-form-control/entityform-tutorial-01-16.png)  
 8. F5 を押してアプリをプレビューしてから、販売注文の一覧にあるリンクをクリックまたはタップします。
@@ -206,7 +209,8 @@ ms.lasthandoff: 11/07/2017
 
 ![](media/entity-form-control/entityform-tutorial-01-21.png)  
 
-**注**: フォームのカスタマイズ ウィンドウを使用すると、**NavigationContext** が適切に決定されます。 ユーザーが **SalesOrderId** をクリックまたはタップすると、以前の数式と同様に **NavigationContext** が **SalesOrderListForm.Selected** に設定されます。 代わりに、移動に **Account** フィールドが指定されている場合は、**NavigationContext** が **SalesOrderListForm.Selected.Account** に設定されており、正しいコンテキストが渡されます。 ただし、そのコンテキストを使用するには、**エンティティ フォーム** コントロールが Common Data Service の **Account** エンティティに接続されている必要があります。
+> [!NOTE]
+> フォームのカスタマイズ ウィンドウを使用すると、**NavigationContext** が適切に決定されます。 ユーザーが **SalesOrderId** をクリックまたはタップすると、以前の数式と同様に **NavigationContext** が **SalesOrderListForm.Selected** に設定されます。 代わりに、移動に **Account** フィールドが指定されている場合は、**NavigationContext** が **SalesOrderListForm.Selected.Account** に設定されており、正しいコンテキストが渡されます。 ただし、そのコンテキストを使用するには、**エンティティ フォーム** コントロールが Common Data Service の **Account** エンティティに接続されている必要があります。
 
 ## <a name="edit-and-save-a-record"></a>レコードの編集および保存
 最後に、**エンティティ フォーム** コントロールでレコードを編集し、保存する方法について見てみましょう。  

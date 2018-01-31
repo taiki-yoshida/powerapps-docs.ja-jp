@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/11/2017
 ms.author: jamesol
-ms.openlocfilehash: 1eeb79d0c109181ae75b86a78cecdb4babe058ab
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f26c97681a4af40e042d1c943e108a424861f810
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environments-administration-in-powerapps"></a>PowerApps での環境の管理
 [PowerApps 管理センター][1]では、作成した環境および Environment Admin ロールが付与されている環境を管理します。 管理センターから、次の管理操作を実行できます。
@@ -35,19 +35,22 @@ ms.lasthandoff: 11/07/2017
 ## <a name="access-the-powerapps-admin-center"></a>PowerApps 管理センターにアクセスする
 PowerApps 管理センターにアクセスするには、次のいずれかを行います。
 
-* [admin.powerapps.com][1] に直接アクセスします。
-* [powerapps.com][2] に移動してから、ナビゲーション ヘッダーで歯車アイコンを選択します。
+* [admin.powerapps.com][1] に直接アクセスする。
+
+* [powerapps.com][2] に移動してから、ナビゲーション ヘッダーで歯車アイコンを選択する。
   
     ![](./media/environment-admin/powerapps-gear-dropdown.png)
 
 PowerApps 管理センターで環境を管理するには、次のロールのいずれかが必要です。
 
-* 環境の環境管理者ロール
-* Azure AD のグローバル管理者ロールまたは Office 365 テナント
+* 該当の環境の環境管理者ロール
+
+* Azure AD または Office 365 テナントのグローバル管理者ロール
 
 また、管理センターにアクセスするには PowerApps プラン 2 または Flow プラン 2 が必要です。 詳細については、[PowerApps の価格に関するページ][3]を参照してください。
 
-**重要**: PowerApps 管理センターで行う変更はすべて[フロー管理センター][4]に影響し、その反対も同様です。
+> [!IMPORTANT]
+> PowerApps 管理センターで行う変更はすべて[フロー管理センター][4]に影響し、その反対も同様です。
 
 ## <a name="create-an-environment"></a>環境の作成
 最初に、**[+ 新しい環境]** をクリックしてダイアログ ボックスを開き、環境を作成します。
@@ -120,18 +123,20 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 データベースを作成したら、セキュリティ モデルを選択します。 詳細については、「[Configure database security (データベース セキュリティの構成)](database-security.md)」を参照してください。
 
 ## <a name="manage-security-for-your-environments"></a>環境のセキュリティを管理する
+
 ### <a name="environment-permissions"></a>環境のアクセス許可
 環境では、Azure AD テナント内のユーザーはすべてその環境のユーザーです。 ただし、より高い特権のロールを割り当てるには、ユーザーを特定の環境ロールに追加する必要があります。 環境には、環境内でのアクセス許可を提供する 2 つの組み込みの役割があります。
 
 * **環境管理者**ロールは、環境に対して、次を含むすべての管理操作を実行できます。
   
-  o   環境管理者ロールまたは環境作成者ロールのいずれかからユーザーまたはグループを追加または削除する
+    * Environment Admin ロールまたは Environment Maker ロールのいずれかからユーザーまたはグループを追加または削除する。
   
-  o   環境に Common Data Service データベースをプロビジョニングする
+    * 環境に Common Data Service データベースをプロビジョニングする。
   
-  o   環境内で作成されたすべてのリソースを表示し、管理する
+    * 環境内で作成されたすべてのリソースを表示し、管理する。
   
-  o   データ損失防止ポリシーを設定する 詳細については、[データ損失防止ポリシー](prevent-data-loss.md)に関するページを参照してください。
+    * データ損失防止ポリシーを設定する。 詳細については、[データ損失防止ポリシー](prevent-data-loss.md)に関するページを参照してください。
+
 * **Environment Maker** ロールは、アプリ、接続、カスタム コネクタ、ゲートウェイ、および Microsoft Flow を使用するフローなど、環境内のリソースを作成できます。 環境作成者は、環境で構築したアプリを組織内の他のユーザーに配布することもできます。 個々 のユーザー、セキュリティ グループ、または組織内のすべてのユーザーとアプリを共有できます。 詳細については、[PowerApps でのアプリの共有](share-app.md)に関するページを参照してください。
 
 環境ロールにユーザーまたはセキュリティ グループを割り当てるために、環境管理者は次の手順を [PowerApps 管理センター][1]で実行できます。

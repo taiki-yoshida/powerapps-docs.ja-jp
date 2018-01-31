@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e6bae4500d3c3ac81c12da3c5b509dc1ea9e711e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b413bd52e9bbdd328ca5197ff5d5a76348298fe9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-excel-data-used-by-your-app"></a>アプリで使用される Excel データの共有
 OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-connections.md)でアプリのユーザーと Excel データを共有することができます。
@@ -49,7 +49,8 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
    
     ![[共有] コマンド](./media/share-app-data/onedrive-share.png)
    
-    **注**: OneDrive for Business の場合は、ファイルを含むフォルダーではなく、ファイル自体を共有します。
+    > [!NOTE]
+> OneDrive for Business の場合は、ファイルを含むフォルダーではなく、ファイル自体を共有します。
 3. ダイアログ ボックスで **[電子メール]** を選択します。
    
     ![メールで共有する](./media/share-app-data/onedrive-email.png)
@@ -72,6 +73,6 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 
 詳細については、[Google ドライブのファイルとフォルダーを共有する方法](https://support.google.com/drive/answer/2494822)に関するページを参照してください。
 
-## <a name="known-limitations"></a>既知の制限
+### <a name="known-limitations"></a>既知の制限
 お客様の組織内の Excel データを共有する方法の詳細については、[これらの制限をご確認ください](connections/cloud-storage-blob-connections.md#sharing-excel-tables)。
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/09/2017
 ms.author: archanan
-ms.openlocfilehash: 9336df54dab2f95114367267408aec6b500a131f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7739607b103d98b934805e62cb9a2bfdf1cc14e6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-your-connections-in-powerapps"></a>PowerApps で接続を管理する
 [powerapps.com](https://web.powerapps.com) で、PowerApps から 1 つ以上のデータ ソースへの接続を作成したり、接続を削除したり、その資格情報を更新したりします。
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/07/2017
 
 最も一般的なデータ ソースの種類はテーブルで、情報の取得および保存に使用できます。 データ ソースへの接続を使用すると、Microsoft Excel ブック、SharePoint リスト、SQL テーブル、およびその他の多くの形式でデータの読み書きを行うことができ、それらを OneDrive for Business、DropBox、SQL Server などのクラウド サービスに格納できます。
 
-電子メール、カレンダー、Twitter、(近い将来の) 通知など、テーブル以外の種類のデータ ソースもあります。
+電子メール、カレンダー、Twitter、通知 (近日対応予定) など、テーブル以外の種類のデータ ソースもあります。
 
 **[ギャラリー](controls/control-gallery.md)**、**[フォームの表示](controls/control-form-detail.md)**、および**[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
 
@@ -54,7 +54,8 @@ ms.lasthandoff: 11/07/2017
 * [接続の追加](add-data-connection.md)に関するページの手順に従って、既存のアプリを更新するかアプリを最初から作成する。
 * 別のユーザーが作成したアプリを開き、[自分と共有する](share-app.md)。
 
-**注**: 代わりに PowerApps Studio を使用する場合は、**[ファイル]** メニューを開き、**[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com) が開くので、そこで接続の作成と管理を行うことができます。
+> [!NOTE]
+> 代わりに PowerApps Studio を使用する場合は、**[ファイル]** メニューを開き、**[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com) が開くので、そこで接続の作成と管理を行うことができます。
 
 ## <a name="create-a-new-connection"></a>新しい接続を作成する
 1. [powerapps.com](https://web.powerapps.com) にまだログインしていない場合は、ログインします。

@@ -14,12 +14,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: karthikb
-ms.openlocfilehash: e6ad4896beb28b5b38b22706838fec5f6a6840ec
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>Excel データからアプリを生成する
 OneDrive などのクラウド ストレージ アカウントにアップロードした Excel ファイル内のデータに基づいて自動的にアプリを作成します。 アプリを生成した後、ニーズに合わせてカスタマイズし、実行して期待どおりに動作するかどうかを確認します。
@@ -30,7 +30,8 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
 * **DetailsScreen1** では、特定のレコードについてさらに多く (またはすべて) のフィールドが表示されます。
 * **EditScreen1** では、ユーザーがレコードを作成または更新して変更内容を保存できる UI 要素が表示されます。
 
-**注**: [カスタム SharePoint リスト](app-from-sharepoint.md)に基づいてアプリを生成することもできます。
+> [!NOTE]
+> [カスタム SharePoint リスト](app-from-sharepoint.md)に基づいてアプリを生成することもできます。
 
 ## <a name="prerequisites"></a>前提条件
 * [PowerApps にサインアップ](signup-for-powerapps.md)し、次の手順のいずれかを実行します。
@@ -39,13 +40,14 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
 * サインアップに使用した資格情報で PowerApps にサインインします。
 * このチュートリアルの手順に忠実に従うには、この [Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードします。
   
-    **重要**: データがテーブルとして書式設定されていれば、ご自身の Excel ファイルを使用できます。 詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
+    > [!IMPORTANT]
+> データがテーブルとして書式設定されていれば、ご自身の Excel ファイルを使用できます。 詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
 * Excel ファイルを OneDrive や他の[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 
 ## <a name="create-an-app"></a>アプリを作成する
 1. PowerApps Studio の **[File (ファイル)]** メニュー (画面左側) の **[New (新規)]** をクリックまたはタップします。
    
-    ![[File (ファイル)] メニューの [New (新規)] オプション](./media/get-started-create-from-data/file-new.png)
+    ![[ファイル] メニューの [新規] オプション](./media/get-started-create-from-data/file-new.png)
 2. 次のいずれかの手順に従います。
    
    * クラウド ストレージ アカウントが **[Start with your data (データを使用して開始)]** の下に表示された場合は、**[電話レイアウト]** をクリックまたはタップします。
@@ -66,7 +68,8 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
    
     ![[次へ] をクリックしてツアーを開始](./media/get-started-create-from-data/quick-tour.png)
    
-    **注**: クイック ツアーは後からいつでも開始できます。右上隅の疑問符アイコンをクリックまたはタップし、**[Take the intro tour (クイック ツアーの開始)]** をクリックまたはタップしてください。
+    > [!NOTE]
+> クイック ツアーは後からいつでも開始できます。右上隅の疑問符アイコンをクリックまたはタップし、**[Take the intro tour (クイック ツアーの開始)]** をクリックまたはタップしてください。
 
 ## <a name="change-the-gallery-layout"></a>ギャラリー レイアウトの変更
 アプリはデータに基づいた既定のレイアウトで作成されますが、ニーズに合わせてギャラリーのレイアウトをカスタマイズできます。
@@ -103,7 +106,8 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
    
     ![BrowseScreen1 と新しいコンテンツ](./media/get-started-create-from-data/browse-content.png)
    
-    **注**: 既定では、マウスホイールまたはタッチ スクリーン上での上下方向のスワイプ操作によって、リスト (ギャラリー) をスクロールすることができます。 トラックパッドまたはホイールなしのマウスを使用するには、ギャラリーを選択し、プロパティの一覧で **[スクロール バーの表示]** をクリックまたはタップしてから、数式バーの **false** を **true** に置換します。
+    > [!NOTE]
+> 既定では、マウスホイールまたはタッチ スクリーン上での上下方向のスワイプ操作によって、リスト (ギャラリー) をスクロールすることができます。 トラックパッドまたはホイールなしのマウスを使用するには、ギャラリーを選択し、プロパティの一覧で **[スクロール バーの表示]** をクリックまたはタップしてから、数式バーの **false** を **true** に置換します。
 
 ## <a name="change-the-order-of-fields-in-a-form"></a>フォームのフィールドの順序を変更する
 1. 左側のナビゲーション バーで中央のサムネイルをクリックまたはタップし、詳細画面 (**DetailsScreen1**) を開きます。
@@ -114,7 +118,7 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
     ![カードを選択](./media/get-started-create-from-data/select-card.png)
 3. 右側のウィンドウで、**[名前]** フィールドをリストの先頭にドラッグします。
    
-    ![カードを移動](./media/get-started-create-from-data/move-card.png)
+    ![カードを移動する](./media/get-started-create-from-data/move-card.png)
    
     画面を更新して変更を反映します。
    
@@ -155,7 +159,7 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
    
     ![プレビュー モードの終了](./media/get-started-create-from-data/close-preview.png)
 
-## <a name="known-limitations"></a>既知の制限
+### <a name="known-limitations"></a>既知の制限
 お客様の組織内の Excel データを共有する方法の詳細については、[これらの制限をご確認ください](connections/cloud-storage-blob-connections.md#sharing-excel-tables)。
 
 ## <a name="next-steps"></a>次の手順

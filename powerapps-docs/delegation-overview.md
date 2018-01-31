@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: d4305884c14a4b85b2ed992a5df13a7d3bb2baa7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b6410a6b392f074c5e5a240e471fa2591e1e135d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-delegation"></a>委任について
 PowerApps には、データのフィルター処理、並べ替え、およびテーブルの整形を行う強力な一連の関数が用意されています。たとえば、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 関数があります。  これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。  データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。  
@@ -95,7 +95,7 @@ PowerApps には、データのフィルター処理、並べ替え、および�
 
 一般的なパターンでは、**AddColumns** と **LookUp** を使用して、1 つのテーブルの情報を別のテーブルにマージします。これは、データベース用語では一般に結合と呼ばれます。  例:
 
-* **AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
+**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
 
 **LookUp** は委任可能な関数ですが、**Products** と **Suppliers** が委任可能なデータ ソースであっても、**AddColumns** 関数は委任できません。  数式全体の結果は、**Products** データ ソースの先頭部分に制限されます。  
 
@@ -118,27 +118,26 @@ PowerApps には、データのフィルター処理、並べ替え、および�
 ## <a name="examples"></a>例
 この例では、商品 (具体的には果物) を含む **[dbo].[Products]** という名前の SQL Server テーブルを使用します。  PowerApps では、[新しい画面] でこのデータ ソースに接続する 3 つの画面から成る基本的なアプリを作成できます。
 
-![](media/delegation-overview/products-afd.png)
+![3 画面アプリ](media/delegation-overview/products-afd.png)
 
 ギャラリーの **Items** プロパティの数式に注目してください。  **SortByColumns** 関数と **Search** 関数を使用しています。どちらも委任できます。
 
 検索テキスト入力コントロールに「**Apple**」と入力します。  注意して見ると、新しい検索の新しいエントリの処理中に、少しの間、画面の上部で点が動いているのがわかります。  点が動いているのは、SQL Server と通信していることを示しています。
 
-![](media/delegation-overview/products-apple.png)
+![検索テキスト入力コントロール](media/delegation-overview/products-apple.png)
 
 これはすべて委任できるため、**[dbo].[Products]** テーブルに何百万件ものレコードが含まれていても、すべてが検索されます。ユーザーが結果をスクロールすると、ギャラリー内のページが移動します。
 
 ご覧のように、"Apple" と "Pineapple" の両方に一致しています。  **Search** 関数では、テキスト列内全体から検索語句を探します。  それでは、代わりに、果物の名前の先頭のみで検索語句を検索してみましょう。  別の委任可能な関数である **Filter** を使用すると、より複雑な検索語句を指定できます (わかりやすくするために、**SortByColumns** 呼び出しを削除します)。
 
-![](media/delegation-overview/products-apple-bluedot.png)
+![SortByColumns 呼び出しを削除する](media/delegation-overview/products-apple-bluedot.png)
 
 これは正常に機能しているようで、**"Apples"** だけ表示され、**"Pineapple"** は表示されていません。  ただし、ギャラリーの横に青い点が表示され、数式の一部分の下に青い波線があります。  画面上のサムネイルにも青い点が表示されています。  ギャラリーの横にある青い点をポイントすると、次のメッセージが表示されます。
 
-![](media/delegation-overview/products-apple-bluepopup.png)
+![青い点をポイントする](media/delegation-overview/products-apple-bluepopup.png)
 
 委任可能なデータ ソースである SQL Server と委任可能な **Filter** 関数を使用しているものの、**Filter** 内で使用した数式は委任可能ではありません。  **Mid** と **Len** はどのデータ ソースにも委任できません。
 
 それでも、一応  機能しています。  これが、注意を促す黄色のアイコンや赤色の波線エラーではなく、青い点が表示される理由です。  **[dbo].[Products]** テーブルに含まれているレコードは 500 件未満なので、問題なく機能しました。   すべてのレコードがデバイスに取り込まれ、**Filter** がローカルで適用されました。  
 
 このテーブルに含まれているレコードが 500 件を超える場合は、"*テーブルの 500 件の先頭レコード内の*" **"Apple"** で始まる果物だけがギャラリーに表示されます。  レコード 501 または 500,001 に **"Apple, Fuji"** という名前が含まれていても、見つかりません。
-

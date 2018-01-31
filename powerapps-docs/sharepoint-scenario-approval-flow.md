@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 5fd4448eba2429dc7bd5027327b132c1b0ff5dd8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4af1571bb72c713c6186f5237d6b3791eb95808b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>プロジェクトの承認を管理するフローを作成する
-**注:** この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> [!NOTE]
+> この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、プロジェクトの承認プロセスを進めるフローを作成します。 Microsoft Flow は SharePoint と統合されているため、リストから直接、簡単にフローを作成できます。 作成するフローは、項目が **Project Requests** リストに追加されると、トリガーされます。 フローがプロジェクトの承認者に電子メールを送信し、承認者は申請を電子メールで直接承認または拒否します。 その後、フローはプロジェクト申請者に承認または拒否の電子メールを送信し、SharePoint リストを適宜更新します。
 
@@ -123,25 +124,33 @@ ms.lasthandoff: 11/07/2017
 8. **[Approved]** ボックスで「No」と入力します。 フローのこの部分は次の図のように表示されます。
    
     ![リストの更新](./media/sharepoint-scenario-approval-flow/03-01-08-no-update-complete.png)
-9. 画面の右上で **[フローの作成]**、**[完了]** の順にクリックまたはタップします。
-   
-    ![[完了] ボタン](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+9. 画面の右上で **[フローの作成]** をクリックまたはタップします。
    
     フローが完了しました。ボックスを折りたたむと、次の図のようになります。
    
     ![完了フロー](./media/sharepoint-scenario-approval-flow/03-01-16-flow-complete.png)
 
+10. 画面の右上で **[完了]** をクリックまたはタップします。
+   
+    ![[完了] ボタン](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+
 ## <a name="step-4-run-the-approval-flow"></a>手順 4: 承認フローを実行する
 1. **Project Requests** リストで、**[クイック編集]** をクリックして、次のような項目を追加します。
    
    * **[Title]** = "New monitor for Megan"
-   * **[Approved]** = "保留中"
+
    * **[Description]** = "Megan が 24 インチのモニターを必要としている"
-   * **[EstimatedDays]** = "1"
+
    * **[ProjectType]** = "新規ハードウェア"
+
    * **[RequestDate]** = "02/03/2017"
+
    * **[Requestor]** = "Megan Bowen"
-     
+
+   * **[EstimatedDays]** = "1"
+
+   * **[Approved]** = "保留中"
+
      ![リストに追加される項目](./media/sharepoint-scenario-approval-flow/03-02-01-list-add.png)
 2. 完了したら、ページの最上部で **[完了]** をクリックします。
    

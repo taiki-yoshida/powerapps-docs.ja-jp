@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: 9d5ccfd11399188e739353e2994f779347377de4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 104afc3d2a5b243b7315b1638f23b7778d049370
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>PowerApps から Microsoft Translator に接続する
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,11 +28,10 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 
 このトピックでは、Microsoft Translator 接続の作成方法とアプリでの Microsoft Translator 接続の使用方法を説明し、使用可能な関数の一覧を示します。
 
-**注**: このコネクタの呼び出し数は、ユーザーあたり 1 日 150 件に制限されています。
+> [!NOTE]
+> このコネクタの呼び出し数は、ユーザーあたり 1 日 150 件に制限されています。
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Microsoft Translator に接続する
 1. PowerApps を開き、**[新規]** を選択して **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 934a3627d902db6dcb853fddae06b3f1f229d2b6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fbbf976b7c0fe4699e9c967b3ecac541efc2c223
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delete-an-app-from-powerapps"></a>PowerApps からのアプリの削除
 この記事では、PowerApps アカウントおよびアプリの共有相手のアカウントからアプリを削除する方法について説明します。
@@ -32,7 +32,8 @@ ms.lasthandoff: 11/07/2017
    
     ![](./media/delete-app/filter-list.png)
    
-    **注**: 削除するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
+    > [!NOTE]
+> 削除するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
 3. 右端で、削除するアプリの情報アイコンをクリックまたはタップします。
    
     ![](./media/delete-app/app-options.png)
@@ -40,10 +41,12 @@ ms.lasthandoff: 11/07/2017
    
     ![](./media/delete-app/delete-icon.png)
    
-    **注**: アプリを削除するには、アプリに対する**共同作成者**のアクセス許可が必要です。
+    > [!NOTE]
+> アプリを削除するには、アプリに対する**共同作成者**のアクセス許可が必要です。
 5. 表示されたダイアログ ボックスで、**[クラウドから削除]** をクリックまたはタップします。  
    
-    **重要**: この操作を実行すると、ご利用のアカウントだけでなく、アプリの共有相手となっている全ユーザーのアカウントからも対象のアプリが完全に削除されます。
+    > [!IMPORTANT]
+> この操作を実行すると、自身のアカウントだけでなく、アプリを共有する全ユーザーのアカウントからも対象のアプリが完全に削除されます。
    
     ![](./media/delete-app/delete-button.png)
 

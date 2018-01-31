@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: fe4bf1a01711c35cda4566ed02bb3bc1297076ed
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d171cc5de26d1dd6e6caa91b0205771707d8048c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps の DateValue、TimeValue、および DateTimeValue 関数
 文字列内の日付、時刻、またはその両方を日付/時刻値に変換します。
@@ -62,7 +62,8 @@ ms.lasthandoff: 11/07/2017
   
     コンピューターが **en** ロケールに設定されている場合、ラベルには "**Saturday, October 11, 2014**" と表示されます。
   
-    **注:** **DateTimeFormat** パラメーターで、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
+    > [!NOTE]
+> **DateTimeFormat** パラメーターでは、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
 * **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     ラベルには "**Monday, November 10, 2014**" と表示されます。
@@ -80,7 +81,8 @@ ms.lasthandoff: 11/07/2017
   
     コンピューターが "en" ロケールに設定されている場合、ラベルには "**Saturday, October 11, 2014 1:50:24 PM**" と表示されます。
   
-    **注:** **DateTimeFormat** パラメーターで、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
+    > [!NOTE]
+> **DateTimeFormat** パラメーターでは、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
 * **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     ラベルには "**Monday, November 10, 2014 1:50:24 PM**" と表示されます。

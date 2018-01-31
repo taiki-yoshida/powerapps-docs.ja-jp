@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/25/2017
+ms.date: 10/20/2017
 ms.author: archanan
-ms.openlocfilehash: 45b43f8d1518c09ffcd584f055391e442899dfa3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 637cccf5a5a88d012657172a9e312e232915a615
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>PowerApps から Office 365 Outlook に接続する
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -30,11 +30,10 @@ Office 365 Outlook に接続すると、メール メッセージの表示、送
 
 このトピックでは、Office 365 Outlook を接続として追加する方法、アプリに Office 365 Outlook をデータ ソースとして追加する方法、および他のコントロールでこのデータを使う方法について説明します。
 
-**重要**: この記事の執筆時点では、カレンダー操作では定期的なイベントがサポートされていません。
+> [!IMPORTANT]
+> この記事の執筆時点では、カレンダー操作では定期的なイベントがサポートされていません。
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-office-365-outlook"></a>Office 365 Outlook に接続する
 1. [データ接続を追加](../add-data-connection.md)して、**[Office 365 Outlook]** を選びます。  
@@ -66,7 +65,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 1. **[挿入]** メニューで、**[テキスト]**、**[Text input]** (テキスト入力) の順に選択します。
 2. 上記の手順を 2 回繰り返して 3 つのボックスを作成します。次に、作成した 3 つのボックスを一列に配置します。  
    
-    ![](./media/connection-office365-outlook/threetextinput.png)
+    ![3 つのボックスを一列に配置](./media/connection-office365-outlook/threetextinput.png)
 3. コントロールの名前を次のように変更します。  
    
    * **inputTo**
@@ -76,7 +75,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
    
     `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
 5. ボタンを他のすべてのコントロールの下に表示されるように移動し、**[Text](../controls/properties-core.md)** プロパティを「**メールの送信**」に設定します。
-6. F5 キーを押すか、[プレビュー] ボタン (![](./media/connection-office365-outlook/preview.png)) を選びます。 有効なメール アドレスを **inputTo** に入力し、他の 2 つの**テキスト入力**コントロールに適当なテキストを入力します。
+6. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 有効なメール アドレスを **inputTo** に入力し、他の 2 つの**テキスト入力**コントロールに適当なテキストを入力します。
 7. **[メールの送信]** を選んでメッセージを送信します。 Esc キーを押して既定のワークスペースに戻ります。
 
 ## <a name="send-a-message-with-an-attachment"></a>ファイルが添付されたメッセージを送信する
@@ -88,7 +87,8 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 * ContentBytes
 * @odata.type
 
-**注**: @odata.type プロパティを指定できる添付ファイルは 1 つだけです。また、このプロパティは空の文字列に設定できます。
+> [!NOTE]
+> @odata.type プロパティを指定できる添付ファイルは 1 つだけです。また、このプロパティは空の文字列に設定できます。
 
 この例では、写真は **file1.jpg** として送信されます。
 
@@ -108,20 +108,23 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 3. ギャラリーで、最初のラベルの **Text** プロパティを `ThisItem.Id` に設定します。 2 つ目のラベルを `ThisItem.Subject` に設定します。 3 つ目のラベルを `ThisItem.Body` に設定します。
 4. ギャラリーで最初のラベルを選び、名前を **EmailID** に変更します。
    
-    ![[オプション] ウィンドウを閉じる](./media/connection-office365-outlook/renameheading.png)
+    ![1 つ目のラベルの名前変更](./media/connection-office365-outlook/renameheading.png)
 5. ギャラリーで 3 つ目のラベルを選び、**ボタン** (**[挿入]** メニュー) を追加します。 ボタンの **OnSelect** プロパティを次の式に設定します。  
    
     `Office365.DeleteEmail(EmailID.Text)`
-6. F5 キーを押すか、[プレビュー] ボタン (![](./media/connection-office365-outlook/preview.png)) を選びます。 ギャラリーでメールの 1 つを選び、ボタンをクリックします。 <br/><br/> **注** 選んだメールが受信トレイから削除されます。 慎重に選んでください。
+6. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 ギャラリーでメールの 1 つを選び、ボタンをクリックします。 
+    
+    > [!NOTE]
+    > 選んだメールが受信トレイから削除されます。 慎重に選んでください。
 7. Esc キーを押して既定のワークスペースに戻ります。
 
 ## <a name="mark-a-message-as-read"></a>メッセージを開封済みにする
-ここでは、「[メールを削除する](connection-office365-outlook.md#delete-email)」と同じコントロールを使います。
+ここでは、「[メッセージを削除する](connection-office365-outlook.md#delete-a-message)」と同じコントロールを使います。
 
 1. ボタンの **OnSelect** プロパティを次の式に設定します。  
    
     `Office365.MarkAsRead(EmailID.Text)`
-2. F5 キーを押すか、[プレビュー] ボタン (![](./media/connection-office365-outlook/preview.png)) を選びます。 未開封のメールを 1 つ選び、ボタンをクリックします。
+2. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 未開封のメールを 1 つ選び、ボタンをクリックします。
 3. Esc キーを押して既定のワークスペースに戻ります。
 
 ## <a name="helpful-links"></a>便利なリンク

@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 0565bba26f9ab78437dd4b5a7729ff518a89e6e8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。
 
 ## <a name="controls"></a>コントロール
 **[画像の追加](controls/control-add-picture.md)** – データ ソースへのアップロードのために、ローカル デバイスから画像を読み込みます。
+
+**[添付ファイル](controls/control-attachments.md)** – ローカルのデバイスからデータ ソースにファイルをダウンロードおよびアップロードします。
 
 **[オーディオ](controls/control-audio-video.md)** – オーディオ クリップまたはビデオ クリップのオーディオ部分を再生します。
 
@@ -507,12 +509,11 @@ ms.lasthandoff: 11/07/2017
 ### <a name="y"></a>Y
 **[Y](controls/properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 多くのコントロールに適用されます。 複数の行を持つコンテナーの**[カード](controls/control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
 
-**[YAxisMax](controls/control-column-line-chart.md)** – 折れ線グラフの Y 軸の最大値です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[YAxisMax](controls/control-column-line-chart.md)** – 折れ線グラフの Y 軸の最大値です。  **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
-**[YAxisMin](controls/control-column-line-chart.md)** – 折れ線グラフの Y 軸の最小値です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[YAxisMin](controls/control-column-line-chart.md)** – 折れ線グラフの Y 軸の最小値です。  **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 **[YLabelAngle](controls/control-column-line-chart.md)** – 折れ線グラフまたは縦棒グラフの Y 軸の横に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="z"></a>Z
 **Zoom** – カメラからの画像、または PDF ビューアーでのファイルの表示を拡大する割合です。  **[カメラ](controls/control-camera.md)** コントロールと **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。
-

@@ -14,18 +14,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 13b15a29cf2f9e211328b815b8419799024e481e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>画像を Excel ファイルに保存してアプリに追加する方法
-&nbsp;
-
-[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
-
-* [データ ソースの追加](add-data-connection.md)方法を確認します。
 
 このチュートリアルの内容:
 
@@ -35,7 +30,11 @@ ms.lasthandoff: 11/07/2017
 * ペン入力コントロールから作成した画像を Excel ファイルに保存します。
 * Excel ファイルに保存されている画像をアプリで表示します。
 
+[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
+* [データ ソースの追加](add-data-connection.md)方法を確認します。
+
 ## <a name="create-the-excel-file-as-a-table"></a>Excel ファイルをテーブルとして作成する
+
 1. 空の Excel ファイルで、列に "**Image [image]**" という名前を付けます。
 2. 次の手順を使用してテーブルを作成します。    
    
@@ -77,7 +76,8 @@ ms.lasthandoff: 11/07/2017
 
 この例では、いくつかの .jpeg ファイルを格納している [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) を使用します。
 
-**注** Excel ファイルから画像を表示するときは、それらの画像のパスにスラッシュを使う必要があります。 PowerApps で (前の手順のように) 画像を Excel テーブルに保存すると、パスに円記号が使用されます。 前の例で使用した **SavePen_images** を使用することもできますが、 その場合は、円記号ではなくスラッシュを使用するように Excel テーブル内のパスを変更してください。 そうしないと、画像は表示されません。  
+> [!NOTE]
+> Excel ファイルから画像を表示するときは、それらの画像のパスにスラッシュを使う必要があります。 PowerApps で (前の手順のように) 画像を Excel テーブルに保存すると、パスに円記号が使用されます。 前の例で使用した **SavePen_images** を使用することもできますが、 その場合は、円記号ではなくスラッシュを使用するように Excel テーブル内のパスを変更してください。 そうしないと、画像は表示されません。  
 
 1. [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をダウンロードし、**Assets** フォルダーをクラウド ストレージ アカウントに抽出します。
 2. Excel スプレッドシートで、次のようなテーブルを作成します。

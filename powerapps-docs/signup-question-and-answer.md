@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2016
 ms.author: jamesol
-ms.openlocfilehash: 661483b6d240785f2945011005b4e552e04ac075
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3ea0d8a3f10a1b9dad7641c1291bae3aef40000a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-in-your-organization-qa"></a>PowerApps in your organization Q&A (組織における PowerApps の Q&A)
 このトピックでは、組織における PowerApps の使い方と、PowerApps サービスの管理方法について説明します。
@@ -65,9 +65,13 @@ PowerApps タイルを既定でアプリ起動ツールから削除したい場�
 PowerApps プラン 1 または PowerApps プラン 2 のライセンスがユーザーに割り当てられている場合、次の手順で PowerApps のライセンスをユーザーから削除することができます。
 
 1. [Office 365 管理ポータル](https://portal.microsoftonline.com/)に移動します。
+
 2. 左側のナビゲーション バーで、**[ユーザー]**、**[アクティブ ユーザー]** の順に選択します。
+
 3. ライセンスの削除対象となるユーザーを見つけて、その名前を選択します。
+
 4. ユーザーの詳細ウィンドウの **[Product licenses (製品ライセンス)]** セクションで **[編集]** を選択します。
+
 5. **[Microsoft PowerApps Plan 1]** または **[Microsoft PowerApps Plan 2]** というライセンスを見つけ、**[オフ]** に切り替えて **[保存]** を選択します。
    
     ![](./media/signup-question-and-answer/remove-license.png)
@@ -75,9 +79,13 @@ PowerApps プラン 1 または PowerApps プラン 2 のライセンスがユ�
 ユーザーが Office 365 や Dynamics 365 プランのライセンスを通じて PowerApps を利用できる場合、次の手順に従って、PowerApps サービスの利用を無効にすることができます。
 
 1. [Office 365 管理ポータル](https://portal.microsoftonline.com/)に移動します。
+
 2. 左側のナビゲーション バーで、**[ユーザー]**、**[アクティブ ユーザー]** の順に選択します。
+
 3. アクセス権の削除対象となるユーザーを見つけて、その名前を選択します。
+
 4. ユーザーの詳細ウィンドウの **[Product licenses (製品ライセンス)]** セクションで **[編集]** を選択します。
+
 5. ユーザーの Office 365 ライセンスまたは Dynamics 365 ライセンスを展開し、**[PowerApps for Office 365]** または **[PowerApps for Dynamics 365]** というサービスへのアクセスを無効にして **[保存]** を選択します。
    
     ![](./media/signup-question-and-answer/remove-service-plan.png)
@@ -93,7 +101,7 @@ PowerApps のライセンスまたはサービスが削除された組織内の�
   
     ![](./media/signup-question-and-answer/office-waffle.png)
 
-### <a name="how-can-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>組織のビジネス データへの PowerApps を使ったアクセスをユーザーに禁止するにはどうすればよいですか
+### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>ユーザーが PowerApps を使用して組織のビジネス データにアクセスするのを制限するにはどうすればよいですか
 PowerApps では、次に示すようにビジネス データ用と非ビジネス データ用の領域を作成することができます。  これらのデータ損失防止ポリシーが実施された後は、ビジネス データと非ビジネス データを組み合わせた PowerApps を設計したり実行したりすることができないようになります。 詳細については、「[Data loss prevention (DLP) policies (データ損失防止 (DLP) ポリシー)](prevent-data-loss.md)」を参照してください。
 
 ![](./media/signup-question-and-answer/data-loss-prevention-policy.png)
@@ -129,7 +137,8 @@ Microsoft によって作成されたテナントは、管理者が次の手順�
 4. 左上隅のアプリ起動ツール アイコンを選択し、[管理者] を選択します。
 5. **[Become the admin (管理者になる)]** ページの指示を読んで、**[Yes, I want to be the admin (はい。管理者になります)]** を選択します。  
 
-**注**: このオプションが表示されない場合は、Office 365 管理者が既に存在します。
+> [!NOTE]
+> このオプションが表示されない場合は、Office 365 管理者が既に存在します。
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>複数のドメインがある場合、管理者として、ユーザーの追加先となる Office 365 テナントを制御することはできますか
 何もしなければ、ユーザーの電子メール ドメインとサブドメインごとにテナントが作成されます。
@@ -138,5 +147,6 @@ Microsoft によって作成されたテナントは、管理者が次の手順�
 
 * 事前に対象テナントを作成するか、既存のテナントを使用します。 そのテナントに含める既存のドメインとサブドメインをすべて追加します。 以後、電子メール アドレスの末尾がこれらのドメインとサブドメインに該当するすべてのユーザーは、サインアップ時に自動的に対象テナントに追加されます。
 
-**重要**: いったん作成されたテナント間でユーザーを自動的に移動するための機構は用意されていません。 単一の Office 365 テナントにドメインを追加する方法については、[ユーザーとドメインを Office 365 に追加する方法](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7)に関するページを参照してください。
+> [!IMPORTANT]
+> いったん作成されたテナント間でユーザーを自動的に移動するためのメカニズムは用意されていません。 単一の Office 365 テナントにドメインを追加する方法については、[ユーザーとドメインを Office 365 に追加する方法](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7)に関するページを参照してください。
 

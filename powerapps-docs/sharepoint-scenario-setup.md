@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 35c6e2b7ddadc0ff907ce34986accdd11a794dd4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ad9033b51142d1bb6b014abe0cc049a0b5c27ee5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>SharePoint Online と PowerApps、Microsoft Flow、Power BI の統合のためのリスト設定
-**注:** この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> [!NOTE]
+> この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 SharePoint には共有やコラボレーションの機能が多数ありますが、このシナリオでは [SharePoint リスト](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)の機能に焦点を当てて説明します。 リストとは、チーム メンバーやその他のサイト ユーザーと共有できる単なるデータのコレクションです。 ここではこのシナリオに使用するリストについて説明しますので、ご使用の SharePoint Online サイトでリストを作成できるようになります。
 
@@ -39,7 +40,8 @@ SharePoint には共有やコラボレーションの機能が多数あります
 | EstimatedDays |Number |申請者の見積とプロジェクト管理者の見積を、実際の値と比較できます |
 | Approved |1 行テキスト |値: 保留中、はい、いいえ |
 
-**注:** この他に **[ID]** 列も使用します。この列は SharePoint によって生成されますが、既定では非表示になっています。 ここでは簡単にするために基本的なデータ型を使用していますが、**[Requestor]** 列の **[ユーザーまたはグループ]** のように、実際のアプリでは複雑な型を使用する場合があります。 PowerApps がサポートするデータ型について詳しくは、「[Microsoft PowerApps から SharePoint に接続する](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/#known-issues)」をご覧ください。
+> [!NOTE]
+> この他に **[ID]** 列も使用します。この列は SharePoint によって生成されますが、既定では非表示になっています。 ここでは簡単にするために基本的なデータ型を使用していますが、**[Requestor]** 列の **[ユーザーまたはグループ]** のように、実際のアプリでは複雑な型を使用する場合があります。 PowerApps がサポートするデータ型について詳しくは、「[Microsoft PowerApps から SharePoint に接続する](connections/connection-sharepoint-online.md#known-issues)」をご覧ください。
 
 2 つ目のリストは、**Project Details** です。承認されたすべてのプロジェクトに関する詳細 (割り当てられたプロジェクト管理者など) を追跡します。
 
@@ -58,12 +60,15 @@ SharePoint には共有やコラボレーションの機能が多数あります
 ## <a name="step-2-create-and-review-the-lists"></a>手順 2: リストを作成してレビューする
 シナリオを続けるには、前述の 2 つの SharePoint リストを作成し、これらのリストにサンプル データを入力する必要があります。 実際にリストを作成し、サンプル データをリストに貼り付けながら、この方法について説明します。 [ダウンロード パッケージ](https://aka.ms/o4ia0f)から Excel ファイルを取得していることを確認してください。
 
-**注:** この手順では Internet Explorer を使用します。
+> [!NOTE]
+> この手順では Internet Explorer を使用します。
 
 ### <a name="create-the-lists"></a>リストを作成する
+
 1. Internet Explorer でお使いの SharePoint サイトを開き、**[新規]**、**[リスト]** の順にクリックまたはタップします。
    
     ![新しい SharePoint リストを作成する](./media/sharepoint-scenario-setup/01-01-01-new-list.png)
+
 2. 「Project Requests」という名前を入力し、**[作成]** をクリックまたはタップします。
    
     ![新しいリストの名前を指定する](./media/sharepoint-scenario-setup/01-01-02-create-list.png)
@@ -73,12 +78,13 @@ SharePoint には共有やコラボレーションの機能が多数あります
     ![Project Requests リスト](./media/sharepoint-scenario-setup/01-01-03-initial-list.png)
 
 ### <a name="add-columns-to-the-list"></a>リストに列を追加する
+
 1. ![新しいアイテムのアイコン](./media/sharepoint-scenario-setup/icon-new.png)、**[1 行テキスト]** の順にクリックまたはタップします。
    
     ![[1 行テキスト] フィールドの追加](./media/sharepoint-scenario-setup/01-01-04-add-column.png)
-2. 「Description」という名前を入力し、**[作成]** をクリックまたはタップします。
+
+2. 「Description」という名前を入力し、**[保存]** をクリックまたはタップします。
    
-    ![[Description] 列の作成](./media/sharepoint-scenario-setup/01-01-05-description-column.png)
 3. 手順 **1.**  と **2.**  を、リストの別の列に対して繰り返します。
    
    1. **[1 行テキスト]** > "ProjectType"
@@ -106,23 +112,37 @@ SharePoint には共有やコラボレーションの機能が多数あります
 このチュートリアル シリーズの冒頭でお伝えしたように、[ダウンロード パッケージ](https://aka.ms/o4ia0f)には 2 つのサンプル アプリと 1 つのレポートが含まれています。 これらのサンプルを使用しなくてもこのシナリオは完了できますが、サンプルを使用する場合は、SharePoint リストへの接続を更新する必要があります。 接続を更新すると、Microsoft のリストではなく、 *お客様* のリストがデータ ソースとして使用されます。
 
 ### <a name="update-connections-for-the-sample-apps"></a>サンプル アプリの接続を更新する
-1. PowerApps Studio で **project-management-app.msapp** を開きます。
-2. **[許可]** をクリックまたはタップします。これにより、PowerApps で SharePoint を使用できるようになります。
-3. リボンの **[ビュー]** タブで、**[データ ソース]** をクリックまたはタップします。
-   
+
+1. [PowerApps Studio](https://create.powerapps.com/studio/) で、左側のウィンドウから **[開く]** をクリックまたはタップします。 
+
+2. **[参照]** をクリックまたはタップし、ダウンロードした **project-management-app.msapp** ファイルを開きます。
+
+3. **[許可]** をクリックまたはタップします。これにより、PowerApps で SharePoint を使用できるようになります。
+
+4. リボンの **[ビュー]** タブで、**[データ ソース]** をクリックまたはタップします。
+
     ![PowerApps の [データ ソース]](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
-4. 右側のウィンドウで、**Project Details** の隣の省略記号 (**. . .**) をクリックまたはタップし、**[削除]** をクリックまたはタップします。
+5. **[データ]** パネルで、**Project Details** の隣にある省略記号 (**[. . .]**) をクリックまたはタップし、**[削除]** をクリックまたはタップします。
    
     ![Project Details のデータ ソースの削除](./media/sharepoint-scenario-setup/01-03-02-remove.png)
-5. 右側のウィンドウで、**[データ ソースの追加]** をクリックまたはタップします。
+6. **[データ ソースの追加]** をクリックまたはタップします。
    
     ![データ ソースの追加](./media/sharepoint-scenario-setup/01-03-03-add.png)
-6. **[新しい接続]** をクリックまたはタップします。
+
+7. PowerApps で SharePoint への接続が既に確立されているか否かによりますが、リストに接続するための方法が 2 つ表示されます。 
+
+    * SharePoint への接続が既に表示されている場合は、その接続をクリックまたはタップします。
+
+        ![既存の接続](./media/sharepoint-scenario-setup/01-03-03aa-existing-connection.png)
+
+    * SharePoint への接続が表示されていない場合は、**[新しい接続]** をクリックまたはタップします。
+
+        ![新しい接続](./media/sharepoint-scenario-setup/01-03-03a-new-connection.png)
+
+        **[SharePoint]** をクリックまたはタップし、**[作成]** をクリックまたはタップします。
    
-    ![新しい接続](./media/sharepoint-scenario-setup/01-03-03a-new-connection.png)
-7. **[SharePoint]**、**[接続]** の順にクリックまたはタップします。
-   
-    ![SharePoint 接続](./media/sharepoint-scenario-setup/01-03-03b-sharepoint.png)
+        ![SharePoint 接続](./media/sharepoint-scenario-setup/01-03-03b-sharepoint.png)
+
 8. 作成したリストが含まれる SharePoint Online サイトの URL を入力し、**[移動]** をクリックまたはタップします。
    
     ![SharePoint の URL](./media/sharepoint-scenario-setup/01-03-03c-sharepoint-url.png)
@@ -130,30 +150,40 @@ SharePoint には共有やコラボレーションの機能が多数あります
    
     ![Project Details リスト](./media/sharepoint-scenario-setup/01-03-03d-project-details.png)
    
-    右側のウィンドウにある **[データ ソース]** タブに、作成した接続が表示されます。
+    **[データ]** パネルに、作成した接続が表示されます。
    
     ![[データ ソース]](./media/sharepoint-scenario-setup/01-03-03e-data-sources.png)
-10. 右側のウィンドウで、**Project Details** の隣の省略記号 (**. . .**) をクリックまたはタップし、**[更新]** をクリックまたはタップします。
+
+10. **Project Details** の隣にある省略記号 (**[. . .]**) をクリックまたはタップし、**[更新]** をクリックまたはタップします。
     
     ![Project Details のデータ ソースの更新](./media/sharepoint-scenario-setup/01-03-02-remove.png)
-11. 左上の ![アプリの実行アイコン](./media/sharepoint-scenario-setup/icon-run-arrow.png) をクリックしてアプリを実行し、接続が正常に動作することを確認します。
+
+11. 左上の ![アプリの実行アイコン](./media/sharepoint-scenario-setup/icon-run-arrow.png) をクリックしてアプリを実行し、接続が正常に機能することを確認します。
+
+12. **[ファイル]** をクリックまたはタップし、アプリをクラウドに保存します。 
+
 12. **project-requests-app.msapp** でも **Project Requests** リストを使用して、このセクションの手順を繰り返します。
 
 ### <a name="update-connections-for-the-sample-report"></a>サンプル レポートの接続を更新する
 1. Power BI Desktop で **project-analysis.pbix** を開きます。
+
 2. リボンの **[ホーム]** タブで、**[クエリを編集]**、**[データ ソース設定]** の順にクリックまたはタップします。
    
     ![[クエリを編集]](./media/sharepoint-scenario-setup/01-03-04-edit-queries.png)
+
 3. **[ソースの変更]** をクリックまたはタップします。
    
     ![[データ ソース設定]](./media/sharepoint-scenario-setup/01-03-05-settings.png)
-4. お使いの SharePoint Online サイトの URL を入力し、**[OK]** をクリックまたはタップします。
+
+4. お使いの SharePoint Online のサイトの URL を入力し、**[OK]** の次に **[閉じる]** をクリックまたはタップします。
    
     ![SharePoint リストの URL](./media/sharepoint-scenario-setup/01-03-06-list-url.png)
+
 5. Power BI Desktop のリボンの下にバナーが表示されます。このバナーで変更を適用して新しいソースからデータを取り込むことができます。 **[変更の適用]** をクリックまたはタップします。
    
     ![クエリの変更を適用](./media/sharepoint-scenario-setup/01-03-07-apply.png)
-6. 組織アカウント (SharePoint Online にアクセスするときに使用するアカウント) でサインインし、**[接続]** をクリックまたはタップします。
+
+6. Microsoft アカウント (SharePoint Online にアクセスするときに使用するアカウント) でサインインし、**[接続]** をクリックまたはタップします。
    
     ![SharePoint Online に接続](./media/sharepoint-scenario-setup/01-03-08-connect.png)
 

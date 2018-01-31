@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 1aff4df6e314f50a67aff6a08298d3d7aa4a9cfa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>エンティティ間のリレーションシップを構築する
 エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Customers** エンティティと **Orders** エンティティがある場合、**Orders** エンティティは、どの顧客からの発注であるかを示す **Customers** エンティティに対するルックアップ リレーションシップを持つことが考えられます。 ルックアップ フィールドを使用すれば、発注した顧客の **Customers** エンティティからのデータを表示することができます。 詳細については、「[Entity relationships and lookup fields](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships)」 (エンティティ リレーションシップとルックアップ フィールド) を参照してください。
@@ -50,7 +50,8 @@ ms.lasthandoff: 11/07/2017
 * エンティティ A のレコードは自由に削除することができます。
 * エンティティ A のレコードとの対応関係を持つレコードがエンティティ B に存在する場合、エンティティ B のレコードを削除するためにはまず、エンティティ A の、対応するすべてのレコードを削除する必要があります。
 
-**注**: エンティティ B が標準エンティティで、エンティティ A に対する親リレーションシップを持つ場合、エンティティ A からレコードを削除すると、エンティティ B からも、対応するすべてのレコードが削除されます。
+> [!NOTE]
+> エンティティ B が標準エンティティで、エンティティ A に対する親リレーションシップを持つ場合、エンティティ A からレコードを削除すると、エンティティ B からも、対応するすべてのレコードが削除されます。
 
 フィールドを削除する方法については、[フィールドの管理](data-platform-manage-fields.md)に関するページを参照してください。
 

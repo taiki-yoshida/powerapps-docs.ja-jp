@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5bf844e4debf7b4614fafe948a6ec15943fd35f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
@@ -31,6 +31,8 @@ ms.lasthandoff: 11/07/2017
 **[Image](properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**ApplyEXIFOrientation** - 画像とともに埋め込まれたEXIF のデータで指定された向きを、自動的に適用するかどうかを指定します。
+
 **AutoDisableOnSelect** – OnSelect の動作の実行時にコントロールを自動で無効化するかどうかを指定します。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -51,6 +53,10 @@ ms.lasthandoff: 11/07/2017
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
+**FlipHorizontal** - 画像を表示する前に水平方向に反転するかどうかを指定します。
+
+**FlipVertical** - 画像を表示する前に垂直方向に反転するかどうかを指定します。
+
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
 **[HoverBorderColor](properties-color-border.md)** – コントロール上にユーザーがマウス ポインターを重ねているときのコントロールの境界線の色です。
@@ -58,6 +64,8 @@ ms.lasthandoff: 11/07/2017
 **[HoverFill](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロールの背景色です。
 
 **[ImagePosition](properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**Fill** (フィル)、**Fit** (サイズに合わせる)、**Stretch** (伸ばす)、**Tile** (タイル表示)、または **Center** (中央に表示))。
+
+**ImageRotation** - 画像を表示する前に回転させる方法を指定します。  値には、なし、時計回り (CW) に 90 度、反時計回り (CCW) に 90 度、時計回りに 180 度を設定できます。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 
@@ -105,21 +113,20 @@ ms.lasthandoff: 11/07/2017
 1. **[コンテンツ]** タブの **[メディア]** をクリックまたはタップして、**[参照]** をクリックまたはタップします。
 2. 追加する画像ファイルをクリックまたはタップし、**[開く]** をクリックまたはタップしてから Esc キーを押して既定のワークスペースに戻ります。
 3. **イメージ** コントロールを追加し、**[Items](properties-core.md)** プロパティを追加したファイルの名前に設定します。
-   
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
-   
+
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+
     指定した画像が**イメージ** コントロールに表示されます。
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>データ ソースの画像セットの表示
 1. こちらの [Excel ファイル](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)をダウンロードして、ローカル デバイスに保存します。
 2. PowerApps Studio で、アプリを作成するか開き、右のウィンドウで **[データ ソースの追加]** をクリックまたはタップします。
-   
+
     右のウィンドウに **[データ ソースの追加]** が表示されない場合、左のナビゲーション バーの画面をどれかクリックまたはタップします。
 3. **[静的データをアプリに追加します]** をクリックまたはタップして、ダウンロードした Excel ファイルをクリックまたはタップし、**[開く]** をクリックまたはタップします。
 4. **[Flooring Estimates]** (フローリングの見積り) チェック ボックスをオンにして、**[接続]** をクリックまたはタップします。
 5. **ギャラリー** コントロールと画像を追加し、**[Items](properties-core.md)** プロパティを **FlooringEstimates** に設定します。
-   
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
-   
-    **ギャラリー** コントロールに、ダウンロードした Excel ファイルに含まれるリンクに基づくカーペット製品、硬木の製品、およびタイル製品の画像が表示されます。
 
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+
+    **ギャラリー** コントロールに、ダウンロードした Excel ファイルに含まれるリンクに基づくカーペット製品、硬木の製品、およびタイル製品の画像が表示されます。

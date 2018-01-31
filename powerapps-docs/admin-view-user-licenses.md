@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/02/2017
 ms.author: manasma
-ms.openlocfilehash: ba60c227b287532f6abe2e2b2e88f6cbe7dd0cd3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bc3d1c94deec6cf5e7c0ba5b73e65cab67d3ee25
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="identify-powerapps-users-in-your-organization"></a>組織内の PowerApps ユーザーを特定する
 Office 365 のグローバル管理者または Azure Active Directory のテナント管理者は、PowerApps、Microsoft Flow、またはその両方のライセンスが与えられているユーザーの一覧だけでなく、これらの製品のいずれかにアクセスしたユーザーの一覧もダウンロードできます。 一覧には、各ユーザーの名前、メール アドレス、ライセンスの種類、その他の情報などが含まれています。 たとえば、以下のようなユーザー情報です。
@@ -29,10 +29,11 @@ Office 365 のグローバル管理者または Azure Active Directory のテナ
 * Dynamics 365 ライセンスで両方の製品にアクセスできる
 * PowerApps と Microsoft Flow プランからアクセスできる
 
-## <a name="download-the-list-of-users"></a>ユーザーの一覧をダウンロードする
+### <a name="download-the-list-of-users"></a>ユーザーの一覧をダウンロードする
 1. PowerApps 管理センターで、左端近くにある **[ユーザー ライセンス]** をクリックまたはタップします。
    
-    **重要**: このオプションは、Office 365 のグローバル管理者と Azure Active Directory テナント管理者のみが使用できます。
+    > [!IMPORTANT]
+> このオプションは、Office 365 のグローバル管理者と Azure Active Directory テナント管理者のみが使用できます。
    
     ![ファイルと共有](./media/admin-view-user-licenses/leftnav.png)
 2. **[アクティブなユーザー ライセンスの一覧をダウンロード]** をクリックまたはタップします。
@@ -41,7 +42,8 @@ Office 365 のグローバル管理者または Azure Active Directory のテナ
    
     ファイルのダウンロードに数分かかる場合があります。 数分待ってから、ダウンロードした .csv ファイルを Excel で開きます。
    
-    **注**: ダウンロードが終了する前にウィンドウを閉じると、プロセスの再起動が必要になる場合があります。
+    > [!NOTE]
+> ダウンロードが終了する前にウィンドウを閉じると、プロセスの再起動が必要になる場合があります。
 
 この例は、さまざまな手段を通じて PowerApps と Microsoft Flow の両方のライセンスを所有している 2 人のユーザーを示しています。 Jane Doe は Office 365 のサブスクリプションでアクセスしており、John Doe は各製品の試用版のライセンスを取得済みです。
 

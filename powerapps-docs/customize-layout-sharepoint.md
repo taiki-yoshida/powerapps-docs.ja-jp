@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/02/2017
 ms.author: sharik
-ms.openlocfilehash: c581abad70012eb66413a31bd765437df69b7a70
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ce0f0693298977ca991636d0a9bf18e238e8368e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="customize-a-gallery-layout-in-powerapps"></a>PowerApps でのギャラリー レイアウトのカスタマイズ
 PowerApps で自動的にアプリを生成したら、既定で表示されるブラウズ画面をカスタマイズしましょう。 使用するレイアウトと表示する列、さらにレコードの並べ替えとフィルター処理に使用する列を指定します。
@@ -97,7 +97,8 @@ PowerApps で自動的にアプリを生成したら、既定で表示される�
     変更後の数式バーには、次のように式が設定されている必要があります。<br>
     **SortByColumns(Filter(AppGen, StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))**
    
-    **注**: これまでに行った操作によっては、**TextSearchBox** の後に表示される数字がもっと大きい場合があります。 ただし数式の機能には問題ありません。
+    > [!NOTE]
+> これまでに行った操作によっては、**TextSearchBox** の後に表示される数字がさらに大きい場合があります。 ただし数式の機能には問題ありません。
 
 ## <a name="test-sorting-and-searching"></a>並べ替えと検索のテスト
 1. F5 キーを押して (または右上隅の再生ボタンをクリックまたはタップして) プレビュー モードを開始します。

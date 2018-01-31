@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6574ad1c67c6fc42da3b1cd5940f163307829333
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 481e6d13cce7624cf46cadbf78f877fdfb9fd481
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>SharePoint Online に Power BI のプロジェクト レポートを埋め込む
-**注:** この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> [!NOTE]
+> この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このシナリオの最後のタスクでは、2 つのリストをホストしているのと同じ SharePoint Online サイトに、Power BI のレポートを埋め込みます。 Power BI は、さまざまな埋め込み方法をサポートしています。また、Power BI には先般、Web およびモバイルのビューに対応した SharePoint ページへの統合機能が直接追加されました。
 

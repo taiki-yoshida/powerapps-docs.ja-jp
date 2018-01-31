@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 2131e964626bee5b90062002619b7f46f7910ae0
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: eb7bb74362a810487e88efb1177b3c1dfa7a694d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>PowerApps の変数について
 Visual Basic や JavaScript などの別のプログラミング ツールを使ってきた方は、**変数はどこにあるのか**という疑問を抱くことでしょう。 PowerApps は若干異なり、別のアプローチが必要です。 変数の説明に進む代わりに、**Excel で何をしようとしているか**を考えてください。
 
 他のツールでは、明示的に計算を実行し、その結果を変数に格納していたことでしょう。 ところが、PowerApps と Excel のどちらも、入力データが変更されると自動的に数式が再計算されます。そのため、通常は変数を作成したり更新したりする必要はありません。 可能な限りこの方法に従うことで、アプリをより簡単に作成、理解、維持することができます。
 
-場合によっては、PowerApps で変数を使用する必要があります。これにより、[動作の数式](working-with-formulas-in-depth.md#behavior-formulas)を追加して Excel のモデルを拡張します。 これらの数式が実行されるのは、ユーザーがボタンを選択したときなどです。 動作の数式の中では、他の数式で使用する変数を設定すると便利なことがよくあります。
+場合によっては、PowerApps で変数を使用する必要があります。これにより、[動作の数式](working-with-formulas-in-depth.md)を追加して Excel のモデルを拡張します。 これらの数式が実行されるのは、ユーザーがボタンを選択したときなどです。 動作の数式の中では、他の数式で使用する変数を設定すると便利なことがよくあります。
 
 一般的には、変数の使用を避けてください。 ただし、変数を使わないと目的の動作が得られないこともあります。
 
@@ -94,13 +94,15 @@ PowerApps では、数式を使用して、コントロールのプライマリ�
 グローバル変数は次のように機能します。
 
 * **[Set](functions/function-set.md)** 関数を使用して、グローバル変数の値を設定します。  **Set( MyVar, 1 )** とすることで、グローバル変数 **MyVar** の値を **1** に設定します。
-* **Set** 関数とともに使用した名前を参照すると、グローバル変数を使用できます。  この場合、**MyVar** は **1** を返します。 
+* **Set** 関数とともに使用した名前を参照すると、グローバル変数を使用できます。  この場合、**MyVar** は **1** を返します。
 * グローバル変数は、文字列、数値、レコード、[テーブル](working-with-tables.md)など、すべての値を保持できます。
 
 それでは、グローバル変数を使用して計算機を作り直してみましょう。
 
 1. **TextInput1** という名前のテキスト入力コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
+
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
+
 3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **Set( RunningTotal, RunningTotal + Text1 )**
@@ -135,7 +137,7 @@ PowerApps には 3 種類の変数があります。
 | --- | --- | --- | --- |
 | グローバル変数 |アプリ |使い方が最も単純です。  数値、テキスト文字列、ブール値、レコード、テーブルなどを保持し、アプリ内のどこからでも参照できます。 |[**Set**](functions/function-set.md) |
 | コンテキスト変数 |画面 |他の言語のプロシージャにパラメーターを渡す場合など、画面に値を渡すのに最適です。  1 つの画面からのみ参照できます。 |[**UpdateContext**](functions/function-updatecontext.md)<br>[**Navigate**](functions/function-navigate.md) |
-| コレクション |アプリ |アプリ内のどこからでも参照できるテーブルを保持します。  全体として設定するのではなく、テーブルのコンテンツごとに変更できます。 後で使用するためにローカル デバイスに保存できます。 |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md)<br>[**Patch**](functions/function-patch.md)<br>[**Update**](functions/function-update.md)<br>[**Remove**](functions/function-remove.md)<br>[**SaveData**](functions/function-savedata-loaddata.md)<br>[**LoadData**](functions/function-savedata-loaddata.md)<br>など。 |
+| コレクション |アプリ |アプリ内のどこからでも参照できるテーブルを保持します。  全体として設定するのではなく、テーブルのコンテンツごとに変更できます。 後で使用するためにローカル デバイスに保存できます。 |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md)<br>[**Patch**](functions/function-patch.md)<br>[**Update**](functions/function-update-updateif.md)<br>[**Remove**](functions/function-remove-removeif.md)<br>[**SaveData**](functions/function-savedata-loaddata.md)<br>[**LoadData**](functions/function-savedata-loaddata.md)<br>など。 |
 
 **Set**、**UpdateContext**、**Navigate**、または **Collect** 関数を使用すると、すべての変数は暗黙的に作成されます。  他のプログラミング ツールで行われるような変数の明示的な宣言はありません。  また、変数の種類は、変数に入る値によって暗黙的に決定します。
 
@@ -157,7 +159,9 @@ PowerApps には 3 種類の変数があります。
 それでは、コンテキスト変数を使用して計算機を作り直してみましょう。
 
 1. **TextInput1** という名前のテキスト入力コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
+
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
+
 3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **UpdateContext( { RunningTotal: RunningTotal + Text1 } )**
@@ -182,7 +186,7 @@ PowerApps には 3 種類の変数があります。
     ![](media/working-with-variables/context-variable-4.png)
 7. 画面に移動する際にコンテキスト変数の値を設定できます。  これはある画面から別の画面に "コンテキスト" または "パラメーター" を渡すのに役立ちます。  これを確認するには、新しい画面を挿入し、**OnSelect** プロパティを次の数式に設定したボタンを挿入します。
    
-    **Navigate( Screen1, None, { RunningTotal: -1000 } )** 
+    **Navigate( Screen1, None, { RunningTotal: -1000 } )**
    
     ![](media/working-with-variables/context-variable-5.png)
    
@@ -207,7 +211,9 @@ PowerApps には 3 種類の変数があります。
 それでは、コレクションを使用して計算機を作り直してみましょう。
 
 1. **TextInput1** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
+
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
+
 3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **Collect( PaperTape, TextInput1.Text )**
@@ -253,5 +259,6 @@ PowerApps には 3 種類の変数があります。
      ![](media/working-with-variables/papertape-6.png)
 12. F5 キーを押してもう一度プレビューを表示し、テキスト入力コントロールに数値を入力してボタンを選択します。  **[保存]** ボタンを選択します。  アプリを終了してもう一度読み込み、**[読み込む]** ボタンを選択してコレクションを再読み込みします。  
     
-     注: **SaveData** と **LoadData** は、Web ブラウザーで実行している場合は機能しません。Windows にインストールされた Studio、またはモバイル デバイスのいずれかのプレーヤーを使用する必要があります。  
+    > [!NOTE]
+    > Web ブラウザーで実行されている場合、**SaveData** と **LoadData** は機能しません。 Windows またはモバイル デバイスのいずれかのプレーヤーにインストールされている Studio を使用する必要があります。  
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 978ea17732a2c91b8ef48b996c637194cd7540e8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>PowerApps のトグル コントロール
 ユーザーがハンドルを動かすことでオンまたはオフにできるコントロールです。
@@ -45,6 +45,12 @@ ms.lasthandoff: 11/07/2017
 
 **[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
 
+**FalseFill** - トグルが無効な場合の、トグルの塗りつぶし色です。
+
+**FalseHoverFill** - トグルが無効な場合の、トグルのポイント時の塗りつぶし色です。
+
+**FalseText** - トグルが無効な場合に表示されるテキストです。
+
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
@@ -63,13 +69,23 @@ ms.lasthandoff: 11/07/2017
 
 **RailFill** – 値が **false** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。
 
-**RailHoverFill** – 値が **false** の場合に、トグル コントロールまたはスライダーをポイントしたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。
+**RailHoverFill** – 値が **false** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
+**ShowLabel** - テキスト ラベルをトグル コントロールの横に表示するかどうかを指定します。
+
 **[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**TextPosition** - ラベルをトグル コントロールの右側と左側のどちらにするかを指定します。
+
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+
+**TrueFill** - トグルが有効な場合の、トグルの塗りつぶし色です。
+
+**TrueHoverFill** - トグルが有効な場合の、トグルのポイント時の塗りつぶし色です。
+
+**TrueText** - トグルが有効な場合に表示されるテキストです。
 
 **ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。
 
@@ -88,14 +104,13 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="example"></a>例
 1. トグルを追加し、名前を **MemberDiscount** にします。
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。
    <br>**If(MemberDiscount.Value = true, "Price: $75", "Price: $100")**
-   
+
     **[If](../functions/function-if.md)** 関数または[その他の関数](../formula-reference.md)の詳細については各関連記事を参照してください。
 3. F5 キーを押し、**MemberDiscount** の値を変更します。
-   
+
     **MemberDiscount** がオンかオフかに応じて、ラベルに異なる価格が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
-

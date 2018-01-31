@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e3eac64ddfc7c4e029c970367b81331722985861
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 40cc6703b2f3467365b6fab36e390fa9ff0f1659
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps の Average、Max、Min、StdevP、Sum、および VarP 関数
 一連の数値をまとめる集計関数。
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/07/2017
 * 個々の引数。 たとえば、**Sum( 1, 2, 3 )** は 6 を返します。
 * [テーブル](../working-with-tables.md)とそのテーブルを操作する数式。  各[レコード](../working-with-tables.md#records)について、数式の値の集計が計算されます。  
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 これらの関数は数値のみに対して動作します。 文字列やレコードなど、他の種類の値は無視されます。 文字列を数値に変換するには、**[Value](function-value.md)** 関数を使用します。
 

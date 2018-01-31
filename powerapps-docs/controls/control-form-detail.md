@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 4121593bb34fe135262d925ae6c9f381d0fcd9f7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e8234526c73f6d55494334a386e8dbd7442c8d62
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール
 データ ソースのレコードを表示、編集、および作成します。
@@ -60,7 +60,8 @@ ms.lasthandoff: 11/07/2017
 
 データ ソースによっては、2 人のユーザーが同じレコードを同時に更新しようとしたときにそのことを検出できます。この場合、**ErrorKind** は **ErrorKind.Conflict** に設定され、対応策は、もう一方のユーザーの変更でデータ ソースを更新し、このユーザーによって行われた変更を再適用することです。
 
-**ヒント:** 進行中の変更をユーザーが破棄できるように **[Cancel (キャンセル)]** ボタンをフォーム上に提供する場合、**[ResetForm](../functions/function-form.md)** 関数をボタンの **[OnSelect](properties-core.md)** プロパティに追加します (画面を変更するための **[Navigate](../functions/function-navigate.md)** 関数もこのプロパティに含まれている場合でも)。 そのようにしないと、フォームはそのユーザーによる変更を保持します。
+> [!TIP]
+> 進行中の変更をユーザーが破棄できるようにフォーム上に **[キャンセル]** ボタンを表示する場合、このボタンの **[OnSelect](properties-core.md)** プロパティに **[ResetForm](../functions/function-form.md)** 関数を追加します (このプロパティに、画面を変更するための **[Navigate](../functions/function-navigate.md)** 関数も含まれている場合でも)。 そのようにしないと、フォームはそのユーザーによる変更を保持します。
 
 ### <a name="layout"></a>レイアウト
 既定では、カードは電話アプリでは 1 列に配置され、タブレット アプリでは 3 列に配置されます。 フォームを構成するときに、フォームの列の数と、カードを列にスナップするかどうかを指定できます。 これらの設定は、カードの **X**、**Y**、および **Width** プロパティを設定するときにだけ使用されるため、プロパティとして公開されません。

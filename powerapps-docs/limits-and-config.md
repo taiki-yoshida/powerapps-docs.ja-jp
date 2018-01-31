@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2017
 ms.author: sharik
-ms.openlocfilehash: 337f3fc00fe52e0008190e2144f21f40d1632f52
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4012439f121a212f6117aa18c1d906cab893248f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-powerapps"></a>Microsoft PowerApps の制限と構成
 このトピックには、PowerApps の現在の制限と構成についての詳細情報が含まれています。
@@ -32,7 +32,8 @@ ms.lasthandoff: 11/07/2017
 | タイムアウト |180 秒 |
 | 再試行回数 |4 |
 
-**注**: 再試行回数が異なる場合があります。 エラーの状況よっては、再試行は無意味です。
+> [!NOTE]
+> 再試行回数が異なる場合があります。 エラーの状況よっては、再試行は無意味です。
 
 ## <a name="ip-addresses"></a>IP アドレス
 PowerApps からの要求では、アプリが存在する[環境](environments-overview.md)のリージョンによって、使用する IP アドレスが異なります。 PowerApps のシナリオで利用できる完全修飾ドメイン名は公開されていません。

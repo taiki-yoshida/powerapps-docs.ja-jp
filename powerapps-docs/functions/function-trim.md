@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 9f829e8c98b03bc47bc36f26273267265819f4ae
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b40f44f8bdcb319191221d0f2cee39e15d5b3b49
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps の Trim および TrimEnds 関数
 テキストの文字列から余分なスペースを削除します。
@@ -60,5 +60,6 @@ ms.lasthandoff: 11/07/2017
 | **Trim(&nbsp;Spaces&nbsp;)** |**Spaces** コレクションの各文字列の先頭と末尾にあるすべてのスペースと各文字列内の余分なスペースを削除します。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |**Spaces** コレクションの各文字列の先頭と末尾からすべてのスペースを削除します。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
-**注**: **[ファイル]** メニューの **[コレクション]** をクリックまたはタップしてコレクションを表示した場合、余分なスペースは表示されません。 文字列の長さを確認するには、**[Len](function-len.md)** 関数を使用してください。
+> [!NOTE]
+> **[ファイル]** メニューの **[コレクション]** をクリックまたはタップしてコレクションを表示した場合、余分なスペースは表示されません。 文字列の長さを確認するには、**[Len](function-len.md)** 関数を使用してください。
 

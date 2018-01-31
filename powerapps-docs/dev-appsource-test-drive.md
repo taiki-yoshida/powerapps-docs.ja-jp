@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 39cf496539a1db041a0ba025bd46a9f858200aee
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ff2c45b1d15bdb6d937756b5e7ed00e5c9e9fdfa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>AppSource でのお客様によるアプリ体験版の使用
 PowerApps でのアプリの作成に関心がありますか。 お客様と共有したいアプリがありますか。 現在、アプリをお客様と共有し、ビジネスの潜在顧客を生成する方法として、[AppSource.com](https://appsource.microsoft.com) で PowerApps 体験版ソリューションを用意しています。
@@ -93,7 +93,8 @@ UpdateIf(SiteInspectorCollect,ID=record.ID,
 RemoveIf(SiteInspectorCollect,ID=record.ID)
 ```
 
-**注**: コレクションにデータが保持されるのはアプリが実行している間だけです。アプリが終了すると、すべての変更は破棄されます。
+> [!NOTE]
+> コレクションにデータが保持されるのはアプリが実行している間だけです。アプリが終了すると、すべての変更は破棄されます。
 
 要約すると、埋め込みデータを使用するアプリのアプリのバージョンを作成できます。これを使用して、外部データに接続するアプリのエクスペリエンスをシミュレーションします。 データを埋め込んだら、そのアプリを体験版ソリューションとして AppSource.com に公開する準備が整いました。
 

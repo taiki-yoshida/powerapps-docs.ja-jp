@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 064ff0778cbc02a81fb64214dbed64f32c04aa15
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4e5c34c557e165625c23e78f86e5cbb1c0faacba
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>完成した SharePoint Online 統合シナリオ全体の説明
-**注:** この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> [!NOTE]
+> この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このチュートリアル シリーズでは、アプリとフローの構築からレポートの作成と SharePoint への埋め込みに至るまで、幅広い内容を説明しました。 多くのことを学び、これらのテクノロジの統合の仕組みをしっかりと理解し、お客様自身のニーズに応じてアプリやフロー、レポートを SharePoint に統合できるようになっていただきたいと思います。 このチュートリアル シリーズを終える前にシナリオ全体をおさらいして、すべての部分がどのように連携しているかを見ていきましょう。
 
@@ -37,11 +38,17 @@ ms.lasthandoff: 11/07/2017
 4. フォームに次の値を記入します。
    
    * **[Title]** = "設計チームのモバイル デバイス"
+
    * **[Approved]** = "保留中"
+
    * **[Description]** = "設計チームは今後 Contoso 提供のデバイスを使用する"
+
    * **[EstimatedDays]** = "30"
+
    * **[ProjectType]** = "新規ハードウェア"
+
    * **[RequestDate]** = "03/01/2017"
+
    * **[Requestor]** = "Emily Braun"
      
      ![Project Requests 編集フォーム](./media/sharepoint-scenario-summary/09-01-01-app-new.png)
@@ -100,8 +107,11 @@ ms.lasthandoff: 11/07/2017
 4. **[Update Details]** 画面で、次の値を設定します。
    
    * **[Status]** フィールド = "未着手"
+
    * **[ProjectedStartDate]** フィールド = "3/6/2017"
+
    * **[ProjectedEndDate]** フィールド = "3/24/2017"
+
    * **[ProjectedDays]** フィールド = "15"
      
      ![プロジェクトの詳細の更新](./media/sharepoint-scenario-summary/09-04-03-update.png)

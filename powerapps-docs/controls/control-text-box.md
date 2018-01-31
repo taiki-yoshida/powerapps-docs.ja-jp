@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c6da4216a4ce2c95f20db322a3ec529299410deb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4fd0b50796bc8c1ba9574d1c401042e3d10c863c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
@@ -95,7 +95,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -118,13 +118,14 @@ ms.lasthandoff: 11/07/2017
 ### <a name="show-a-literal-string"></a>リテラル文字列を表示する
 * ラベルを追加し、その **[Text](properties-core.md)** プロパティを **"Hello, world"** (二重引用符を含む) に設定します。
   
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
 ### <a name="show-the-result-of-a-formula"></a>数式の結果を表示する
 * ラベルを追加し、**[Text](properties-core.md)** プロパティを次のような数式に設定します。<br>
   **Today()**
   
-    **注:** 数式を指定する場合、その数式の引数がリテラル文字列でない限り、引用符は使用しないでください。 引数にリテラル文字列を使用する場合は、数式ではなく、引数を二重引用符で囲みます。
+    > [!NOTE]
+> 数式を指定する場合、その数式の引数がリテラル文字列でない限り、引用符は使用しないでください。 引数にリテラル文字列を使用する場合は、数式ではなく、引数を二重引用符で囲みます。
   
     **[Today](../functions/function-now-today-istoday.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 

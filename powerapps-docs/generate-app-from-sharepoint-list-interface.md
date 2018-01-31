@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/21/2017
 ms.author: sharik
-ms.openlocfilehash: 62f46339e2136494225bf218d372f539c389e1ad
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8ac8fb34f9cdeb0c9e0ce6172938cef33ecccbc5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>PowerApps を使用して、SharePoint 内からアプリを生成する
-[!VIDEO nb:cid:UUID:639d7eaf-bae5-447c-a34b-ec539a01a15c]
+
 
 
 PowerApps で、ユーザーがカスタム SharePoint Online リスト内のアイテムを管理できるアプリを自動的に生成します。 アプリには 3 つの画面があり、ユーザーは次のことができます。
@@ -33,7 +33,8 @@ PowerApps で、ユーザーがカスタム SharePoint Online リスト内のア
 
 SharePoint Online コマンド バーからカスタム リストのアプリを作成する場合、アプリはそのリストのビューとして表示されます。 Web ブラウザーだけでなく、Windows Phone、iOS、または Android デバイスでもアプリを実行できます。
 
-**重要**: PowerApps は全種類の SharePoint データをサポートしているわけではありません。 詳細については、「[Known issues (既知の問題)](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
+> [!IMPORTANT]
+> PowerApps は全種類の SharePoint データをサポートするわけではありません。 詳細については、「[Known issues (既知の問題)](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
 
 ## <a name="generate-an-app"></a>アプリを生成する
 1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]**、**[アプリの作成]** の順にクリックまたはタップします。
@@ -48,7 +49,8 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
     ![](./media/generate-app-from-sharepoint-list-interface/powerapp-studio-for-web.png)  
 3. SharePoint リストのブラウザー タブをクリックまたはタップしてから、**[開く]** をクリックまたはタップします。
    
-    **注**: ブラウザー ウィンドウを (F5 キーを押すなどして) 更新しないとアプリが開かない場合もあります。
+    > [!NOTE]
+> ブラウザー ウィンドウを (F5 キーを押すなどして) 更新しないとアプリが開かない場合もあります。
    
     ![](./media/generate-app-from-sharepoint-list-interface/open-app-in-browser.png)
    

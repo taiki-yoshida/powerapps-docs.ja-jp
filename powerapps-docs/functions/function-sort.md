@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 780c72323e4b0d406d89ba35201c78456bb0dbca
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 72bbbc882250d25ddabc8086e81bfc7779e26b60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
 [テーブル](../working-with-tables.md)を並べ替えます。
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/07/2017
 
 数式は、それぞれのテーブルの[レコード](../working-with-tables.md#records)に対して評価され、結果はテーブルの並べ替えに使用されます。  数式の結果は、数値、文字列、またはブール値になる必要があります。結果がテーブルまたはレコードになることはできません。
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 まず 1 つの列で並べ替えてから、別の列で並べ替えるには、**Sort** 式を別の Sort 式に埋め込みます。 たとえば、次の数式を使用して最初に **Contacts** テーブルを **LastName** 列で並べ替えてから、**FirstName** 列で並べ替えることができます: **Sort( Sort( Contacts, LastName ), FirstName )**
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/07/2017
 
 文字列または数値と同じように、[テーブル](../working-with-tables.md)は PowerApps 内の値です。  関数に渡して、関数から返すことができます。  **Sort** と **SortByColumn** はテーブルを変更しません。代わりに、テーブルを引数として受け取り、並べ替えた新しいテーブルを返します。  詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>構文
 **Sort**( *Table*, *Formula* [, *SortOrder* ] )
@@ -58,7 +58,8 @@ ms.lasthandoff: 11/07/2017
 * *ColumnName(s)* - 必須。 文字列として、並べ替える列名。
 * *SortOrder(s)* - 省略可能。  **SortOrder.Ascending** または **SortOrder.Descending**。  **SortOrder.Ascending** が既定です。  複数の *ColumnNames* が指定されている場合は、最後の列以外に、*SortOrder* を含める必要があります。
   
-    **注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+    > [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -66,7 +67,8 @@ ms.lasthandoff: 11/07/2017
 * *ColumnName(s)* - 必須。 文字列として、並べ替える列名。
 * *SortOrderTable* - 必須。  並べ替えの対象となる、値を含んだ単一列テーブル。
   
-    **注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+    > [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 以下の例では、次のテーブルにデータが含まれている **IceCream** [データ ソース](../working-with-data-sources.md)を使用します。

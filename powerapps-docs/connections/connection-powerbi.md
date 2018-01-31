@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/12/2016
 ms.author: sirsu
-ms.openlocfilehash: 59b19a81a7c3bfca059adb00e2b3140c122f53eb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 62dbb11d167155d7f0c47b889674a61b1b1047f3
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -28,7 +28,7 @@ Power BI は、データを分析し、洞察を共有するビジネス分析�
 
 このトピックでは、アプリで Power BI の接続を使用する方法を説明し、使用可能な関数の一覧を表示します。
 
-## <a name="what-you-need-to-get-started"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 * [powerapps.com](https://powerapps.com) へのアクセス権があること、または [PowerApps](http://aka.ms/powerappsinstall) をインストール済みであること
 * Power BI の [接続](https://powerapps.microsoft.com/tutorials/add-manage-connections/) を追加していること
 * [テンプレート](https://powerapps.microsoft.com/tutorials/get-started-test-drive/)、[データ](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/)、または[ゼロ](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/)からアプリを作成していること
@@ -78,7 +78,8 @@ Power BI サービスで設定したアラートを一覧表示します。
 ## <a name="checkalertstatus"></a>CheckAlertStatus
 アラートの状態を確認します。
 
-**注:** このエンドポイントへの要求は、あまり頻繁に呼び出されるとアラートごとに調整されます。
+> [!NOTE]
+> このエンドポイントへの要求は、あまり頻繁に呼び出されるとアラートごとに調整されます。
 
 #### <a name="input-properties"></a>入力プロパティ
 | プロパティ名 | データ型 | 必須 | 説明 |

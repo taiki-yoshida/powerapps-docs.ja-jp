@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: b9d93fe540d32bc547cec3254b5aa3968b460660
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c5972d35f98d15f1cad45e74763320011ab98c6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps の Blank、Coalesce、IsBlank、および IsEmpty 関数
 値が空白であるかどうか、または、[テーブル](../working-with-tables.md)に[レコード](../working-with-tables.md#records)が含まれていないかどうかをテストし、*空白*の値を作成する方法を提供します。
@@ -27,7 +27,8 @@ ms.lasthandoff: 11/07/2017
 ## <a name="overview"></a>概要
 "*空白*" は、"値がない" または "不明な値" の場合のプレースホルダーです。 ユーザーが**[テキスト入力](../controls/control-text-input.md)**コントロールに文字を入力しなかった場合、テキスト入力コントロールは "*空白*" になります。 ユーザーが文字を入力するとすぐに、そのコントロールは "*空白*" ではなくなります。  一部のデータ ソースは、NULL 値を格納し、返します。これは、PowerApps では "*空白*" として表されます。
 
-**注**: 現時点で、"*空白*" の値は、ローカル コレクションに対してのみサポートされています。 多くのデータ ソースで "*空白*" (NULL) 値がサポートされていることがわかっており、マイクロソフトでは、この制限の解消に取り組んでいます。
+> [!NOTE]
+> 現時点で、"*空白*" の値の保存は、ローカル コレクションでのみサポートされています。 多くのデータ ソースで "*空白*" (NULL) 値がサポートされていることがわかっており、マイクロソフトでは、この制限の解消に取り組んでいます。
 
 プロパティまたは計算された値はどれも、"*空白*" になる可能性があります。  たとえばブール値は通常、**true** と **false** のいずれかの値になります。  しかし、これら 2 つの値のほかに、"*空白*" になることがあります。  これは特に Microsoft Excel に似ています。Excel では、最初は空白であるワークシートのセルに **true** または **false** の値を設定できます。 このセルの内容はいつでも削除でき、削除したらセルの内容は "*空白*" の状態に戻ります。
 
@@ -70,7 +71,8 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="examples"></a>例
 ### <a name="blank"></a>空白
-注: 現時点で、次の例はローカル コレクションに対してのみ機能します。  多くのデータ ソースで "*空白*" (NULL) 値がサポートされていることがわかっており、マイクロソフトでは、この制限の解消に取り組んでいます。
+> [!NOTE]
+> 現時点で、次の例はローカル コレクションでのみ機能します。  多くのデータ ソースで "*空白*" (NULL) 値がサポートされていることがわかっており、マイクロソフトでは、この制限の解消に取り組んでいます。
 
 1. アプリを最初から作成し、**ボタン** コントロールを追加します。
 2. ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。

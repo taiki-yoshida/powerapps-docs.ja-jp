@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 99fc1a29604c15cc473e0d4442a32a8b5d915f48
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3f4cf53e8db612004619017304f222d3863430b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-formulas"></a>数式の使用を開始
 (Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、アプリを構成します。
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/07/2017
 
 このトピックでは、数式の操作の概要のみを示します。 詳しい情報のほか、使用できる関数、演算子、その他の構成要素の完全な一覧については、[数式のリファレンス](formula-reference.md)を参照してください。
 
-**前提条件**
+## <a name="prerequisites"></a>前提条件
 
 * PowerApps に[サインアップ](signup-for-powerapps.md)し、[インストール](http://aka.ms/powerappsinstall)して開きます。その後、サインアップに使用したのと同じ資格情報を入力してサインインします。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
@@ -71,7 +71,8 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
    
     Excel では、**42** などの数値を表示するには、その数値をセルに入力したり、その数値が解となる数式 (**=SUM(30,12)** など) を入力したりします。 PowerApps では、ラベルなどのコントロールの **Text** プロパティに **42** または **Sum(30,12)** を設定することで、同じ結果を得ることができます。 ワークシートまたはアプリのその他の変更に関係なく、セルとラベルにはいつもこの数値が表示されます。
    
-    **注:** PowerApps では、Excel で行うように数式の前に等号またはプラス記号を使用しません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
+    > [!NOTE]
+> PowerApps では、Excel のように数式の前に等号またはプラス記号を使用することはありません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
 5. ラベルの **[Text](controls/properties-core.md)** プロパティで、**"Hello World"** を **Sum(1,2,3)** に置き換えます。
    
     ![「Sum(1,2,3」のように部分関数を終わりかっこなしで入力すると、エラーが発生します。](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +99,8 @@ Excel では、たとえば負の値を赤色で表示するなど、条件付�
 
 1. ラベルの **[Color](controls/properties-color-border.md)** プロパティに次の数式を設定します。<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
-    **注:** 数式では、コントロールのプロパティを指定する際に、コントロールの名前、ピリオド、プロパティの名前を順番に入力します。 たとえば、**TextBox1** の **[Text](controls/properties-core.md)** プロパティは、「**TextBox1.Text**」と入力して指定します。
+    > [!NOTE]
+> 数式では、コントロールのプロパティを指定する際に、コントロールの名前、ピリオド、プロパティの名前を順番に入力します。 たとえば、**TextBox1** の **[Text](controls/properties-core.md)** プロパティは、「**TextBox1.Text**」と入力して指定します。
    
     ![値に基づいてラベルの色の変更を再計算する PowerApps の図](./media/working-with-formulas/recalc-color1.png)
 2. **TextInput1** と **TextInput2** に、合計すると負の数値になる 2 つの数値を指定します。
@@ -123,7 +125,7 @@ Excel では、たとえば負の値を赤色で表示するなど、条件付�
     ![各スライダーの最大値の変更](./media/working-with-formulas/three-sliders-max.png)
 4. コントロールから離れた場所をクリックして画面を選択し、画面の **[Fill](controls/properties-color-border.md)** プロパティに次の数式を設定します。<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
    
-    既に説明したとおり、コントロール プロパティへのアクセスには **.** 演算子を使用します。  **Slider1.Value** はスライダーの **[Value](controls/properties-core.md)** プロパティを参照し、ユーザーが **Min** と **Max** の間の値で設定したスライダーの位置が反映されます。 この数式を入力すると、数式に含まれている各コントロールには画面と数式バーで同じ色が付きます。
+    既に説明したとおり、コントロール プロパティへのアクセスには **.** 。  **Slider1.Value** はスライダーの **[Value](controls/properties-core.md)** プロパティを参照し、ユーザーが **Min** と **Max** の間の値で設定したスライダーの位置が反映されます。 この数式を入力すると、数式に含まれている各コントロールには画面と数式バーで同じ色が付きます。
    
     ![画面の背景塗りつぶし色に関する数式の変更 (未完了)](./media/working-with-formulas/three-sliders-partial-rgba.png)
    

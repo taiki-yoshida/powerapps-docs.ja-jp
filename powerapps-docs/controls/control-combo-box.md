@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 7220771d9798e6bb5481bbc86c430a357aeab7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -29,7 +29,10 @@ ms.lasthandoff: 11/07/2017
 
 単一選択モードまたは複数選択モードは SelectMultiple プロパティを介して構成されます。
 
-選択する項目を検索するとき、データ ペインで、レイアウトの設定を変更することにより、項目ごとに、1 つのデータ値、2 つの値、または画像および 2 つの値 (Person) の表示を選択できます。
+選択する項目を検索するとき、[データ] ウィンドウの [レイアウト] 設定を変更することで、項目ごとに、1 つのデータ値、2 つの値、または画像および 2 つの値 (Person) の表示を選択できます。
+
+## <a name="people-picker"></a>メンバーの選択
+**コンボ ボックス**をメンバーの選択に使用するには、[データ] ウィンドウの [レイアウト] 設定で **Person** テンプレートを選択し、メンバーの下に表示される関連データのプロパティを構成します。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[項目](properties-core.md)** – 選択を行う元となるデータのソース。
@@ -78,8 +81,7 @@ ms.lasthandoff: 11/07/2017
 2. プロパティの [オプション] タブで、[データ] をクリックします。  
 3. データ ソース、レイアウトと以下の関連するプロパティを選択します。
 4. [詳細設定] タブで **SelectMultiple** プロパティを設定します。
-   
-    機能**コンボ ボックス**がアプリに表示されます。
-   
-    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
+    機能**コンボ ボックス**がアプリに表示されます。
+
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。

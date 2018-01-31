@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/05/2017
 ms.author: mblythe
-ms.openlocfilehash: 80f56a849dca7488f5b38908a7ec87b3a0916187
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2eac422675fc8741848ab90777824a10ec9e0e1e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="register-and-use-custom-connectors-in-powerapps"></a>PowerApps でのカスタム コネクタの登録と使用
 PowerApps では、従来のアプリケーション コードをまったく使用せずに、完全な機能を備えたアプリを作成できます。 しかし、PowerApps の機能を拡張する必要があり、そのためには Web サービスを使用するのが自然な場合もあります。 アプリはサービスに接続し、操作を実行し、データを取得することができます。 PowerApps で接続したい Web サービスがある場合は、そのサービスをカスタム コネクタとして登録できます。 このプロセスにより、PowerApps は Web API の特性 (必要な認証、サポートする操作、各操作のパラメーターと出力など) を把握できます。
@@ -49,12 +49,12 @@ PowerApps では、従来のアプリケーション コードをまったく使
    * 基本認証
 3. 業界標準の 2 つの方法のいずれかで **API を記述**して、PowerApps が API に接続できるようにします。
    
-   * OpenAPI ファイル (Swagger ファイルとも呼ばれます)
+   * OpenAPI ファイル (Swagger ファイルとも呼ばれます) - 手順 4 で登録プロセスの一環として OpenAPI ファイルを作成することもできます。
    * Postman Collection
-     
-     また、手順 4 で登録プロセスの一環として OpenAPI ファイルを作成することもできます。
 4. PowerApps のウィザードを使用して、**カスタム コネクタを登録**します。ここで API の説明、セキュリティの詳細、その他の情報を指定します。
+
 5. アプリで**カスタム コネクタを使用**します。 アプリで API への接続を作成し、PowerApps でネイティブ関数を呼び出すのと同じように、API で提供されるすべての操作を呼び出します。
+
 6. **カスタム コネクタを共有**します。これは PowerApps で他のデータ接続に対して行うのと同様です。 この手順は省略可能ですが、通常、複数のアプリ作成者の間でカスタム コネクタを共有するときに役立ちます。
 
 ## <a name="describe-your-api"></a>API を記述する
@@ -70,7 +70,8 @@ OpenAPI ファイルと Postman Collection はさまざまな形式を使用し�
 * API 用の OpenAPI ファイルを持っておらず、作成したくない場合は、Postman Collection を使用してもカスタム コネクタを簡単に作成できます。 詳細については、「[Create a Postman Collection](postman-collection.md)」(Postman Collection の作成) をご覧ください。
 * PowerApps は最終的には OpenAPI をバックグラウンドで使用するので、Postman Collection は解析されて OpenAPI 定義ファイルに変換されます。
 
-**注**: ファイルのサイズは 1 MB 未満である必要があります。
+> [!NOTE]
+> ファイルのサイズは 1 MB 未満である必要があります。
 
 ### <a name="getting-started-with-openapi-and-postman"></a>OpenAPI と Postman の概要
 * OpenAPI を初めて使用する場合は、swagger.io サイトの[OpenAPI の概要](http://swagger.io/getting-started/)に関するページをご覧ください。
@@ -82,7 +83,8 @@ OpenAPI ファイルまたは Postman Collection を使用して、PowerApps に
 
 1. [powerapps.com](https://web.powerapps.com) の左側のメニューで、**[接続]** を選択します。 省略記号 (**...**) を選択し、右上隅の **[Manage custom connectors]** (カスタム コネクタの管理) を選択します。
    
-     **ヒント**: モバイル ブラウザーでカスタム コネクタを管理する場所が見つからない場合は、左上隅のメニューの下にある可能性があります。
+     > [!TIP]
+> モバイル ブラウザーでカスタム コネクタを管理する場所が見つからない場合は、左上隅のメニューの下にある可能性があります。
    
     ![カスタム コネクタの作成](./media/register-custom-api/managecustomapi.png)  
 2. **[Create custom connector]** (カスタム コネクタの作成) を選択します。
@@ -91,7 +93,9 @@ OpenAPI ファイルまたは Postman Collection を使用して、PowerApps に
 3. **[全般]** タブで、カスタム コネクタを作成する方法を選択します。
    
    * OpenAPI ファイルをアップロードする
+
    * OpenAPI URL を使用する
+
    * Postman Collection V1 をアップロードする
      
      ![カスタム コネクタの作成方法](./media/register-custom-api/choosehowtocreate.png)
@@ -126,6 +130,7 @@ OpenAPI ファイルまたは Postman Collection を使用して、PowerApps に
    2. **[要求]** セクションで、右上の **[サンプルからのインポート]** を選択します。 右側のフォームに、サンプルの要求を貼り付けます。 通常、サンプルの要求は API のドキュメントで提供されています。そこで **[動詞]**、**[要求 URL]**、**[ヘッダー]**、**[本文]** の各フィールドに入力する情報を入手できます。 例については、[Text Analytics API のドキュメント](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c6)をご覧ください。
       
        ![サンプルからのインポート](./media/register-custom-api/importfromsample.png)
+
    3. **[インポート]** を選択して、要求の定義を完了します。 同様の方法で応答を定義します。
 6. すべての操作を定義したら、**[作成]** を選択してカスタム コネクタを作成します。
 7. カスタム コネクタの作成が完了したら、**[テスト]** タブに移動して、API で定義されている操作をテストします。 接続を選択し、入力パラメーターを指定して操作をテストします。

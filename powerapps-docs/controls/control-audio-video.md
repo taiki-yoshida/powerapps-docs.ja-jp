@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: b3eafd9f37537a083212e9ecbb92c6928ae0f773
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps でのオーディオとビデオのコントロール
 オーディオ ファイル、ビデオ ファイル、または YouTube のビデオを再生するコントロールです。
@@ -90,10 +90,11 @@ ms.lasthandoff: 11/07/2017
 2. 再生するファイルを探してクリックまたはタップし、**[開く]** をクリックまたはタップします。
 3. Esc キーを押して既定のワークスペースに戻り、**オーディオ**または**ビデオ** コントロールを追加して、**Media** プロパティを追加したファイルに設定します。
    
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 4. F5 キーを押し、追加したコントロールの再生ボタンをクリックまたはタップして、クリップを再生します。
    
-    **ヒント:** **ビデオ** コントロールの再生ボタンは、コントロールをポイントすると表示されます。
+    > [!TIP]
+> **ビデオ** コントロールの再生ボタンは、コントロールをポイントすると表示されます。
 5. Esc キーを押して既定のワークスペースに戻ります。
 
 ### <a name="play-a-youtube-video"></a>YouTube のビデオを再生する

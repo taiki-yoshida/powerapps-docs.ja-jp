@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: 0c8aa48d1e8d2b524d287b5a123117c764e22385
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 381fe4021a06b13d6fbdf3887e42616a30053030
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-sources-in-powerapps"></a>PowerApps のデータ ソースについて
 ほとんどの PowerApps アプリでは、**データ ソース**と呼ばれる、クラウド サービスに格納されている外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 アプリは、**接続**を使用してこれらのデータ ソースにアクセスします。
@@ -55,7 +55,8 @@ PowerApps アプリの内部テーブルは、数や文字列が値であるの�
 
 * データ ソースの列名とデータ型は、接続の基になるテーブルと同じになります。
   
-    **注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、PowerPoint ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+    > [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、PowerApps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 * データ ソースは、アプリが読み込まれるときにサービスから自動的に読み込まれます。  **[Refresh](functions/function-refresh.md)** 関数を使用して、強制的にデータを更新できます。
 * ユーザーはアプリを実行するとき、レコードを作成、変更、削除して、その変更をサービスの基になるテーブルにプッシュ転送できます。
   * レコードを作成するには、**[Patch](functions/function-patch.md)** 関数と **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用します。  

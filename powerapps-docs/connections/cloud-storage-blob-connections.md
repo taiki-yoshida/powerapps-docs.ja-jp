@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 379b9773033245ba5e2a88486a7738f51f000e6b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>PowerApps からクラウド ストレージに接続する
 PowerApps には、クラウド ストレージ接続がいくつか用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
@@ -28,7 +28,7 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
 | --- | --- | --- | --- | --- | --- |
 | ![アイコン](./media/cloud-storage-blob-connections/blobicon.png) |![API アイコン][boxicon] |![API アイコン][dropboxicon] |![API アイコン][googledriveicon] |![API アイコン][onedriveicon] |![API アイコン][onedriveforbusinessicon] |
 
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 * データがテーブルとして[書式設定されている Excel ファイル](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664):
   
@@ -53,7 +53,8 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
    
     ![Excel テーブルを選択する](./media/cloud-storage-blob-connections/selecttable.png)
    
-    **注** Excel データはテーブルとして書式設定されている必要があります。
+    > [!NOTE]
+> Excel データはテーブルとして書式設定されている必要があります。
 
 ## <a name="using-the-excel-data-in-your-app"></a>アプリで Excel データを使用する
 1. **[挿入]** タブで **ギャラリー**を選択し、**テキスト付き** ギャラリー コントロールを選択します。
@@ -73,7 +74,8 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
     サンプル出力:  
     ![2 番目と 3 番目のラベル](./media/cloud-storage-blob-connections/secondthirdtextboxes.png)
    
-    <br/>**注:** 実際には、1 番目のボックスはイメージ コントロールです。 Excel テーブルにイメージがない場合、イメージ コントロールを削除し、その場所にラベルを追加できます。 [コントロールの追加および構成](../add-configure-controls.md)に関する記事をご覧ください。
+> [!NOTE]
+> 実際には、1 番目のボックスはイメージ コントロールです。 Excel テーブルにイメージがない場合、イメージ コントロールを削除し、その場所にラベルを追加できます。 [コントロールの追加および構成](../add-configure-controls.md)に関する記事をご覧ください。
 
 「[テーブルとレコードについて](../working-with-tables.md)」に詳しい説明といくつかの例があります。  
 

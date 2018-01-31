@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/04/2017
 ms.author: sharik
-ms.openlocfilehash: 1ffa79a35d93249756316e52876922ce1d850c49
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 114aa01bd745ed501e209e314e75904751aad3f5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="regions-overview-in-powerapps"></a>PowerApps のリージョン概要
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>アプリがデプロイされる場所
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
   
     管理センターでは、**[環境]** タブに既存のすべての環境が一覧表示されます。この一覧には、アプリがデプロイされている**リージョン**が表示されます。
   
-   ![](./media/regions-overview/environment-list.png)
+   ![[環境] タブ](./media/regions-overview/environment-list.png)
 
 ## <a name="what-regions-are-available"></a>利用可能なリージョン
 * 米国
@@ -47,5 +47,6 @@ ms.lasthandoff: 11/07/2017
 
 最適なパフォーマンスを維持するため、ユーザーがヨーロッパにいる場合は、ヨーロッパ リージョン内の環境を使用してください。 ユーザーが米国にいる場合は、米国内の環境を使用してください。
 
-**注**: オンプレミスのデータ ゲートウェイは、インドのリージョンまたはカスタム環境では利用できません。 既定の環境でゲートウェイを作成する必要があります。
+> [!NOTE]
+> オンプレミスのデータ ゲートウェイは、インドのリージョンまたはカスタム環境では利用できません。 既定の環境でゲートウェイを作成する必要があります。
 

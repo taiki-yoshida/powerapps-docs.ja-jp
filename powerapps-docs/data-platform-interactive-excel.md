@@ -14,16 +14,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: 2a72bfa21c8d4cb7eab0a3cb2292a61d5c036696
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d559774c65ee2db99f891e41472f6110e330bfc1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="open-entity-data-in-excel"></a>Excel でエンティティ データを開く
 Microsoft Excel でエンティティ データを開くことで、Microsoft PowerApps Excel アドインを使用して迅速かつ簡単にデータを表示して編集することができます。 PowerApps Excel アドインには Microsoft Excel 2016 が必要です。
 
-**注**: ご利用の Microsoft Azure Active Directory (Azure AD) テナントが、Active Directory フェデレーション サービス (AD FS) を使用するように構成されている場合は、Excel アドインで正常にサインインできるように、2016 年 5 月の更新プログラムが適用されていることを確認してください。
+> [!NOTE]
+> ご利用の Microsoft Azure Active Directory (Azure AD) テナントが、Active Directory フェデレーション サービス (AD FS) を使用するように構成されている場合は、Excel アドインで正常にサインインできるように、2016 年 5 月の更新プログラムが適用されていることを確認してください。
 
 ## <a name="open-entity-data-in-excel"></a>Excel でエンティティ データを開く
 1. [powerapps.com](https://web.powerapps.com) で、**[Common Data Service]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。 すべてのエンティティが表示されます。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 86329003ee2f5e6e4ffbe91714be290eacd04ad7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dfb50597af4012fe6145664fb645439a54686825
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
 クリックまたはタップするとアプリを操作できるコントロールです。
@@ -145,7 +145,8 @@ ms.lasthandoff: 11/07/2017
    
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
-    **注:** 複数の数式はセミコロン "**;**" で区切ります。
+    > [!NOTE]
+> 複数の数式はセミコロン "**;**" で区切ります。
 3. "**Source**" の **[Default](properties-core.md)** プロパティを **ClearInput** に設定します。
 4. **F5** キーを押し、複数の数値を一緒に追加してアプリをテストします。
 
@@ -161,7 +162,8 @@ ms.lasthandoff: 11/07/2017
 #### <a name="change-a-buttons-shape"></a>ボタンの形を変更する
 PowerApps の既定では、角の丸い四角形の**ボタン** コントロールが作成されます。 **ボタン** コントロールの形に基本的な変更を加えることができます。そのためには、**[Height](properties-size-location.md)**、**[Width](properties-size-location.md)**、**[Radius](properties-size-location.md)** の各プロパティを変更します。
 
-**注: [アイコンとシェイプ](control-shapes-icons.md)** には、さまざまなデザインが用意されていて、 **ボタン** コントロールで実行できるのと同じ基本的な機能のいくつかを実行できます。 ただし、 **[アイコンとシェイプ](control-shapes-icons.md)** に **[Text](properties-core.md)** プロパティはありません。
+> [!NOTE]
+> [アイコンとシェイプ](control-shapes-icons.md)には、さまざまなデザインが用意されていて、**ボタン** コントロールで実行できるのと同じ基本的な機能のいくつかを実行できます。 ただし、 **[アイコンとシェイプ](control-shapes-icons.md)** に **[Text](properties-core.md)** プロパティはありません。
 
 1. **ボタン** コントロールを追加し、**[Height](properties-size-location.md)** プロパティと **[Width](properties-size-location.md)** プロパティを **300** に設定して、大きな正方形のボタンを作成します。
 2. **[RadiusTopLeft](properties-size-location.md)**、**[RadiusTopRight](properties-size-location.md)**、**[RadiusBottomLeft](properties-size-location.md)**、**[RadiusBottomRight](properties-size-location.md)** の各プロパティを変更して、四隅の曲率の量を調整します。 異なるいくつかのシェイプの例を次に示します。それぞれ 300 x 300 の正方形のボタンを基にしています。
@@ -177,7 +179,8 @@ PowerApps の既定では、角の丸い四角形の**ボタン** コントロ�
 
 **ボタン** コントロールの色を指定する別の方法として、**[HoverFill](properties-color-border.md)** プロパティを、 **[ColorFade](../functions/function-colors.md)** 関数ではなく **[ColorValue](../functions/function-colors.md)** 関数を含む数式 **ColorValue("Red")** など に変更する方法もあります。
 
-**注:** 色の値は、任意の CSS 色定義とすることができ、名前または 16 進値のどちらでもかまいません。
+> [!NOTE]
+> 色の値には、CSS 色定義を名前か 16 進値のいずれかで指定できます。
 
 * 作成したいずれかのボタンで、**[ColorFade](../functions/function-colors.md)** 関数を **[ColorValue](../functions/function-colors.md)** 関数に置き換え、効果を確認します。
 

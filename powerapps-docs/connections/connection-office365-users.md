@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/07/2016
 ms.author: archanan
-ms.openlocfilehash: c6f4d61728d41df880e595e74e91ff6012bc29aa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ca6a91359f04aa54dfb9db146dc08b098763cc2d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)
@@ -30,9 +30,7 @@ Office 365 Users を使用すると、自分の Office 365 アカウントを使
 
 このトピックでは、Office 365 Users を接続として追加する方法、アプリに Office 365 Users をデータ ソースとして追加する方法、およびギャラリー コントロールでテーブル データを使用する方法について説明します。
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>接続を追加する
 1. [データ接続を追加](../add-data-connection.md)して、**[Office 365 Users]** を選択します。  
@@ -97,7 +95,8 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 
 ラベルに、指定したユーザーまたはそのユーザーの上司に関する入力した情報が表示されます。
 
-**注**: Common Data Service のエンティティに基づくアプリを開発する場合は、電子メール アドレスの代わりに ID でユーザーを指定できます。
+> [!NOTE]
+> Common Data Service のエンティティに基づくアプリを開発する場合は、メール アドレスではなく ID でユーザーを指定できます。
 
 たとえば、[アプリを自動で作成し](../data-platform-create-app.md)、**[ラベル]** コントロールが含まれる画面を追加してから、このコントロールの **Text** プロパティを次の式に設定します。
 <br>**Office365Users.UserProfile(BrowseGallery1.Selected.CreatedByUser).DisplayName**
@@ -116,7 +115,8 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 4. 2 番目のリストで、**[JobTitle]** (役職) を選択します。 3 番目のリストで、**[DisplayName]** (表示名) を選択します。 ギャラリーが更新され、これらの値が表示されます。  
    
-    <br/>**注:** 実際には、1 番目のボックスはイメージ コントロールです。 イメージがない場合はこのイメージ コントロールを削除し、その場所にラベルを追加できます。 [コントロールの追加および構成](../add-configure-controls.md)に関する記事をご覧ください。
+> [!NOTE]
+> 実際には、1 番目のボックスはイメージ コントロールです。 イメージがない場合はこのイメージ コントロールを削除し、その場所にラベルを追加できます。 [コントロールの追加および構成](../add-configure-controls.md)に関する記事をご覧ください。
 
 ### <a name="search-for-users"></a>ユーザーを検索する
 1. **[挿入]** メニューの **[テキスト]** から **[Text input]** (テキスト入力) を追加し、名前を **SearchTerm** に変更します。 検索対象の名前を入力します。 たとえば、姓を入力します。

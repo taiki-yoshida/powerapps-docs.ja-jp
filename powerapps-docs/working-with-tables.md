@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6af28020810394c90c86f87fc40e3cbe9c75a877
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>PowerApps におけるテーブルとレコードについて
 作成したアプリから、Microsoft Excel、SharePoint、SQL Server など、レコード形式やテーブル形式でデータを格納するソースにアクセスして情報を取得することができます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。
@@ -63,7 +63,8 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 
 他のツールでは、列が "フィールド" と呼ばれることもあります。
 
-**注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、PowerPoint ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+> [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、PowerApps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 
 ### <a name="table"></a>テーブル
 テーブルは 1 つ以上のレコードで構成されます。各レコードは複数のフィールドで構成され、フィールドにはレコード全体で一貫したフィールド名が使用されます。
@@ -96,7 +97,8 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
    
     既定では、このギャラリーには **TextualGallerySample** という名前のテーブルから取得したプレースホルダー テキストが表示されます。 ギャラリーの **[Items](controls/properties-core.md)** プロパティは自動的にこのテーブルに設定されます。
    
-    **注:** 一部のコントロールは例示の目的で配置を変更して拡大しています。
+    > [!NOTE]
+> 一部のコントロールは、分かりやすいように配置変更され、拡大されています。
    
     ![](media/working-with-tables/gallery-items.png)
 2. **[Items](controls/properties-core.md)** プロパティにテーブルの名前を設定する代わりに、次の例のように、テーブルの名前を引数として受け取る数式を設定します。<br>
@@ -149,7 +151,9 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 1. ボタンを追加し、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
+
 2. ボタンが選択されていない場合は、ボタンをクリックして選択します。もう一度クリックすると、式が実行されます。
+
 3. **[ファイル]** メニューの **[コレクション]** を選択します。
 
 ![](media/working-with-tables/selected-collection.png)
@@ -159,6 +163,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、**.**  演算子を使用します。
 
 1. Esc キーを押して既定のワークスペースに戻り、ギャラリーの下にラベルを追加します。
+
 2. ラベルの **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **Gallery.Selected.Heading**
    
@@ -232,7 +237,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 ### <a name="disambiguation"></a>曖昧性の除去
 レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前に優先します。  このような状況が発生した場合でも、[**@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
 
-* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を、***テーブル*[@*フィールド名*]** のパターンで使用します。  
+* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を **テーブル*[@*フィールド名*]** のパターンで使用します。  
 * データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@*オブジェクト名*]** のパターンを使用します (テーブルは指定しません)。
 
 演算対象のテーブルが **Filter( *テーブル*, ... )** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。

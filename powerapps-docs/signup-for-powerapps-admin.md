@@ -15,18 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/23/2016
 ms.author: jamesol
-ms.openlocfilehash: 1227d8926f8da61d0d1960a8f1cb8844f74bd01c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d924e9ae22dda3fbe551be1d38f0544b15380004
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>組織の PowerApps の購入
 この記事では、管理者として組織の PowerApps を購入する方法について説明します。 PowerApps は PowerApps Web サイト、Office 365 管理センター、または Microsoft の担当者またはパートナーを通じて直接購入できます。 この記事では、PowerApps プラン 1 またはプラン 2 で利用できる試用版オプションと、組織として PowerApps プラン 1 またはプラン 2 を購入する方法について説明します。 詳細については、「[PowerApps in your organization Q&A (組織における PowerApps の Q&A)](signup-question-and-answer.md)」を参照してください。
 
-> **注**   組織の PowerApps を購入するには、既にテナントの Office 365 のグローバルまたは課金管理者となっているか、またはテナントを作成する必要があります。
-> 
-> 
+> [!NOTE]
+>   組織の PowerApps を購入するには、テナントの Office 365 グローバル管理者または課金管理者であるか、またはテナントを作成する必要があります。
 
 ## <a name="choosing-the-right-plan"></a>適切なプランの選択
 組織用に選択できるライセンスの詳細については、[PowerApps のライセンスの概要](pricing-billing-skus.md)に関するページを参照してください。
@@ -35,48 +34,59 @@ ms.lasthandoff: 11/07/2017
 組織の PowerApps サブスクリプションを [powerapps.microsoft.com][4] から購入し、PowerApps ライセンスをユーザーに割り当てることができます。 詳細については、[こちら][5]を参照してください。
 
 1. [powerapps.microsoft.com][4] を開き、**[価格]** を選択します。
+
 2. 必要なプランの **[今すぐ購入]** を選択します。
-   
+
     ![](./media/signup-for-powerapps-admin/buy-now.png)
+
 3. 購入するための情報を入力し、[[Office 365 管理センター]][6] に移動して、PowerApps ライセンスをユーザーに割り当てます。
 
 ## <a name="get-powerapps-through-office-365"></a>Office 365 を介した PowerApps の入手
 組織の PowerApps サブスクリプションを [[Office 365 管理センター]][6] から購入し、PowerApps ライセンスをユーザーに割り当てることができます。 詳細については、[こちら][5]を参照してください。
 
-> **注** PowerApps は 2016 年 11 月の後半以降、既存および新規の Office 365 サブスクリプションに追加されます。
-> 
+> [!NOTE]
+> PowerApps は 2016 年 11 月、既存および新規の Office 365 サブスクリプションに追加されます。
+>
 > * この変更が実施される前に Office 365 サブスクリプションで PowerApps にサインインすると、PowerApps プラン 2 の無料試用版にサインアップするように求められます。
 > * ご使用の Office 365 サブスクリプションが更新される前に PowerApps を使ってみたい場合は、この試用版にサインアップしてください。  
 > * ただし、90 日の試用期間を過ぎると、Office 365 サブスクリプションでは、試用版のライセンスに含まれる PowerApps の機能の一部を使用できない場合があることにご注意ください。  Office 365 サブスクリプションに含まれる機能については、[PowerApps の価格][2]に関するページを参照してください。
-> 
-> 
+
 
 ### <a name="purchase-a-subscription-trial"></a>サブスクリプションの試用版の購入
 1. [[Office 365 管理センター]][6] を参照します。
+
 2. 左のナビゲーション ウィンドウで、**[課金] -> [サブスクリプション]** をクリックします。
+
 3. 右側にある **[+ サブスクリプションの追加]** を選択します。
+
 4. **[その他のプラン]** で、必要なプランの省略記号 (...) にマウスを合わせて、**[無料試用版の開始]** を選択します。
-   
+
     ![](./media/signup-for-powerapps-admin/admin-purchase-trial.png)
+
 5. 確認画面で **[今すぐ試す]** を選択します。
 
-**[課金] -> [サブスクリプション]** で、**[Microsoft PowerApps Plan 1 Trial (Microsoft PowerApps プラン 1 の試用版)]** を確認するか、100 ライセンスを利用できる **[Microsoft PowerApps Plan 2 Trial (Microsoft PowerApps プラン 2 の試用版)]** を一覧表示させます。 90 日間無料試用版を用意しています。
+    **[課金] -> [サブスクリプション]** で、**[Microsoft PowerApps Plan 1 Trial (Microsoft PowerApps プラン 1 の試用版)]** を確認するか、100 ライセンスを利用できる **[Microsoft PowerApps Plan 2 Trial (Microsoft PowerApps プラン 2 の試用版)]** を一覧表示させます。 90 日間無料試用版を用意しています。
 
 ### <a name="purchase-a-subscription"></a>サブスクリプションの購入
 1. [[Office 365 管理センター]][6] を参照します。
+
 2. 左のナビゲーション ウィンドウで、**[課金] -> [サブスクリプション]** をクリックします。
+
 3. 右側にある **[+ サブスクリプションの追加]** を選択します。
+
 4. **[その他のプラン]** で、必要なプランの省略記号 (...) にマウスを合わせて、**[今すぐ購入]** を選択します。
-   
+
     ![](./media/signup-for-powerapps-admin/admin-purchase-paid.png)
+
 5. 追加するライセンスの数を入力し、**[今すぐチェックアウト]** または **[カートに追加]** を選択します。
-   
-   > **注** 必要に応じて、後で追加できます。
-   > 
-   > 
+
+   > [!NOTE]
+> 必要に応じて、後で追加できます。
+   >
+
 6. チェックアウト フローで必要な情報を入力します。
 
-**[課金] -> [サブスクリプション]** で、**[Microsoft PowerApps Plan 1 (Microsoft PowerApps プラン 1)]** を確認するか、**[Microsoft PowerApps Plan 2 (Microsoft PowerApps プラン 2)]** を一覧表示させます。 ライセンスをさらに追加するかを後で決定する場合は、**[サブスクリプションの追加]** に戻り、**[Change license quantity (ライセンス数の変更)]** を選択します。
+    **[課金] -> [サブスクリプション]** で、**[Microsoft PowerApps Plan 1 (Microsoft PowerApps プラン 1)]** を確認するか、**[Microsoft PowerApps Plan 2 (Microsoft PowerApps プラン 2)]** を一覧表示させます。 ライセンスをさらに追加するかを後で決定する場合は、**[サブスクリプションの追加]** に戻り、**[Change license quantity (ライセンス数の変更)]** を選択します。
 
 ## <a name="add-ons"></a>アドオン
 これらはまもなく公開予定ですが、まだサポートされていません。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ada7fed1ac9fabb9a89f79a876fcce68b4415d30
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 687b66a50e168559f670d07f4e6c7dd7214ccde8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
 
-[!INCLUDE [long-items](../../includes/long-items.md)]
+[!INCLUDE [long-items](../includes/long-items.md)]
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -141,7 +141,7 @@ ms.lasthandoff: 11/07/2017
    * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
    * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
-     **[If](../functions/function-if.md)** 関数または[その他の関数](../formula-reference.md)の詳細については各関連記事を参照してください。
+     **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。
    
     選択に基づいて、適切な**[ドロップ ダウン](control-drop-down.md)** コントロールが表示されます。

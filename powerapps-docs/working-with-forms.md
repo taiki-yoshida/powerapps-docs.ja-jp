@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: f9a4a274146373acd22fd4fdcebf9a83b252958c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d9664b490970f7eada757b83d6c9934753af3ad5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォームについて
 ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールを追加します。
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/07/2017
 
 このトピックで説明するように、これらのコントロールを数式と組み合わせて、全体的なユーザー エクスペリエンスを作成します。
 
-**前提条件**
+## <a name="prerequisites"></a>前提条件
 
 * PowerApps に[サインアップ](signup-for-powerapps.md)し、[インストール](http://aka.ms/powerappsinstall)して開きます。その後、サインアップに使用したのと同じ資格情報を入力してサインインします。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
@@ -59,7 +59,8 @@ PowerApps では、指定したデータ ソースに基づいて自動的にア
 
 データ ソースのレコードをギャラリーに表示するように、ギャラリーの **[Items](controls/properties-core.md)** プロパティを設定します。 たとえば、このプロパティを **Assets** に設定すると、その名前のデータ ソースのレコードが表示されます。
 
-**注**: 生成されたアプリでは、ユーザーがレコードの並べ替えと検索を実行できるように、**[Items](controls/properties-core.md)** が既定でかなり複雑な数式に設定されています。 この数式の作成方法についてはこのトピックの後半で説明しますが、この時点では単純なバージョンで十分です。
+> [!NOTE]
+> 生成されたアプリでは、ユーザーがレコードの並べ替えと検索を実行できるように、**[Items](controls/properties-core.md)** が既定でかなり複雑な数式に設定されています。 この数式の作成方法についてはこのトピックの後半で説明しますが、この時点では単純なバージョンで十分です。
 
 ユーザーは、表示または編集するレコードを探す代わりに、ギャラリーの上部にある "+" 記号を選択してレコードを作成することができます。 この効果を作成するには、**[イメージ](controls/control-image.md)** コントロールを追加し、その中に "+" 記号を表示して、その **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 <br>**NewForm( EditForm1 ); Navigate( EditScreen1, None )**
@@ -148,7 +149,8 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 ## <a name="identify-test-data"></a>テスト データの識別
 このトピックを最大限に活用するために、実験に使用できるデータ ソースから見ていきましょう。 このデータ ソースには、心配なしに読み取りおよび更新できるテスト データが含まれている必要があります。
 
-**注:** データ ソースとしてスペースを使用する列の名前を含む、SharePoint リストまたは Excel テーブルを使用する場合は、PowerApps ではスペースを **"\_x0020\_"** に置き換えます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+> [!NOTE]
+> データ ソースに列名がスペースの列を含む SharePoint リストまたは Excel テーブルを使用する場合、PowerApps はスペースを **"\_x0020\_"** に置き換えます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 
 このトピックの残りの部分に忠実に従うために、次のデータを含む、"Ice Cream" という名前の SharePoint リストを作成します。
 
@@ -156,7 +158,8 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 
 * スマートフォン向けに、アプリをゼロから作成し、[それをデータ ソースに接続](add-data-connection.md)します。
   
-    **注:** タブレット アプリはよく似ていますが、追加の画面スペースを最大限に活用するために別の[画面レイアウト](#screen-design)が必要になる場合があります。
+    > [!NOTE]
+> タブレット アプリはどれもよく似ていますが、余分な画面スペースを最大限に活用するために、別の[画面レイアウト](#screen-design)が必要になる場合があります。
   
     このトピックの残りの部分の例は、**Ice Cream** という名前のデータ ソースに基づいています。
 
@@ -201,7 +204,7 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 
 最後に、特定のレコードの詳細が表示されるように、**[表示フォーム](controls/control-form-detail.md)** コントロールを**[ギャラリー](controls/control-gallery.md)** コントロールに接続します。  **[Item](controls/control-form-detail.md)** プロパティの設定が完了すると、すぐにギャラリーの最初のレコードがフォームに表示されます。
 
-1. **[表示フォーム](controls/control-form-detail.md)** コントロールの **[Item](controls/control-form-detail.md)** プロパティを **Gallery1.Selected** に設定します。
+* **[表示フォーム](controls/control-form-detail.md)** コントロールの **[Item](controls/control-form-detail.md)** プロパティを **Gallery1.Selected** に設定します。
    
     選択した項目の詳細がフォームに表示されます。
    
@@ -209,20 +212,23 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 
 成功しました。  次は、ナビゲーションです。これは、ユーザーがギャラリー画面から詳細画面、詳細画面からギャラリー画面を開く方法です。
 
-1. 画面に **[ボタン](controls/control-button.md)** コントロールを追加し、**[Back](functions/function-navigate.md)**と表示されるように **[Text](controls/properties-core.md)** プロパティを設定して、**[OnSelect](controls/properties-core.md)** プロパティを **Back()** に設定します。
+* 画面に **[ボタン](controls/control-button.md)** コントロールを追加し、**[Back](functions/function-navigate.md)**と表示されるように **[Text](controls/properties-core.md)** プロパティを設定して、**[OnSelect](controls/properties-core.md)** プロパティを **Back()** に設定します。
    
     この数式により、ユーザーは、詳細の表示を終了したときにギャラリーに戻ります。
 
-![[Back] ボタンが追加された Ice Cream データ ソースの表示フォーム](./media/working-with-forms/viewform-icecream-back.png)
+    ![[Back] ボタンが追加された Ice Cream データ ソースの表示フォーム](./media/working-with-forms/viewform-icecream-back.png)
 
 ここで、**[ギャラリー](controls/control-gallery.md)** コントロールに戻り、詳細画面にいくつかのナビゲーションを追加します。
 
 1. **[ギャラリー](controls/control-gallery.md)** コントロールをホストしている最初の画面に切り替え、ギャラリーの最初の項目の矢印を選択します。
+
 2. 図形の **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**Navigate( Screen2, None )**
    
     ![[Back] ボタンが追加された Ice Cream データ ソースの表示フォーム](./media/working-with-forms/gallery-icecream-nav-new.png)
+
 3. F5 キーを押し、ギャラリーの矢印を選択して項目の詳細を表示します。
+
 4. **[[Back]](functions/function-navigate.md)** ボタンを選択して製品ギャラリーに戻り、Esc キーを押します。
 
 ## <a name="editing-details"></a>詳細の編集
@@ -302,12 +308,11 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 
 何らかの理由で **[SubmitForm](functions/function-form.md)** が失敗すると、**[編集フォーム](controls/control-form-detail.md)** コントロールの **Error** プロパティには、ユーザーに表示されるエラー メッセージが格納されます。 この情報により、ユーザーは問題を修正して変更を再送信できるようになります。または、更新を取り消すこともできます。
 
-1. 編集および作成画面で、**[ラベル](controls/control-text-box.md)** コントロールを追加し、それを **[Save]** ボタンのすぐ下に移動します。
-   
-    ユーザーがこのコントロールを選択して変更を保存すると、エラーがわかりやすくなります。
+1. 編集および作成画面で、**[ラベル](controls/control-text-box.md)** コントロールを追加し、それを **[Save]** ボタンのすぐ下に移動します。 ユーザーがこのコントロールを選択して変更を保存すると、エラーがわかりやすくなります。
+
 2. **[ラベル](controls/control-text-box.md)** コントロールの **[Text](controls/properties-core.md)** プロパティを **Form1.Error** が表示されるように設定します。
 
-![[Edit] ボタンが追加された表示フォーム](./media/working-with-forms/edit-icecream-error.png)
+    ![[Edit] ボタンが追加された表示フォーム](./media/working-with-forms/edit-icecream-error.png)
 
 PowerApps によってデータから生成されるアプリでは、このコントロールの **[AutoHeight](controls/control-text-box.md)** プロパティが *true* に設定されているため、エラーが発生しなければ領域が使用されません。 **[編集フォーム](controls/control-form-detail.md)** コントロールの **[Height](controls/properties-size-location.md)** プロパティと **[Y](controls/properties-size-location.md)** プロパティも、エラーが発生したときに拡張されるこのコントロールに合わせて動的に調整されます。 詳細については、既存のデータからアプリを生成し、これらのプロパティを調べてください。 エラー用のテキスト ボックス コントロールは、エラーが発生していないときは非常に短くなっています。このコントロールを選択するには、(**[表示]** タブにある) **[詳細]** ビューを開く必要がある場合もあります。
 
@@ -319,9 +324,10 @@ PowerApps によってデータから生成されるアプリでは、このコ�
 データ ソースはユーザーがアプリを開くたびに更新されますが、ユーザーはアプリを閉じなくてもギャラリーのレコードを更新したい場合があります。 **[Refresh]** ボタンを追加し、ユーザーがそのボタンを選択して手動でデータを更新できるようにします。
 
 1. **[ギャラリー](controls/control-gallery.md)** コントロールが配置された画面で、**[ボタン](controls/control-button.md)** コントロールを追加し、**Refresh** と表示されるように **[Text](controls/properties-core.md)** プロパティを設定します。
+
 2. このコントロールの **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。<br> **Refresh( 'Ice Cream' )**
 
-![データ ソースの更新](./media/working-with-forms/browse-icecream-refresh.png)
+    ![データ ソースの更新](./media/working-with-forms/browse-icecream-refresh.png)
 
 ## <a name="search-and-sort-the-gallery"></a>ギャラリーの検索と並べ替え
 PowerApps によってデータから生成されたアプリでは、閲覧画面の上部にある 2 つのコントロールを無視してきました。 ユーザーは、これらのコントロールを使用すると、1 つ以上のレコードの検索、レコードの一覧の並べ替え (昇順または降順)、またはその両方を実行できます。

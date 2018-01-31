@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d9b1251d27fc45fd4ad13fd401d2e13c7390f26c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cd2e2a8c28fb894b1935b29bf80bf65eb631a266
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/07/2017
 **OnStart** – ユーザーがアプリを開くときのアプリの動作です。
 
 * このプロパティで設定した数式は、アプリの最初の画面が表示される前に実行されます。 アプリ開始時にどの画面が最初に表示されるかを変更するには、[**Navigate**](../functions/function-navigate.md) 関数を呼び出します。
-* [**UpdateContext**](../functions/function-updatecontext.md) 関数で[コンテキスト変数](../workding-with-variables.md)を設定することはできません (どの画面もまだ表示されていないため)。 ただし、**Navigate** 関数でコンテキスト変数を渡し、[**Collect**](../functions/function-collect.md) 関数を使用して[コレクション](../workding-with-variables.md)を作成し、そのコレクションに入力することができます。
+* [**UpdateContext**](../functions/function-updatecontext.md) 関数で[コンテキスト変数](../working-with-variables.md)を設定することはできません (どの画面もまだ表示されていないため)。 ただし、**Navigate** 関数でコンテキスト変数を渡し、[**Collect**](../functions/function-clear-collect-clearcollect.md) 関数を使用して[コレクション](../working-with-variables.md)を作成し、そのコレクションに入力することができます。
 * アプリを更新する場合、このプロパティで設定した数式は、アプリが PowerApps Studio に読み込まれるときに実行されます。 このプロパティ変更の影響を確認するには、アプリを保存して閉じ、再読み込みする必要があります。
 * **OnStart** プロパティは、実際には画面ではなくアプリのプロパティです。 編集の便宜を考慮して、このプロパティをアプリの最初の画面のプロパティとして表示し、変更します。 最初の画面を削除したか、画面の順序を変更したために、このプロパティを見つけられなくなることがあります。 その場合は、アプリを保存して閉じ、再読み込みすると、最初の画面のプロパティとして表示されます。
 

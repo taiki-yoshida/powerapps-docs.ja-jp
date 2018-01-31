@@ -14,17 +14,17 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/06/2017
-ms.author: karthikb
-ms.openlocfilehash: a49dcdb3d85339152f026e6d76d21262dc25fbbf
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: 52fa30b95b076e9a37f92499041206a3d99d48a8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>PowerApps でテーブルのレコードを表示、編集、または追加する
 レコード内のすべてのフィールドを表示するには、**[フォームを表示](controls/control-form-detail.md)**コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、**[フォームを編集](controls/control-form-detail.md)**コントロールを追加および構成します。
 
-**前提条件**
+## <a name="prerequisites"></a>前提条件
 
 * PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
 * [この Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードして、チュートリアルのサンプル データを取得します。
@@ -34,68 +34,81 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="add-a-form-and-show-data"></a>フォームを追加し、データを表示する
 1. **[ドロップ ダウン](controls/control-drop-down.md)** コントロールを追加し、**ChooseProduct** という名前を付け、**[Items](controls/properties-core.md)** プロパティを以下の値に設定します。
-   
+
     **FlooringEstimates.Name**
-   
-    **注**: コントロールを追加したり、名前を変更したり、プロパティを設定したりする方法がわからない場合は、[コントロールの追加と構成](add-configure-controls.md)を参照してください。
-   
+
+    > [!NOTE]
+> コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
+
     一覧に、データ ソースから取得した床材製品の名前が表示されます。
+
 2. **フォームの編集**コントロールを追加し、それを **ChooseProduct** の下に移動して、フォームが画面の大部分を占めるようにサイズ変更します。
-   
+
     ![フォームを追加する](./media/add-form/add-a-form.png)
-   
-    **注**: このトピックでは**フォームを編集**コントロールについて説明していますが、同様の原則が**フォームを表示**コントロールにも当てはまります。
+
+    > [!NOTE]
+> このトピックでは**フォームを編集**コントロールについて説明していますが、同様の原則が**フォームを表示**コントロールにも当てはまります。
+
 3. フォームの **[DataSource](controls/control-form-detail.md)** プロパティを **FlooringEstimates** に設定し、**[Item](controls/control-form-detail.md)** プロパティを次の数式に設定します。
-   
+
    **First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))**
-   
+
    この式では、フォームの構成が完了した後、**ChooseProduct** でユーザーが選択したレコードが表示されるように指定しています。
+
 4. **[データ]** ウィンドウで、各フィールドのチェックボックスをクリックまたはタップして表示状態にします。
-   
-    注: **[データ]** ウィンドウが閉じている場合、左側のウィンドウでフォームを選択し、右側のウィンドウで**[データ]** をクリックまたはタップして開いてください。
-   
+
+    > [!NOTE]
+> **[データ]** ウィンドウが閉じている場合、左側のウィンドウでフォームを選択し、右側のウィンドウで **[データ]** をクリックまたはタップして開いてください。
+
     ![フォーム上にフィールドを表示する](./media/add-form/checkbox.png)
+
 5. **[データ]** ウィンドウで、**[名前]** エントリを一覧の先頭にドラッグします。
-   
+
     ![カードを移動する](./media/add-form/drag-field.png)
-   
+
     **フォームを編集**コントロールに変更内容が反映されます。
-   
+
     ![先頭にある名前](./media/add-form/move-card-form.png)
 
 ## <a name="set-the-card-type-for-a-field"></a>フィールドにカードの種類を設定する
 1. フォームを選択したまま、**[データ]** ウィンドウで **[価格]** のカード セレクターをクリックまたはタップします。
-   
+
     ![カード セレクターを選択する](./media/add-form/price-card2.png)
+
 2. 下にスクロールし、**View text** オプションをクリックまたはタップして、フィールドを読み取り専用にします。
-   
+
     ![View text](./media/add-form/view-text.png)
-   
+
     フォームに変更内容が反映されます。
-   
+
     ![読み取り専用番号](./media/add-form/read-only.png)  
 
 ## <a name="edit-form-only-save-changes"></a>(編集フォームのみ) 変更を保存する
 1. 左側のウィンドウで、フォームを選択し、省略記号 (...) をクリックまたはタップします。
-   
-   ![フォームを選択する](./media/add-form/select-form.png)  
+
+   ![フォームを選択する](./media/add-form/select-form.png)
+
 2. **[名前の変更]** をクリックまたはタップして、フォーム **EditForm** の名前を変更します。
+
 3. **[ボタン](controls/control-button.md)** コントロールを追加し、**[Text](controls/properties-core.md)** プロパティを **Save** に設定します。
-   
+
     ![保存ボタンの追加](./media/add-form/save-button.png)  
+
 4. **Save** ボタンの **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
-   
+
    **SubmitForm(EditForm)**
+
 5. 右上隅の再生ボタンを選択するか、F5 キーを押して、プレビュー モードを開きます。
-   
+
     ![プレビュー モードを開始](./media/add-form/open-preview.png)
+
 6. 製品の名前を変更し、先ほど作成した **Save** ボタンをクリックまたはタップします。
-   
+
     **[SubmitForm](functions/function-form.md)** 関数によって、変更内容がフォームの構成に使用したデータ ソースに保存されます。
+
 7. (省略可能) 閉じるアイコンを選択して (または Esc キーを押して) プレビューを終了します。
-   
+
     ![プレビューを終了する](./media/add-form/close-preview.png)
 
 ## <a name="next-steps"></a>次の手順
-* [フォーム](working-with-forms.md)と[数式](working-with-formulas.md)についてさらに理解を深める。
-
+[フォーム](working-with-forms.md)と[数式](working-with-formulas.md)についてさらに理解を深める。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: f06c242d7eed3d7519af829400708362ab1a77d6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f55b66e615b79852b86cc5ea88ee9fbef321f8aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps の Filter、Search、および LookUp 関数
 [テーブル](../working-with-tables.md)内の 1 つ以上の[レコード](../working-with-tables.md#records)を検索します。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 
 どちらの場合も、数式はテーブルの各レコードについて評価されます。  *true* となるレコードが結果に含まれます。  標準的な数式の[演算子](operators.md)に加えて、部分文字列の照合には **[in](operators.md#in-and-exactin-operators)** 演算子と **[exactin](operators.md#in-and-exactin-operators)** 演算子を使用できます。
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 **Search** 関数は、テーブル内でそのいずれかの列にある文字列が含まれているレコードを検索します。 この文字列は、列内のどこに現れてもかまいません。たとえば、"rob" または "bert" を検索すると、"Robert" を含む列で一致が検出されます。 検索では大文字小文字が区別されません。 **Filter** および **LookUp** とは異なり、**Search** 関数は、照合に数式ではなく 1 つの文字列を使用します。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/07/2017
 
 文字列または数値と同じように、[テーブル](../working-with-tables.md)は PowerApps 内の値です。 関数に渡して、関数から返すことができます。  **Filter**、**Search**、**LookUp** は、テーブルを変更しません。 代わりに、引数としてテーブルを受け取り、そこからテーブル、レコード、または 1 つの値を返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>構文
 **Filter**( *Table*, *Formula1* [, *Formula2*, ... ] )
@@ -53,7 +53,8 @@ ms.lasthandoff: 11/07/2017
 * *SearchString* - 必須。 検索対象文字列。 "*空白*" または空の文字列の場合は、すべてのレコードが返されます。
 * *Column(s)* - 必須。 *Table* 内で検索する列の名前。 検索する列には、テキストが含まれている必要があります。 列名は、文字列であり、二重引用符で囲む必要があります。 ただし、列名は静的である必要があるため、数式を使用して計算することはできません。 *SearchString* が、これらの列のいずれかのデータ内で部分一致として見つかった場合は、レコード全体が返されます。
 
-**注:** 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+> [!NOTE]
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
 

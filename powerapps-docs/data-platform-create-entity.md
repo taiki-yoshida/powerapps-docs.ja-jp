@@ -12,28 +12,29 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/06/2016
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 5d927e84144da8e3b011bb4e4a7ac107aedac74f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e02a423f6a951c1c479b3941c6f361383244cafc
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-custom-entity"></a>カスタム エンティティの作成
 組織に固有のデータを格納するカスタム エンティティを作成することができます。 エンティティを参照するアプリを開発すると、そのデータを表示できるようになります。
 
 エンティティを作成する方法は、2 つあります。
 
-* 最初からエンティティを作成する。 既定では、エンティティには [4 つのシステム フィールドと 1 つのレコード タイトル フィールド](data-platform-create-entity.md#system-and-record-title-fields)のみが格納されます。
+* 最初からエンティティを作成する。 既定では、エンティティには [4 つのシステム フィールドと 1 つのレコード タイトル フィールド](data-platform-create-entity.md#system-fields-and-the-record-title-field)のみが格納されます。
 * 別のエンティティのフィールドと設定をコピーして (そのデータはコピーしない)、そのエンティティをもとに新しいエンティティを作成する。
 
 どちらのケースも、Microsoft PowerApps によって自動的にデータが保存され、セキュリティが確保されます。 エンティティの作成後、[そのフィールドを作成または編集](data-platform-manage-fields.md)したり、[エンティティ間のリレーションシップを構築](data-platform-entity-lookup.md)したりすることができます。
 
-**注:** エンティティを作成する前に、[標準エンティティの一覧](data-platform-intro.md#standard-entities)を参照してください。 これらのエンティティには、アカウントや連絡先などの一般的なシナリオが含まれています。 これらのエンティティのいずれかが既に要件を満たしているか、わずかな変更のみで要件を満たす場合は、そのエンティティを使用することで時間を節約することができます。
+> [!NOTE]
+> エンティティを作成する前に、[標準エンティティの一覧](data-platform-intro.md#standard-entities)を参照してください。 これらのエンティティには、アカウントや連絡先などの一般的なシナリオが含まれています。 これらのエンティティのいずれかが既に要件を満たしているか、わずかな変更のみで要件を満たす場合は、そのエンティティを使用することで時間を節約することができます。
 
 ## <a name="create-an-entity"></a>エンティティの作成
-1. 1. [powerapps.com](https://web.powerapps.com) で、**[Common Data Service]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com) で、**[Common Data Service]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 2. データベースを作成していない場合は、作成する必要があります。 詳細については、「[Create a Common Data Service database (Common Data Service サービスの作成)](create-database.md)」を参照してください。
 3. 右上隅にある **[新しいエンティティ]** をクリックまたはタップします。
 4. **[エンティティ名]** フィールドに、エンティティの名前を入力します。 明確でわかりやすいエンティティ名を指定してください。この名前はエンティティの作成後に変更することはできません。 この名前は、アプリを開発するときに式の中でエンティティを参照する際に使用します。
