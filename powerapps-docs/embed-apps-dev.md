@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a5c0e2c69ccf5e7359318794e4c39bb66bba9dac
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>PowerApps を Web サイトなどのサービスに統合する
 多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
@@ -65,16 +65,14 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 3. URI の `[AppID]` 値を置き換えます。 資産の注文アプリの場合、URI は次のようになります。
    
     ```
-    https://web.powerapps.com/webplayer/iframeapp?hideNavBar=true&
-    source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
+    https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
     ```
 
 ## <a name="embed-your-app-in-a-website"></a>Web サイトにアプリを埋め込む
 アプリの埋め込みは、サイトの HTML コード (または、Power BI や SharePoint などの iframe をサポートするその他のサービス) に iframe を追加することと同じほど、簡単にできるようになりました。
 
 ```
-<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?hideNavBar=true&
-source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
+<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
 ```
 
 iframe の幅と高さの値を指定し、`[AppID]` を対象のアプリの ID で置き換えます。
