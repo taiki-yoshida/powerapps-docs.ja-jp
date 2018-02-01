@@ -176,34 +176,16 @@
           href: sharepoint-scenario-summary.md
     - name: Cognitive Services との統合
       href: cognitive-services-api.md
-- name: '開発: 企業開発者'
+- name: PowerApps の開発
   items:
-    - name: 企業開発者向け PowerApps
+    - name: 企業の開発者、パートナー、ISV のための PowerApps
       href: dev-enterprise-intro.md
-    - name: カスタム コネクタの登録と使用
+    - name: カスタム コネクタのビルドと認定
       href: register-custom-api.md
-    - name: Postman でのカスタム コネクタの説明
-      href: postman-collection.md
-    - name: カスタム コネクタを使用した Azure Active Directory の使用
-      href: customapi-azure-resource-manager-tutorial.md
-    - name: Web API 用カスタム コネクタの構築
-      href: customapi-web-api-tutorial.md
     - name: Web サイトやその他の技術との統合
       href: embed-apps-dev.md
     - name: オフラインでも利用可能なアプリの開発
       href: offline-apps.md
-- name: '開発: パートナーおよび ISV'
-  items:
-    - name: Microsoft のパートナーおよび ISV 向け PowerApps
-      href: dev-isv-partner-intro.md
-    - name: API コネクタの認定の概要
-      href: api-connector-overview.md
-    - name: 認定に向けた API コネクタの開発
-      href: api-connector-dev.md
-    - name: API コネクタの認定の申請
-      href: api-connector-submission.md
-    - name: API コネクタの認定に関する FAQ
-      href: api-connector-faq.md
     - name: ユーザーにアプリの体験版を配布する
       href: dev-appsource-test-drive.md
 - name: 管理および ALM
