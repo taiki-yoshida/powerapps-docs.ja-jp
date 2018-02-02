@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 225f4d79cee5a960116cb29efd06a8a5d229673c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="powerapps-for-microsoft-partners-and-isvs"></a>Microsoft のパートナーおよび ISV 向け PowerApps
 Microsoft パートナーまたは独立系ソフトウェア ベンダー (ISV) は、顧客のデータとビジネス プロセスと統合するように自社製品を拡張することによって、顧客による製品の採用を加速化できます。 PowerApps で作成したアプリを通して、Common Data Service に格納されているデータを操作できます。顧客が製品に接続するコネクタを作成することもできます。 PowerApps を使用してアプリを開発し、新しい顧客が試用できるように AppSource に公開することで、ビジネスの新しいビジネス チャンスを生み出すことができます。

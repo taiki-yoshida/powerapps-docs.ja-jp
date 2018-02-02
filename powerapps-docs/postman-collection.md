@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 04/28/2017
 ms.author: archanan
 ms.openlocfilehash: fd060ff873ee376b7ca886f721d360372c1d13ed
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="describe-a-custom-connector-with-postman"></a>Postman でのカスタム コネクタの説明
 [Postman](https://www.getpostman.com/) は、API 開発をより迅速で簡単にするためのツールです。 このチュートリアルでは、Postman Collection を作成して、PowerApps 内の[カスタム コネクタ](register-custom-api.md)を簡単に作成できるようにする方法について説明します。

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/06/2017
 ms.author: astay
 ms.openlocfilehash: 68a0be6c6be91ff5b89b3e06aecc242f987a4cf4
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="develop-an-api-connector-powerapps"></a>API コネクタを開発する (PowerApps)
 コネクタを作成するプロセスには、複数の手順が含まれています。 最初に、[PowerApps](https://web.powerapps.com/) で、ページの右上隅にある **[設定]** ボタン (歯車のアイコン) をクリックするかタップします。 次に、**[カスタム コネクタ]** をクリックするかタップします。
