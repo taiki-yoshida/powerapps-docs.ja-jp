@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c84eec1bdd541429d4524640d9e1ffa649b895fd
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/12/2018
 タイマーをデザイナーで実行するためには、アプリをプレビューする必要があることに注意してください。  これにより、ユーザーは時間制限がない状態で、デザイナーでタイマーを構成できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
-**Duration** – タイマーを実行する時間の長さを指定します。
+**Duration** - タイマーを実行する時間の長さを、ミリ秒単位で指定します。  最大値はありません。
 
 **OnTimerEnd** – タイマーが実行を完了した場合のアプリの反応を指定します。
 
@@ -113,29 +113,28 @@ ms.lasthandoff: 01/12/2018
 ## <a name="examples"></a>例
 ### <a name="show-a-countdown"></a>カウントダウンの表示
 1. タイマーを追加して **Countdown** という名前を付けます。
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. タイマーの **Duration** プロパティを **10000** に、その **Repeat** および **Autostart** プロパティを **true** に設定します。
 3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
 4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。
    <br>**"残りの秒数: " & RoundUp(10-Countdown.Value/1000, 0)**
-   
+
     **[RoundUp](../functions/function-round.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-   
+
     ラベルには、タイマーが再開されるまでの秒数が表示されます。
 5. (オプション) タイマーの **[Visible](properties-core.md)** プロパティを **false** に設定します。
 
 ### <a name="animate-a-control"></a>コントロールのアニメーション
 1. タイマーを追加して **FadeIn** という名前を付けます。
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. タイマーの **Duration** プロパティを **5000** に、その **Repeat** および **Autostart** プロパティを **true** に設定します。
 3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
 4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを設定して "**ようこそ!**" を表示し、 その **[Color](properties-color-border.md)** プロパティを次の数式に設定します。
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
-   
+
     **[ColorFade](../functions/function-colors.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-   
+
     ラベル内のテキストが白色にフェードした後、最大輝度に戻り、このプロセスが繰り返されます。
 5. (オプション) タイマーの **[Visible](properties-core.md)** プロパティを **false** に設定します。
-

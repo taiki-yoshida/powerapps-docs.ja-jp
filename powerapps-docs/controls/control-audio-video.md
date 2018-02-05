@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a79ef2ff58667b5a2516056f29845330745e5936
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps でのオーディオとビデオのコントロール
 オーディオ ファイル、ビデオ ファイル、または YouTube のビデオを再生するコントロールです。
 
 ## <a name="description"></a>説明
-**オーディオ** コントロールは、ファイルのサウンド クリップ、**[マイク](control-microphone.md)** コントロールからの録音、またはビデオ ファイルのオーディオ トラックを再生します。 **ビデオ** コントロールは、ファイルのビデオ クリップまたは URL で指定された YouTube のビデオ クリップを再生します。
+**オーディオ** コントロールは、ファイルのサウンド クリップ、**[マイク](control-microphone.md)** コントロールからの録音、またはビデオ ファイルのオーディオ トラックを再生します。 **ビデオ** コントロールは、ファイルのビデオ クリップ、またはクローズド キャプション付き (省略可能) URL で指定された YouTube のビデオ クリップを再生します。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Loop** – オーディオまたはビデオ クリップを、再生終了と同時に先頭から自動的に再開するかどうかを指定します。
@@ -44,6 +44,8 @@ ms.lasthandoff: 01/23/2018
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+
+**ClosedCaptionsUrl** – ビデオ コントロールのみ。  WebVTT 形式のクローズド キャプションのファイルの URL です。  ビデオの URL と キャプションの URL は、どちらも HTTPS である必要があります。 ビデオとキャプションの両方のファイルをホストするサーバーでは、CORS が有効になっている必要があります。
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
@@ -89,10 +91,10 @@ ms.lasthandoff: 01/23/2018
 1. **[ファイル]** メニューの **[メディア]** をクリックまたはタップし、**[ビデオ]** または **[オーディオ]** をクリックまたはタップしてから、**[参照]** をクリックまたはタップします。
 2. 再生するファイルを探してクリックまたはタップし、**[開く]** をクリックまたはタップします。
 3. Esc キーを押して既定のワークスペースに戻り、**オーディオ**または**ビデオ** コントロールを追加して、**Media** プロパティを追加したファイルに設定します。
-   
+
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 4. F5 キーを押し、追加したコントロールの再生ボタンをクリックまたはタップして、クリップを再生します。
-   
+
     > [!TIP]
 > **ビデオ** コントロールの再生ボタンは、コントロールをポイントすると表示されます。
 5. Esc キーを押して既定のワークスペースに戻ります。
@@ -101,4 +103,3 @@ ms.lasthandoff: 01/23/2018
 1. **ビデオ** コントロールを追加し、**Media** プロパティに、YouTube のビデオの URL を二重引用符で囲んで設定します。
 2. F5 キーを押し、**ビデオ** コントロールの再生ボタンをクリックまたはタップして、クリップを再生します。
 3. Esc キーを押して既定のワークスペースに戻ります。
-

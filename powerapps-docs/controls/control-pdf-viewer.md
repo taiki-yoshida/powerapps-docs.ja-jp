@@ -15,17 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 51b0045bd8b5e83f754c4d68e1dfe63566371ae1
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 8a67a071a19bae57f022fe960a0b29296b58cf5d
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="pdf-viewer-control-in-powerapps"></a>PowerApps の PDF ビューアー コントロール
 PDF ファイルの内容を表示するコントロールです。
 
 ## <a name="description"></a>説明
 PDF ファイルのテキスト、グラフィック、他の内容を表示するには、この種類のコントロールを追加し、その **Document** プロパティに、表示するファイルの URL を二重引用符で囲んで設定します。
+
+## <a name="limitations"></a>制限
+PowerApps のセキュリティ アーキテクチャにより、PDF ビューアーでは HTTPS リンクのみがサポートされ、HTTP リンクはサポートされないことにご注意ください。  
+制限の厳しい CORS 設定のサーバーに PDF ドキュメントがある場合、そのドキュメントはアプリ内で表示できない場合があります。  PowerApps でドキュメントを開けない場合は、外部ブラウザーでドキュメントを開くオプションがエンド ユーザーに表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Document** – 二重引用符で囲んだ、PDF ファイルの URL です。
@@ -94,8 +98,7 @@ PDF ファイルのテキスト、グラフィック、他の内容を表示す�
 ## <a name="example"></a>例
 * **PDF ビューアー** コントロールを追加し、その **Document** プロパティを、この例のように二重引用符で囲んだ PDF の URL に設定します。<br>
   **"http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"**
-  
-    コントロールに PDF ファイルが表示されます。
-  
-    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
+    コントロールに PDF ファイルが表示されます。
+
+    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。

@@ -13,22 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/18/2018
+ms.date: 01/31/2018
 ms.author: sharik
-ms.openlocfilehash: 5f3336d4cd3ab45f35a3ce93441dd30ffccbaca5
-ms.sourcegitcommit: 7d66f33f1419751dd1c758e344cc6d55818a0fd5
+ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
+ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
 
+## <a name="jan-31"></a>1 月 31 日
+1. [ビデオ](controls/control-audio-video.md)コントロールにクローズド キャプションが追加されました。
+2. [PDF ビューアー](controls/control-pdf-viewer.md)コントロールのエラー処理が向上しました。
+
 ## <a name="jan-18"></a>1 月 18 日
-* PowerApps for iOS と PowerApps for Android での Microsoft Authenticator との統合がサポートされました。
-* フォームの [SharePoint lookup コントロール](sharepoint-lookup-fields.md)が[コンボ ボックス](controls/control-combo-box.md)に置き換えられ、PowerApps Studio の単一選択 lookup フィールドに、新しい[データ カード](working-with-cards.md) テンプレートが既定で選択されます。
-* 拡張された読み取りモードを使用すると、[コンボ ボックス](controls/control-combo-box.md)内の候補リストにすべての項目が表示されます。
-* [委任不可のクエリ](delegation-overview.md#non-delegable-limits)におけるローカル レコードの保存上限サイズを、最大 2000 レコードまでに制御できます。 (実験的な機能)
+1. PowerApps for iOS と PowerApps for Android での Microsoft Authenticator との統合がサポートされました。
+2. フォームの [SharePoint lookup コントロール](sharepoint-lookup-fields.md)が[コンボ ボックス](controls/control-combo-box.md)に置き換えられ、PowerApps Studio の単一選択 lookup フィールドに、新しい[データ カード](working-with-cards.md) テンプレートが既定で選択されます。
+3. 拡張された読み取りモードを使用すると、[コンボ ボックス](controls/control-combo-box.md)内の候補リストにすべての項目が表示されます。
+4. [委任不可のクエリ](delegation-overview.md#non-delegable-limits)におけるローカル レコードの保存上限サイズを、最大 2000 レコードまでに制御できます。 (実験的な機能)
 
 ## <a name="jan-5"></a>1 月 5 日
 * Power BI レポートからコンテキスト データを取得する [PowerApps カスタム ビジュアル (プレビュー リリース)](https://powerapps.microsoft.com/blog/powerbi-powerapps-visual/) を統合したことで、Power BI レポートやダッシュボードのデータに基づいて行動できます。
@@ -63,9 +67,3 @@ ms.lasthandoff: 01/23/2018
 ## <a name="aug-15"></a>8 月 15 日
 1. 組織で使用されている[アプリの一覧](admin-view-apps.md)をダウンロードします。
 2. **Sum**、**Average**、**Min**、および **Max** 関数を SQL Server に委任します。
-
-## <a name="july-26"></a>7 月 26 日
-1. [Power BI タイル](controls/control-power-bi-tile.md)をアプリ内で表示します。
-2. **[Coalesce](functions/function-isblank-isempty.md)** 関数を使用すると、簡単に空の値を置き換えることができますが、それ以外の値は変更されません。
-3. **[EndsWith](functions/function-startswith.md)** 関数を使用すると、あるテキスト文字列が別のテキスト文字列で終わるかどうかをテストできます。
-4. 数式で **[And](functions/operators.md)**、**[Or](functions/operators.md)**、または **[Not](functions/operators.md)** 演算子を使用します。
