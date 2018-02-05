@@ -13,16 +13,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.author: sharik
-ms.openlocfilehash: b359a4f5dcc930b344ded68d5ffcd3ae72c007c6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: f6b91bcc8b5e4c9d0128c2cba1eb3f772c6f7451
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 ## <a name="recently-addedchanged"></a>最近追加または変更された情報
+1. **アプリが動作しない**
+
+    作成したアプリが警告なしで動作を停止した場合、過去 6 か月以内に更新または再発行をしていないことが原因である可能性があります。 この問題を解決するには、アプリを更新または再発行して PowerApps の最新バージョンと同期します。その後は、最後に公開してから 6 か月以内にアプリを更新または再発行することを継続して行うようにします。
+
 1. **データ テーブル コントロール**
 
     **[項目]** プロパティに**フィルター**関数を含む数式が設定された **[データ テーブル]** コントロールをコピーして貼り付ける場合、新しい **[データ テーブル]** コントロールの **[項目]** プロパティの数式には、サフィックス **_1** を含むフィールド名が適用されます。 これによってフィールド名が無効になり、データ テーブルにデータが表示されなくなります。 この問題を回避するには、コントロールをコピーする前に、**[データ テーブル]** コントロール内の列と同じ名前を持つデータ ソースのフィールドを、**フィルター**関数が参照していないことを確認します。 参照している場合は、**[データ テーブル]** コントロールの列の名前を変更します。 または、無効なフィールド名からサフィックス **_1** を削除して、エンティティ内の名前と一致させます。
