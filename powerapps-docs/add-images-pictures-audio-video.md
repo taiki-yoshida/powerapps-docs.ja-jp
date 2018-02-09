@@ -163,7 +163,7 @@ PowerApps に[サインアップ](signup-for-powerapps.md)し、[インストー
 
     ![サンプル画面](./media/add-images-pictures-audio-video/screen.png)
 
-10. F5 キーを押すか、[プレビュー] ( ![プレビュー ボタン](./media/add-images-pictures-audio-video/preview.png) ) を選択します。
+10. F5 キーを押すか、[プレビュー]\( ![プレビュー ボタン](./media/add-images-pictures-audio-video/preview.png) ) を選択します。
 
 11. MyPen で何かを描画し、ボタンを選択します。
 
