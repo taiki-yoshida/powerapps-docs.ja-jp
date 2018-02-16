@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 1558dba59f4b755ded709329c099feb94b55fac6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>Excel データからアプリを生成する
 OneDrive などのクラウド ストレージ アカウントにアップロードした Excel ファイル内のデータに基づいて自動的にアプリを作成します。 アプリを生成した後、ニーズに合わせてカスタマイズし、実行して期待どおりに動作するかどうかを確認します。
@@ -41,7 +41,7 @@ OneDrive などのクラウド ストレージ アカウントにアップロー
 * このチュートリアルの手順に忠実に従うには、この [Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードします。
   
     > [!IMPORTANT]
-> データがテーブルとして書式設定されていれば、ご自身の Excel ファイルを使用できます。 詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
+> データがテーブルとして書式設定されていれば、ご自身の Excel ファイルを使用できます。 詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
 * Excel ファイルを OneDrive や他の[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 
 ## <a name="create-an-app"></a>アプリを作成する

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: sharik
-ms.openlocfilehash: f3e5fdce6948928cdd393e7a9933b3261af4e3f6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 75b3315833fc6ced9ef3d8eb252d0f8639ccd696
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>PowerApps から Excel へのイメージの追加
 ユーザーがファイルのイメージを表示、追加、または削除したり、**ペン** コントロールを使用して描画したりできるアプリを自動的に作成します。 アプリは、作成してクラウド ストレージ アカウントにアップロードする Excel ファイルに基づきます。
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/23/2018
 ## <a name="prerequisites"></a>前提条件
 
 * [コントロールの追加と構成](add-configure-controls.md)に慣れている。
-* [テーブルとしての Excel データの構成](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US)に慣れている。
+* [テーブルとしての Excel データの構成](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US)に慣れている。
 * Excel ファイルを格納できる、クラウド ストレージ アカウント (Dropbox、OneDrive、Google Drive など) への [PowerApps の接続](add-data-connection.md)。
 
 ## <a name="create-the-data-source-and-the-app"></a>データ ソースとアプリの作成

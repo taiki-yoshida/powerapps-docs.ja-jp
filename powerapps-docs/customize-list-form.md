@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/02/2018
+ms.date: 02/05/2018
 ms.author: sharik
-ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: a1ebe4011619b0a2baaa3b9a98579bb22d02774e
+ms.sourcegitcommit: 290e81488ec5c2e0bb820ef0e3b7f5c0f54c80eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -30,9 +30,6 @@ PowerApps は SharePoint と直接統合されます。別のアプリをコン�
 PowerApps は SharePoint にシームレスに統合されるので、2 つの場所からフォームを管理する必要はありません。アクセス許可は SharePoint から継承され、SharePoint を通じて管理されます。 何よりも、PowerApps を SharePoint に統合すると、分析レポート、条件付き書式の簡単なポイント アンド クリック ルール、他のデータ ソースへの接続などの多くの強力な機能にアクセスできるようになります。
 
 カスタマイズを始める準備はできましたか? それでは、始めましょう。
-
-> [!NOTE]
-> この機能は、SharePoint のお客様に段階的にロールアウトされているところです。 現在は SharePoint リストに **[フォームのカスタマイズ]** オプションが表示されなくても、すぐに表示されるようになります。
 
 ## <a name="create-a-custom-list-form-app-in-powerapps"></a>PowerApps でカスタム リスト フォーム アプリを作成する
 

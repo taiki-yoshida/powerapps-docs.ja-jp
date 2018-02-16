@@ -14,14 +14,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 51138467e93dc4ef3fd2a08163536971c3811d23
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>エンティティ間のリレーションシップを構築する
-エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Customers** エンティティと **Orders** エンティティがある場合、**Orders** エンティティは、どの顧客からの発注であるかを示す **Customers** エンティティに対するルックアップ リレーションシップを持つことが考えられます。 ルックアップ フィールドを使用すれば、発注した顧客の **Customers** エンティティからのデータを表示することができます。 詳細については、「[Entity relationships and lookup fields](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships)」 (エンティティ リレーションシップとルックアップ フィールド) を参照してください。
+エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Customers** エンティティと **Orders** エンティティがある場合、**Orders** エンティティは、どの顧客からの発注であるかを示す **Customers** エンティティに対するルックアップ リレーションシップを持つことが考えられます。 ルックアップ フィールドを使用すれば、発注した顧客の **Customers** エンティティからのデータを表示することができます。 詳細については、「[Entity relationships and lookup fields](https://docs.microsoft.com/common-data-service/entity-reference/relationships)」 (エンティティ リレーションシップとルックアップ フィールド) を参照してください。
 
 ## <a name="define-a-relationship"></a>リレーションシップの定義
 2 つのエンティティ間 (または同じエンティティ間) で作成できるリレーションシップには、いくつかの種類があります。 1 つのエンティティは、複数のエンティティとのリレーションシップを持つことができます。また、1 つのエンティティが、別のエンティティに対して複数のリレーションシップを持つこともできます。 以下に、いくつかの一般的なリレーションシップの種類を示します。

@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 40feb1f2412408e732be91e649ab2b4c54e4ba98
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps コミュニティ プラン: 個人用の無料開発環境
 PowerApps、Microsoft Flow、および Common Data Service のスキルを習得して詳しく学びたいと考える場合は、PowerApps コミュニティ プランが最適です。 PowerApps コミュニティ プランでは、次のことができる個人向けの無料開発環境が提供されます。
 
 * PowerApps と Microsoft Flow のすべての機能を使用したビジネス アプリやワークフローの構築方法を学びます。
 * あらゆるデータ ソースに接続します。提供されている 100 以上の[すぐに使用できるコネクタ](connections-list.md) を使用するか、独自の[カスタム コネクタ](register-custom-api.md)を作成できます。
-* 一般的なデータ モデルと [SDK](https://aka.ms/eek20s) で強力なビジネス アプリを構築するために、[Common Data Service](https://docs.microsoft.com/en-us/common-data-service/entity-reference/introduction) をどのように活用できるかを探究します。
+* 一般的なデータ モデルと [SDK](https://aka.ms/eek20s) で強力なビジネス アプリを構築するために、[Common Data Service](https://docs.microsoft.com/common-data-service/entity-reference/introduction) をどのように活用できるかを探究します。
 * 個人用環境で作成したソリューションをエクスポートして、[AppSource で公開](dev-appsource-test-drive.md)して、お客様が体験できるようにします。
 
 ## <a name="who-can-sign-up-for-the-powerapps-community-plan"></a>PowerApps コミュニティ プランにサインアップできるユーザー

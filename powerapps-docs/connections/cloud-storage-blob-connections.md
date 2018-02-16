@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 665a772807179b2a33d6d47bb09483ebed69ed45
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>PowerApps からクラウド ストレージに接続する
 PowerApps には、クラウド ストレージ接続がいくつか用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
@@ -30,7 +30,7 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
 
 [!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
-* データがテーブルとして[書式設定されている Excel ファイル](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664):
+* データがテーブルとして[書式設定されている Excel ファイル](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664):
   
   1. Excel ファイルを開き、使用するデータの任意のセルを選択します。
   2. **[挿入]** タブの **[テーブル]** を選択します。
@@ -87,7 +87,7 @@ Dropbox のフォルダーを共有する場合は、共有フォルダーをユ
 Excel ファイルに関連するコネクタには、[いくつかの制限](#sharing-excel-tables)があります。
 
 ## <a name="known-limitations"></a>既知の制限
-アプリで Excel 接続を利用しようとしたとき、**[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
+アプリで Excel 接続を利用しようとしたとき、**[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
 
 Excel データに計算列が含まれる場合、それを利用してアプリを作成することはできません。そのデータを既存のアプリに追加することはできません。
 

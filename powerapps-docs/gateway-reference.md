@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e5bcf28febb2d37284203a4856a8fea590637aed
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Microsoft PowerApps のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
@@ -85,7 +85,7 @@ ms.lasthandoff: 01/23/2018
 
 **ファイアウォールまたはプロキシの構成**
 
-ゲートウェイのプロキシ情報を指定する方法については、[プロキシ設定の構成](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/)に関するページをご覧ください。
+ゲートウェイのプロキシ情報を指定する方法については、[プロキシ設定の構成](https://docs.microsoft.com/power-bi/service-gateway-proxy)に関するページをご覧ください。
 
 PowerShell プロンプトから次のコマンドを実行することで、ファイアウォールまたはプロキシが接続をブロックしている可能性があるかどうかを確認できます。 これにより、Azure Service Bus への接続がテストされます。 これはネットワーク接続をテストするだけで、クラウド サーバー サービスまたはゲートウェイとは関係ありません。 マシンが実際にインターネットに接続できるかどうかを確認する際に役立ちます。
 
@@ -140,7 +140,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 これは、オンプレミスのデータ ソースへの接続に使用するアカウントでも、クラウド サービスへのサインインに使用する職場または学校アカウントでもありません。
 
-認証によってプロキシ サーバーに問題が発生した場合は、[プロキシの構成](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)に関するページの説明に従い、Windows サービス アカウントをドメイン ユーザーまたは管理されたサービス アカウントに切り替えることができます。
+認証によってプロキシ サーバーに問題が発生した場合は、[プロキシの構成](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user)に関するページの説明に従い、Windows サービス アカウントをドメイン ユーザーまたは管理されたサービス アカウントに切り替えることができます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 #### <a name="general"></a>全般

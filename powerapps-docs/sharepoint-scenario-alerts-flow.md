@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fb750e6345c6aa576e378134ed98be92c234a86b
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6696f03be879e1c6f764cc444aa874e0b4a73905
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Power BI ダッシュボードのデータ アラートを設定する
 > [!NOTE]
 > この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
-このタスクでは、保留中のプロジェクトの承認に時間がかかりすぎる場合に通知するアラート、およびアラート発生時に対応するフローを Power BI に追加します。 アラートについて詳しくは、「[Power BI サービスでのデータ アラート](https://powerbi.microsoft.com/documentation/powerbi-service-set-data-alerts)」を参照してください。
+このタスクでは、保留中のプロジェクトの承認に時間がかかりすぎる場合に通知するアラート、およびアラート発生時に対応するフローを Power BI に追加します。 アラートについて詳しくは、「[Power BI サービスでのデータ アラート](https://docs.microsoft.com/power-bi/service-set-data-alerts)」を参照してください。
 
 ## <a name="step-1-create-an-alert"></a>手順 1: アラートを作成する
 1. Power BI サービスで、前回のタスクで作成したダッシュボードを開きます。

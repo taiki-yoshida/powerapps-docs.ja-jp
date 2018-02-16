@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: kfend
-ms.openlocfilehash: a8c13158ab2c3f152aa99357684c818f48e637ae
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: ea4fc21eb98ddb4861739559062f01190fb14819
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configure-database-security"></a>データベース セキュリティを構成
 Common Data Service では、ロールベースのセキュリティ モデルを使用して、データベースへのアクセスをセキュリティで保護します。 このトピックでは、アプリのセキュリティ保護に必要なセキュリティ アーティファクトを作成する方法を説明します。 これらのユーザー ロールは、データへの実行時アクセスを制御するもので、環境管理者や環境作成者を管理する環境ロールとは別のものです。 環境の概要については、「[Environments overview (環境の概要)](environments-overview.md)」を参照してください。
@@ -32,7 +32,7 @@ Common Data Service では、ロールベースのセキュリティ モデル�
 
 最もよく使用される 2 つのアクセス許可レベルは、読み取り専用アクセスとフル アクセスです。 Common Data Service には、すべてのエンティティに対する、これら 2 つのアクセス許可レベルでのアクセス許可セットが含まれています。 表示アクセス許可セットは、エンティティへの読み取りアクセスを提供します。 管理アクセス許可セットは、エンティティへのフル アクセスを提供します。
 
-このセキュリティ モデルでは、これらのアクセス許可の任意の組み合わせをユーザー ロールに割り当てることができます。 ロールでは、ロールに追加されたすべてのアクセス許可セットで付与されるさまざまなアクセス許可が組み合わされます。 したがって、ロールのメンバーは、そのロールに含まれるアクセス許可セットがアクセスを許可するすべてのデータにアクセスできます。 Common Data Service セキュリティ モデルの詳細については、「[Security model (セキュリティ モデル)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model)」を参照してください。
+このセキュリティ モデルでは、これらのアクセス許可の任意の組み合わせをユーザー ロールに割り当てることができます。 ロールでは、ロールに追加されたすべてのアクセス許可セットで付与されるさまざまなアクセス許可が組み合わされます。 したがって、ロールのメンバーは、そのロールに含まれるアクセス許可セットがアクセスを許可するすべてのデータにアクセスできます。 Common Data Service セキュリティ モデルの詳細については、「[Security model (セキュリティ モデル)](https://docs.microsoft.com/common-data-service/entity-reference/security-model)」を参照してください。
 
 ## <a name="identify-the-entities"></a>エンティティの識別
 アプリに正しいアクセス制御を構成するには、アプリで使用されるエンティティを把握する必要があります。 アプリで使用されるエンティティの一覧を表示するには、次の手順に従います。

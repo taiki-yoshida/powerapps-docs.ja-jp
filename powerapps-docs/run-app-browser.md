@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/16/2018
 ms.author: litran
-ms.openlocfilehash: 0aff680aa5b8840330ee3a1758a895785f05da6f
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a833bc4a0364ccf427815cd75b43fad0f971c3e6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="use-powerapps-in-a-web-browser"></a>Web ブラウザーでの PowerApps の使用
 PowerApps でアプリを作成すると、そのアプリをブラウザーで実行できます。これには、[Dynamics 365](https://home.dynamics.com) を開き、ホーム ページでアプリのタイルをクリックするかタップします。
 
 > [!NOTE]
-> Sales などの Dynamics 365 アプリについて質問がありましたら、[Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/) に関する全般的な情報を参照するか、[サポートにお問い合わせ](https://www.microsoft.com/en-us/dynamics365/contact-us)ください。
+> Sales などの Dynamics 365 アプリについて質問がありましたら、[Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/) に関する全般的な情報を参照するか、[サポートにお問い合わせ](https://www.microsoft.com/dynamics365/contact-us)ください。
 
 サポートされているブラウザーとオペレーティング システムは次のとおりです。
 

@@ -15,20 +15,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: a2a8d7df48403a5d8d480619bd01c59510ae9899
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 1f351877e3c05b83b4bd9cfa104a7eb22cef5028
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 アプリ内の [Power BI](https://powerbi.microsoft.com) タイルを表示するコントロール。
 
 ## <a name="description"></a>説明
-アプリ内の **[Power BI タイル](https://powerbi.microsoft.com/documentation/powerbi-service-dashboard-tiles/)**を表示して、既存のデータ分析とレポートを活用します。  オプション パネルの **[データ]** タブで **Workspace**、**Dashboard** および **Tile** プロパティを設定して、表示するタイルを選択します。
+アプリ内の **[Power BI タイル](https://docs.microsoft.com/power-bi/service-dashboard-tiles)**を表示して、既存のデータ分析とレポートを活用します。  オプション パネルの **[データ]** タブで **Workspace**、**Dashboard** および **Tile** プロパティを設定して、表示するタイルを選択します。
 
 ## <a name="sharing-and-security"></a>共有とセキュリティ
-一度共有すると、アプリのアクセス権を持つすべてのユーザーが PowerApp にアクセスできます。  ただし、Power BI のコンテンツをそれらのユーザーに表示されるようにするのには、タイルの情報源であるダッシュボードを、Power BI のユーザーに[共有](https://powerbi.microsoft.com/documentation/powerbi-service-how-should-i-share-my-dashboard/)する必要があります。  これによって、アプリ上で Power BI のコンテンツにアクセスする場合に、Power BI の共有アクセス許可が適切に扱われるようになります。
+一度共有すると、アプリのアクセス権を持つすべてのユーザーが PowerApp にアクセスできます。  ただし、Power BI のコンテンツをそれらのユーザーに表示されるようにするのには、タイルの情報源であるダッシュボードを、Power BI のユーザーに[共有](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports)する必要があります。  これによって、アプリ上で Power BI のコンテンツにアクセスする場合に、Power BI の共有アクセス許可が適切に扱われるようになります。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **ワークスペース** – タイルの情報源である Power BI ワークスペース。
@@ -66,5 +66,5 @@ ms.lasthandoff: 01/12/2018
    
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
    
-   Power BI をお持ちではありませんか。 [サインアップ](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-self-service-signup-for-power-bi/)してください。
+   Power BI をお持ちではありませんか。 [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
 

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 849bde71d8f5dcf6505721758e2edca0921146bb
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 49ff8b15b3697afb7367aa5d4a587b389c9b538c
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>PowerApps でマルチ メディア ファイルを使用する
 このトピックでは、アプリにマルチ メディア ファイルを埋め込み、データ ソースにペン画をアップロードして、アプリでデータ ソースからのイメージを表示する方法を説明します。 このトピックで使用しているデータ ソースは、OneDrive for Business の Excel ファイルです。
@@ -119,7 +119,7 @@ PowerApps に[サインアップ](signup-for-powerapps.md)し、[インストー
 
        ![テーブルの作成](./media/add-images-pictures-audio-video/create-table.png)
 
-       Excel ファイルは、現在表形式です。 Excel の表の書式設定の詳細については、「[Excel のテーブルの書式を設定する](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)」を参照してください。
+       Excel ファイルは、現在表形式です。 Excel の表の書式設定の詳細については、「[Excel のテーブルの書式を設定する](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)」を参照してください。
 
    4. テーブルに、**Drawings** と名前を付けます。
 

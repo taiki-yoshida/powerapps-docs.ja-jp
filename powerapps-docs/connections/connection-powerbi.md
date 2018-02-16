@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/12/2016
 ms.author: sirsu
-ms.openlocfilehash: 62dbb11d167155d7f0c47b889674a61b1b1047f3
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a9d625f5c30d2619eeb6376aae6076125789cd2c
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
-Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https://powerbi.microsoft.com/documentation/powerbi-service-set-data-alerts/)を参照してください。
+Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https://https://docs.microsoft.com/power-bi/service-set-data-alerts)を参照してください。
 
 このトピックでは、アプリで Power BI の接続を使用する方法を説明し、使用可能な関数の一覧を表示します。
 

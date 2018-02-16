@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: da01fe6e89e64e07b5ce4eb0350bc2ac1f54ff30
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>Common Data Service のエンティティの概要
 
@@ -72,7 +72,7 @@ Common Data Service 内の標準とカスタムの両方のエンティティに
 各標準エンティティには、変更や削除ができない既定のフィールドのセットが含まれています。 エンティティとそのフィールドの一覧と、候補リストの一覧については、「[Standard entities](https://docs.microsoft.com/common-data-service/entity-reference/standard-entities)」 (標準エンティティ) をご覧ください。
 
 ### <a name="custom-fields"></a>カスタム フィールド
-カスタム フィールドは、標準エンティティまたはカスタム エンティティに作成できます。 各カスタム フィールドの名前、表示名、データ型を指定する必要があります。 サポートされる型の一覧については、[エンティティ フィールドのデータ型](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-data-types)に関するページをご覧ください。
+カスタム フィールドは、標準エンティティまたはカスタム エンティティに作成できます。 各カスタム フィールドの名前、表示名、データ型を指定する必要があります。 サポートされる型の一覧については、[エンティティ フィールドのデータ型](https://docs.microsoft.com/common-data-service/entity-reference/field-data-types)に関するページをご覧ください。
 
 ## <a name="lookup-relationships"></a>参照リレーションシップ
 フィールドのデータ型が **Lookup** に定義されているリレーションシップがある場合は、双方のエンティティのレコード間を移動できます。 参照リレーションシップを作成するには、データ型を **Lookup** に設定したフィールドをエンティティに追加し、情報の参照先であるエンティティをポイントします。 詳細については、[参照フィールドを使用したエンティティのリレーションシップ](data-platform-entity-lookup.md)に関するページをご覧ください。

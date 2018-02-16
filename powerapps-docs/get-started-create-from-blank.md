@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: 7a81e7287f2891e428062241d747ea451dff9e10
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-an-app-from-scratch"></a>アプリを最初から作成する
 さまざまなデータ ソースからいずれかを選んで自分だけのアプリをゼロから作成しましょう。必要であればデータ ソースは後から追加できます。 それぞれの UI 要素には、思い描いた目的とワークフローに最適な結果が得られるよう、外観と動作を指定します。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりもかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/23/2018
 
 2. そのデータを **Schedule** という名前のテーブルとして書式設定し、PowerApps が情報を解析できるようにします。
 
-    詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
+    詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
 
 3. ファイルを **eventsignup.xls** という名前で保存してから、OneDrive などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 

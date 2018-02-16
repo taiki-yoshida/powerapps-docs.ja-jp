@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: a2224d97c9cfc1261e43f7d30c8d8bdd2dd6e86b
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 892f434d54c723d8de4ad6e9a48ced05cf23b311
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Common Data Service データベースの作成
 データベースの作成とアプリの構築には、Common Data Service をデータ ストアとして使用できます。 独自のカスタム エンティティを作成することも、事前定義されたエンティティを使用することもできます。 データベースを作成するには、まず環境を作成するか、管理者として既存の環境に割り当てられる必要があります。 さらに、適切なライセンスが割り当てられている必要があります。 Common Data Service を使用するためのプランの購入については、[価格情報](pricing-billing-skus.md)に関するページを参照してください。
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/12/2018
    * セキュリティを無効にするには、**[Open access (アクセスをオープンにする)]** を選択します。
 
 ## <a name="license-and-security-permissions"></a>ライセンスとセキュリティ アクセス許可
-データベースを作成するには、選択した環境の管理者であり、適切なライセンスが割り当てられている必要があります。 そのような環境では、**[セキュリティ]** タブを使用して、他のユーザーのセキュリティ アクセス許可をさらに構成できます。詳細については、「[Configure database security (データベース セキュリティの構成)](database-security.md)」と「[Security model (セキュリティ モデル)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model)」を参照してください。
+データベースを作成するには、選択した環境の管理者であり、適切なライセンスが割り当てられている必要があります。 そのような環境では、**[セキュリティ]** タブを使用して、他のユーザーのセキュリティ アクセス許可をさらに構成できます。詳細については、「[Configure database security (データベース セキュリティの構成)](database-security.md)」と「[Security model (セキュリティ モデル)](https://docs.microsoft.com/common-data-service/entity-reference/security-model)」を参照してください。
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
 Microsoft PowerApps の Common Data Service では、Microsoft の診断システムにカスタム エンティティとフィールド名を収集して格納します。  収集した情報は、お客様向けの Common Data Service の改善に使用します。 作成者が作成するエンティティとフィールド名は、Microsoft PowerApps コミュニティ全体で共通するシナリオを理解したり、組織に関するスキーマなどの、サービスの標準エンティティの対象範囲のギャップを確認したりする場合に役立ちます。 このエンティティに関連するデータベース テーブルのデータに、Microsoft がアクセスまたは使用することはありません。また、データベースがプロビジョニングされているリージョン外にデータがレプリケートされることもありません。 ただし、カスタム エンティティとフィールド名はリージョン間でレプリケートされ、Microsoft のデータ保持ポリシーに基づいて削除される場合があります。 Microsoft はお客様のプライバシーを尊重いたします。詳細については、[Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) を参照してください。

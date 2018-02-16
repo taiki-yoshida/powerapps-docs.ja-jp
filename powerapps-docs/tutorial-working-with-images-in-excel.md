@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e789a253a2c1d52cc85dadc6f532604021f6b004
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>画像を Excel ファイルに保存してアプリに追加する方法
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 01/23/2018
    2. **[挿入]** リボンの **[テーブル]** を選択します。
    3. ダイアログ ウィンドウで、**[先頭行をテーブルの見出しとして使用する]** を選択し、**[OK]** を選択します。
       
-      Excel ファイルがテーブル形式になりました。 Excel におけるテーブルの書式設定について詳しくは、[データをテーブルとして書式設定](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)する方法についてのページを参照してください。
+      Excel ファイルがテーブル形式になりました。 Excel におけるテーブルの書式設定について詳しくは、[データをテーブルとして書式設定](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)する方法についてのページを参照してください。
    4. テーブルに、**Drawings** と名前を付けます。  
       
       ![テーブルの名前を Drawings に変更する](./media/tutorial-working-with-images-in-excel/drawings-table.png)

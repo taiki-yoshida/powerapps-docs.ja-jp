@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6b3bab666ddd842c868dfdac752cd8897a5427b2
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
 プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
@@ -141,5 +141,5 @@ PowerAppsNotification.SendPushNotification(
 * 通知には、特定のアプリ アイコンの代わりに汎用的な PowerApps アイコンが表示されます。
 * Microsoft Flow を使用する場合、一度に 1 人の受信者にしかプッシュ通知を送信できせん。
 
-参照情報については、[PowerApps 通知の参照](https://docs.microsoft.com/en-us/connectors/powerappsnotification/)に関するページを参照してください。
+参照情報については、[PowerApps 通知の参照](https://docs.microsoft.com/connectors/powerappsnotification/)に関するページを参照してください。
 

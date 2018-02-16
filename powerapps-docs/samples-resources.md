@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: 156a213fbf2bb1d5c7d4f032331ce4ca91f2641c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: f8fb8da441c037e47f508282e9677fdda35874a0
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="samples-and-other-resources--for-the-common-data-service"></a>Common Data Service のサンプルとその他のリソース
 ## <a name="samples"></a>サンプル
@@ -36,5 +36,5 @@ YouTube の [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQ
 Microsoft Ignite カンファレンスの多数のセッションが記録されています。[Microsoft Ignite On-Demand](https://myignite.microsoft.com/videos) で視聴できます。 "PowerApps" と "Common Data Model" で検索してください。
 
 ## <a name="overview"></a>概要
-Common Data Service と Common Data Model については、「[Common Data Service and Common Data Model overview](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model)」 (Common Data Service と Common Data Model の概要) を参照してください。
+Common Data Service と Common Data Model については、「[Common Data Service and Common Data Model overview](https://docs.microsoft.com/common-data-service/entity-reference/security-model)」 (Common Data Service と Common Data Model の概要) を参照してください。
 

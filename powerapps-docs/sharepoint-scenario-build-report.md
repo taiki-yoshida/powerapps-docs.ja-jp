@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f3045a67de492866c3db7d9238a5c4c2111bcb6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
 > [!NOTE]
@@ -177,7 +177,7 @@ Power BI Desktop でリストを取り込むと、両方のテーブルの **[Id
    
     この数式は、日付列 1 つを含む "**Dates**" というテーブルを作成します。 このテーブルには、お使いの他のテーブルのすべての日付が含まれています。また、日付が追加された場合 (データが更新された場合) は、自動で更新されます。
    
-    この数式とこのセクションのその他の数式では、Power BI や他のテクノロジで使用されている数式言語の Data Analysis Expressions (DAX) を使用します。 詳細については、「[Power BI Desktop における DAX の基本事項](https://powerbi.microsoft.com/documentation/powerbi-desktop-quickstart-learn-dax-basics/)」をご覧ください。
+    この数式とこのセクションのその他の数式では、Power BI や他のテクノロジで使用されている数式言語の Data Analysis Expressions (DAX) を使用します。 詳細については、「[Power BI Desktop における DAX の基本事項](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics)」をご覧ください。
 3. Enter キーを押して、**[Dates]** テーブルを作成します。
    
     ![[Dates] テーブル](./media/sharepoint-scenario-build-report/05-02-07-date-table.png)
