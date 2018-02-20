@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f54274af043964f02ef02a5ce97c261a410391d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Power BI プロジェクト レポートの発行とダッシュボードの作成
 > [!NOTE]
@@ -37,20 +37,17 @@ ms.lasthandoff: 01/23/2018
 3. パスワードを入力して、**[サインイン]** をクリックまたはタップします。
    
     ![アカウントのパスワードを入力](./media/sharepoint-scenario-publish-report/06-01-03-password.png)
-4. レポートの宛先を選択し、**[選択]** をクリックまたはタップします。 SharePoint でのレポートへのアクセスを簡素化するために、グループ ワークスペースに発行することをお勧めします。 ここでは、**プロジェクト管理**のグループ ワークスペースに発行しています。 詳細については、[Power BI でのグループの作成](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-group-in-power-bi)に関するページをご覧ください。
+4. レポートの宛先を選択し、**[選択]** をクリックまたはタップします。 SharePoint でのレポートへのアクセスを簡素化するために、グループ ワークスペースに発行することをお勧めします。 ここでは、**プロジェクト管理**のグループ ワークスペースに発行しています。 詳細については、「[Power BI アプリ ワークスペースでの共同作業](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace)」を参照してください。
    
     ![宛先のワークスペース](./media/sharepoint-scenario-publish-report/06-01-04-workspace.png)
 5. 発行が完了したら、**[Open 'project-analysis.pbx' in Power BI]\(Power BI で 'project-analysis.pbx' を開く\)** をクリックまたはタップします。
    
     ![発行に成功](./media/sharepoint-scenario-publish-report/06-01-05-open-report.png)
-6. Power BI サービスにより、レポートがブラウザーで読み込まれます。 左上のメニュー **(a)** をクリックまたはタップして、左側のナビゲーション ウィンドウを参照します。
+6. Power BI サービスにより、レポートがブラウザーで読み込まれます。 左側のナビゲーション ウィンドウが展開されていない場合には、左上のメニュー **(a)** をクリックまたはタップして展開します。
    
     ![Power BI サービス内のレポート](./media/sharepoint-scenario-publish-report/06-01-06-service-report.png)
    
-    発行したときに、Power BI Desktop にデータセット **(d)** とレポート **(c)** がアップロードされたことがわかります。 Power BI Desktop ではなくサービスでダッシュボードを作成しますが、このワークスペースにはまだダッシュボードがありません **(b)**. 後の手順で作成します。
-   
-    > [!NOTE]
-> Power BI では新しいナビゲーション エクスペリエンスの提供を開始しており、お使いのサイトで有効になっている場合があります。 左側のナビゲーション ウィンドウの表示が上記の画像と異なる場合は、「[新しい Power BI ナビゲーション体験](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience)」で詳細情報をご覧ください。
+    発行したときに、Power BI Desktop にデータセット **(d)** とレポート **(c)** がアップロードされたことがわかります。 Power BI Desktop ではなくサービスでダッシュボードを作成しますが、このワークスペースにはまだダッシュボードがありません **(b)**. 後ほどの手順で作成します。
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>手順 2: 更新のための資格情報を構成する
 1. サービスで、右上隅の![ギア アイコン](./media/sharepoint-scenario-publish-report/icon-gear.png)をクリックまたはタップし、**[設定]** をクリックまたはタップします。
@@ -72,7 +69,10 @@ ms.lasthandoff: 01/23/2018
     ![データ ソースが更新されました](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
 ## <a name="step-3-create-a-dashboard"></a>手順 3: ダッシュボードを作成する
-1. サービスで左上のグラフをクリックまたはタップし、 ![ピン アイコンをクリックまたはタップします。](./media/sharepoint-scenario-publish-report/icon-pin.png).
+
+1. レポートに戻るには、**[レポート]** 以下の **[project-analysis]** をクリックまたはタップします。
+
+1. 左上のグラフをクリックまたはタップし、 ![ピン アイコンをクリックまたはタップします。](./media/sharepoint-scenario-publish-report/icon-pin.png).
    
     ![グラフのピン留め](./media/sharepoint-scenario-publish-report/06-01-12-pin-projected.png)
 2. ピン留めするダッシュボードの名前を入力し、**[ピン留め]** をクリックまたはタップします。
