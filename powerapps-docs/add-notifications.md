@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 6b3bab666ddd842c868dfdac752cd8897a5427b2
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.openlocfilehash: 0492f5559f5ec575a3161e693e728c1caa95ed3c
+ms.sourcegitcommit: 6a56c3fdba1c7f95fe4b286e041cc307610e279f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
-# <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
-プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
+# <a name="send-a-pull-notification-in-powerapps"></a>PowerApps でプル通知を送信する
+プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてデスクトップ アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
 
 ![プッシュ通知の外観の例](./media/add-notifications/pic1-notification-screenshot.png)
 
