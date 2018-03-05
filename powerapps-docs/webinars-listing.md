@@ -13,41 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/29/2018
+ms.date: 2/23/2018
 ms.author: v-malyng
-ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
+ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 トピックを追加したい場合は、このトピックのコメントからお気軽にご提案ください。
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー ##
-**Getting Started | 製品の統合: Teams + PowerApps のヒントとコツ**
-<br>講師: Audrie Gordon
-<br>*1 月 31 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-
-このウェビナーに参加して、PowerApps と Teams がどのように連携し、より強力なビジネス ソリューションを生み出しているのかを今すぐご覧ください。 お客様の Teams チャンネル内で PowerApps を活用する方法をご覧ください。また、これらの製品を連携させて活用し、チームの共同作業の質を高める方法について、新しいアイデアをご紹介します。
-
-[ここをクリックすると、1 月 31 日に配信されます](https://www.youtube.com/watch?v=obBQk-aSElI)
-
-**コネクタ シリーズ | PowerApps での Office Graph の活用**
-<br>講師: Audrie Gordon
-<br>*2 月 5 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-
-Office Graph テクノロジによって PowerApps を活用する方法を、PowerApps チームのシニア プログラム マネージャーである Audrie Gordon がご紹介します。 テンプレートの 1 つをカスタマイズして、一般的なビジネス シナリオにおける Office グループの影響力を最大限に引き出します。
-
-[ここをクリックすると、2 月 5 日に配信されます](https://www.youtube.com/watch?v=AOGGyoElGaQ)
-
 **Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (講師: Brian Blanchard)**
-<br>講師: Audrie Gordon
-<br>*2 月 19 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
+<br>講師: Brian Blanchard、Audrie Gordon
+<br>*2 月 26 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
 
 Microsoft Retail Stores の Brian Blanchard が、サーバーの修正プログラムの適用スケジュールをチームで管理できるアプリを作成する方法をご紹介します。 今回は、デスクトップ版とモバイル版の両方をご紹介します。現在、彼のチームでは、このどちらも使用することで、修正プログラムの適用プロセスを円滑に、かつ簡単に行っています。 PowerApps と Flow を活用してチームの時間とお金を節約する Brian。素晴らしいですね。
 
-[ここをクリックすると、2 月 19 日に配信されます](https://www.youtube.com/watch?v=QAe0oBecowU)
+[ここをクリックすると、2 月 26 日に配信されます](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ## <a name="past-webinars"></a>過去のウェビナー ##
 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。
@@ -122,6 +107,12 @@ Microsoft Retail Stores の Brian Blanchard が、サーバーの修正プログ
 
 **コネクタの操作: Planner コネクタを使用する**
 <br> 講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
+
+**Getting Started | 製品の統合: Teams + PowerApps のヒントとコツ**
+<br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=obBQk-aSElI)
+
+**コネクタ シリーズ | PowerApps での Office Graph の活用**
+<br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
 ### <a name="app-designer-topics"></a>アプリケーション デザイナーに関するトピック ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger (PowerApps 開発者 Marie Hoeger の開発秘話 - テンプレートの詳細)**
