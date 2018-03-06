@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
 ms.openlocfilehash: d791d04965873c133be85013feb181dc5a1e1bad
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="use-field-groups"></a>フィールド グループを使う
 フィールド グループは、エンティティの 1 つ以上のフィールドをグループ化する方法を提供します。 フィールド グループを使うと、アプリの作成と保守を迅速化および簡素化できます。 フィールド グループには、1 つ以上のフィールドが含まれています。1 つのフィールドを任意の数のフィールド グループに含めることができます。 1 つのフィールド グループに同じフィールドを複数含めることはできません。
