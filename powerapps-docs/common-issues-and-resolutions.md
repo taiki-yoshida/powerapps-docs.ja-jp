@@ -5,7 +5,7 @@ services:
 suite: powerapps
 documentationcenter: na
 author: skjerland
-manager: anneta
+manager: kfile
 editor: 
 tags: 
 ms.service: powerapps
@@ -13,16 +13,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/24/2018
+ms.date: 03/05/2018
 ms.author: sharik
-ms.openlocfilehash: f6b91bcc8b5e4c9d0128c2cba1eb3f772c6f7451
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.openlocfilehash: c2faa505e62e4460e2fe65707946e3190b5b0350
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 ## <a name="recently-addedchanged"></a>最近追加または変更された情報
+1. **SharePoint のフォームのレイアウト変更**
+
+    特定の言語の SharePoint リスト フォームをカスタマイズするときに、ポートレート (既定) からランドスケープにレイアウトを変更しようとすると、アプリに複数のエラー (コントロールの黄色の三角形) が表示される場合があります。 これらのエラーを解決して、ランドスケープのレイアウトを保持するには、**[元に戻す]** をクリックします。
+
 1. **アプリが動作しない**
 
     作成したアプリが警告なしで動作を停止した場合、過去 6 か月以内に更新または再発行をしていないことが原因である可能性があります。 この問題を解決するには、アプリを更新または再発行して PowerApps の最新バージョンと同期します。その後は、最後に公開してから 6 か月以内にアプリを更新または再発行することを継続して行うようにします。

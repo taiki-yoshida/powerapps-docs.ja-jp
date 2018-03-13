@@ -15,22 +15,32 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: 2fd5db380eead5403d4cc7d927da5a24aa24abc9
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール
-ユーザーが自分のデバイスにファイルをダウンロードできるコントロールです。  アップロード機能はまもなく公開されます。
+ユーザーが自分のデバイスへのファイルのダウンロードや、SharePoint リストからのファイルのアップロードや削除ができるようになるコントロール。
+
+## <a name="limitations"></a>制限
+Attachments コントロールには次の一時的な制限があります。
+1. 添付ファイルのアップロードは、SharePoint リストのデータ ソースでのみ機能します。  他のデータ ソースのサポートは、CDS から徐々に導入されます。
+
+1. アップロードと削除の機能は、フォームの内部でのみ機能します。  Attachments コントロールは、編集モードでフォーム内にない場合、無効と表示されます。   ファイルの追加と削除をバックエンドに保存するには、エンド ユーザーがフォームを保存する必要があります。
+
+1. アップロードできるファイルのサイズは最大で 10 MB です。  
 
 ## <a name="description"></a>説明
-**Attachments** コントロールでは、データ ソースに格納されているファイルを開くことができます。
+**Attachments** コントロールにより、データ ソースに保存されたファイルを開いたり、SharePoint リストの間でファイルを追加したり削除したりできるようになります。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Items](properties-core.md)** – ダウンロードできるファイルを記述するソースです。
 
 **MaxAttachments** - コントロールが受け入れるファイルの最大数です。
+
+**MaxAttachmentSize** – 新しい添付ファイルごとに許容される最大ファイル サイズ (MB) です。  現在、10 MB の制限があります。
 
 **OnAttach** – ユーザーが新しい添付ファイルを追加したときのアプリの応答です。
 
@@ -39,7 +49,9 @@ ms.lasthandoff: 01/12/2018
 **[OnSelect](properties-core.md)** – ユーザーが添付ファイルをクリックしたときのアプリの応答です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
-**AddAttachmentText** – 新しい添付ファイルを追加するために使用するボタンのラベル テキストです。
+**AccessibleLabel** – スクリーン リーダーが読み上げるラベルです。
+
+**AddAttachmentText** – 新しい添付ファイルを追加するために使用するリンクのラベル テキストです。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
@@ -47,11 +59,13 @@ ms.lasthandoff: 01/12/2018
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールで、ファイルの追加と削除を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
-**NoAttachmentsText** – 表示する添付ファイルが存在しないときにユーザーに表示する指示テキストです。
+**MaxAttachmentsText** – コントロールに許容される最大数のファイルが含まれている場合に "ファイルの添付" リンクと置き換えられるテキストです。
+
+**NoAttachmentsText** – 添付されているファイルが存在しないときにユーザーに表示する情報テキストです。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかです。
 

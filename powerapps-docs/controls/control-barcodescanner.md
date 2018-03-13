@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c27a2319d74db9a50acff84e40ea7df83dc1c126
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="barcode-scanner-control-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール
-デバイスのバーコード スキャナーを使って写真を撮影できるコントロールです。
+# <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール (試験段階)
+デバイスのバーコード スキャナーを使って写真を撮影できる試験段階のコントロールです。
 
 ## <a name="description"></a>説明
 このコントロールを追加した場合、ユーザーは、アプリを実行している任意の場所から 1 枚以上の写真でデータ ソースを更新できます。
@@ -73,9 +73,8 @@ ms.lasthandoff: 01/12/2018
 ## <a name="example"></a>例
 ### <a name="add-photos-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールに写真を追加する
 1. **バーコード スキャナー** コントロールを追加し、名前を **Mybarcode scanner** に設定します
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. **ラベル** コントロールを追加し、その出力をバーコードの値に設定します。  
 3. BarcodeType プロパティで設定されている種類のバーコードをスキャンします。
 4. スキャンされたバーコードがラベルに表示されます。
-

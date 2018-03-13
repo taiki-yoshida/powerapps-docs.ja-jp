@@ -13,26 +13,52 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 2/23/2018
+ms.date: 3/1/2018
 ms.author: v-malyng
-ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
-ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
+ms.openlocfilehash: d1f10a12a188acaf2ee4bc4590e7dba9f3587611
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 トピックを追加したい場合は、このトピックのコメントからお気軽にご提案ください。
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー ##
-**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (講師: Brian Blanchard)**
+**コネクタ シリーズ | Project Online (PWA)**
+<br>講師: Audrie Gordon
+<br>*3 月 12 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
+
+このコネクタ シリーズのデモでは、Project Online (別名 PWA) のコネクタ オプションの使用について説明します。 ご自由に参加していただき、ポートフォリオ管理ツールと Project Online を活用するアプリの構築に関する質問をお寄せください。
+
+[ここをクリックすると、3 月 12 日に配信されます](https://www.youtube.com/watch?v=oncGxlmFqy8)
+
+
+**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (パート 2) (講師: Brian Blanchard)**
 <br>講師: Brian Blanchard、Audrie Gordon
-<br>*2 月 26 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
+<br>*3 月 19 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
 
-Microsoft Retail Stores の Brian Blanchard が、サーバーの修正プログラムの適用スケジュールをチームで管理できるアプリを作成する方法をご紹介します。 今回は、デスクトップ版とモバイル版の両方をご紹介します。現在、彼のチームでは、このどちらも使用することで、修正プログラムの適用プロセスを円滑に、かつ簡単に行っています。 PowerApps と Flow を活用してチームの時間とお金を節約する Brian。素晴らしいですね。
+これは、Brian Blanchard が自分のチームのサーバーの修正プログラム適用スケジュールを管理するアプリをどのように構築したかに関するデモのパート 2 です。 Azure Automation のセットアップと Microsoft Flow の高度なワークフローの詳細についてご紹介します。 PowerApps と Flow を活用してチームの時間とお金を節約する Brian。素晴らしいですね。
 
-[ここをクリックすると、2 月 26 日に配信されます](https://www.youtube.com/watch?v=QAe0oBecowU)
+[ここをクリックすると、3 月 19 日に配信されます](https://www.youtube.com/watch?v=oncGxlmFqy8)
 
+**Deep Dive | PowerApps のクリックスルー分析 (講師: Vivek Bavishi)**
+<br>講師: Vivek Bavishi、Audrie Gordon
+<br>*4 月 17 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
+
+PowerApps の世界的権威である Vivek Bavishi 氏と、PowerApps チームの Audrie Gordon が PowerApps と Flow を使って独自のクリックスルー分析を作成するための簡単な方法を説明します。 レポート オプションを拡張することで、アプリの利用者がアプリケーションをどのように移動しているかがよくわかる統計が含まれるようになり、このデータによってアプリの使用とデザインに関する想定を検証できるようになります。 日常的にアプリを製作している方はぜひ Vivek 氏のプレゼンテーションをご覧ください。
+
+[ここをクリックすると、4 月 17 日に配信されます](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+**コネクタ シリーズ | Common Data Service を活用することの利点**
+<br>講師: Audrie Gordon
+<br>*4 月 23 日、午前 10 時 30 分 (太平洋標準時)、午後 1 時 30 分 (東部標準時)*
+
+Common Data Service (別名 CDS) をもうお使いになりましたか? 共通データ スキーマの利点をその都度ビジネス アプリケーションに導入できていますか? この分野の最新情報を逃さずキャッチできていますか?
+
+このウェビナーでは、(Office 365、Azure、Dynamics 365 アプリを有効化するための) すべての Microsoft Cloud のサブスクリプションで Common Data Service を活用する利点について詳しく説明します。 CDS の今後の方向性と、このプラットフォームを使ってアプリをモデル化するうえで CDS がいかに強力かについて、このライブ ウェビナーで概要をご確認ください。 無限の可能性のごく一部をご紹介します。
+
+[ここをクリックすると、4 月 23 日に配信されます](https://www.youtube.com/watch?v=JY8r46HnHoI)
 
 ## <a name="past-webinars"></a>過去のウェビナー ##
 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。
@@ -113,6 +139,10 @@ Microsoft Retail Stores の Brian Blanchard が、サーバーの修正プログ
 
 **コネクタ シリーズ | PowerApps での Office Graph の活用**
 <br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+
+**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (講師: Brian Blanchard)**
+<br>講師: Brian Blanchard、Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ### <a name="app-designer-topics"></a>アプリケーション デザイナーに関するトピック ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger (PowerApps 開発者 Marie Hoeger の開発秘話 - テンプレートの詳細)**

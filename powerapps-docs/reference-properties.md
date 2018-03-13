@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 11f3a29989057a3dc1a75c40877314596a62859d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/23/2018
 
 **[オーディオ](controls/control-audio-video.md)** – オーディオ クリップまたはビデオ クリップのオーディオ部分を再生します。
 
-**[バーコード スキャナー](controls/control-barcodescanner.md)** – カメラを備えたデバイスを使用して、バーコードをスキャンします。
+**[バーコード スキャナー (試験段階)](controls/control-barcodescanner.md)** – カメラを備えたデバイスを使用して、バーコードをスキャンします。
 
 **[ボタン](controls/control-button.md)** – クリックまたはタップしてアプリを操作します。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/23/2018
 
 **[マイク](controls/control-microphone.md)** – サウンドを録音し、アプリまたはデータ ソースに保存します。
 
-**[PDF ビューアー](controls/control-pdf-viewer.md)**  – インターネット上の PDF ファイルの内容を表示します。
+**[PDF ビューアー (試験段階)](controls/control-pdf-viewer.md)** – インターネット上の PDF ファイルの内容を表示します。
 
 **[入力ペン](controls/control-pen-input.md)** – イメージやテキストを描画し、アプリケーションまたはデータ ソースに保存します。
 

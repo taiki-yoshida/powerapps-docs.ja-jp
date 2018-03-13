@@ -13,19 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/13/2018
+ms.date: 03/05/2018
 ms.author: sharik
-ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.openlocfilehash: e259c4c235809f75c03b3ea87df580b9b17a790c
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
 
 > [!NOTE]
 > リリースは、数日間にわたってロールアウトします。 新機能や更新された機能は、すぐには表示されない場合があります。
+
+## <a name="mar-5"></a>3 月 5 日
+1. [添付ファイル](controls/control-attachments.md) が SharePoint リストとの間で追加 (および削除) されます。
+2. 外部の [PDF](controls/control-pdf-viewer.md) ファイルが Web ブラウザーで開きます。 (実験的な機能)
 
 ## <a name="feb-12"></a>2 月 12 日
 * 埋め込まれた[ビデオ](controls/control-audio-video.md)および[オーディオ](controls/control-audio-video.md)の再生用ボリューム コントロールがインラインになりました。 再生をミュートにするには、ユーザーはボタンをクリックまたはタップする代わりに、ボリューム コントロールを使用してボリュームを下げる必要があります。
@@ -64,13 +68,3 @@ ms.lasthandoff: 02/14/2018
 1. アプリで、選択したコントロールのルールだけでなく、[すべてのルールを表示](working-with-rules.md)します。
 2. アプリ作成者から最も要望が多かったアイコンを追加します。
 3. Android および iOS デバイスでのアプリのパフォーマンスが向上しました。
-
-## <a name="sept-20"></a>9 月 20 日
-1. 最初に[アプリを保存](save-publish-app.md)したあとは、追加の変更が既定で 2 分おきに自動的に保存されます。
-2. 式の記述をせずに、簡単に条件付き書式の[ルールを作成](working-with-rules.md)できます。PowerApps キャンバス上で条件を設定し、結果を設計するだけです。
-3. コントロールが追加されたときに別ウィンドウに表示される全画面のデータ ペインで、フォーム、ギャラリー、およびデータ テーブルをより簡単に構成できます。
-4. 空のアプリ、テンプレート、データ ソース、または SharePoint のいずれから開始する場合でも、アプリの作成に役立つ状況に合わせたクイック ヒントが表示されます。
-
-## <a name="sept-6"></a>9 月 6 日
-1. 作成したアプリについては、Power BI での埋め込みダッシュ ボードで[使用状況を追跡](app-analytics.md)します。
-2. 区切り記号を使用してテキスト文字列を分割するには、**[Split](functions/function-split.md)** 関数を使用します。

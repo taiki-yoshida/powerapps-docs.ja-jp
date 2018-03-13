@@ -15,21 +15,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8a67a071a19bae57f022fe960a0b29296b58cf5d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="pdf-viewer-control-in-powerapps"></a>PowerApps の PDF ビューアー コントロール
-PDF ファイルの内容を表示するコントロールです。
+# <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
+PDF ファイルの内容を表示する試験段階のコントロールです。
 
 ## <a name="description"></a>説明
 PDF ファイルのテキスト、グラフィック、他の内容を表示するには、この種類のコントロールを追加し、その **Document** プロパティに、表示するファイルの URL を二重引用符で囲んで設定します。
 
 ## <a name="limitations"></a>制限
 PowerApps のセキュリティ アーキテクチャにより、PDF ビューアーでは HTTPS リンクのみがサポートされ、HTTP リンクはサポートされないことにご注意ください。  
-制限の厳しい CORS 設定のサーバーに PDF ドキュメントがある場合、そのドキュメントはアプリ内で表示できない場合があります。  PowerApps でドキュメントを開けない場合は、外部ブラウザーでドキュメントを開くオプションがエンド ユーザーに表示されます。
+制限の厳しい CORS 設定のサーバーに PDF ドキュメントがある場合、そのドキュメントはアプリ内で表示できない場合があります。  この問題を解決するには、PDF ドキュメントをホストするサーバーが powerapps.com からのクロス オリジン要求 (CORS) を許可する必要があります。
+
+PowerApps でドキュメントを開けない場合は、外部ブラウザーでドキュメントを開くオプションがエンド ユーザーに表示されます。  このオプションはすべての外部ドキュメントのコントロール メニューでも使用できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Document** – 二重引用符で囲んだ、PDF ファイルの URL です。
