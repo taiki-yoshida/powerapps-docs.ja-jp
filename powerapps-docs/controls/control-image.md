@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
+ms.sourcegitcommit: 87327f99636c68c62c755c4eb48861249a5a3add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
@@ -110,9 +110,9 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="examples"></a>例
 ### <a name="show-an-image-from-a-local-file"></a>ローカル ファイルの画像の表示
-1. **[コンテンツ]** タブの **[メディア]** をクリックまたはタップして、**[参照]** をクリックまたはタップします。
+1. **[ファイル]** メニューの **[メディア]** をクリックまたはタップして、**[参照]** をクリックまたはタップします。
 2. 追加する画像ファイルをクリックまたはタップし、**[開く]** をクリックまたはタップしてから Esc キーを押して既定のワークスペースに戻ります。
-3. **イメージ** コントロールを追加し、**[Items](properties-core.md)** プロパティを追加したファイルの名前に設定します。
+3. **イメージ** コントロールを追加し、**Image** プロパティを追加したファイルの名前に設定します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
