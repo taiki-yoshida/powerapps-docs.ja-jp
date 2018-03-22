@@ -1,12 +1,12 @@
 ---
-title: "列 コントロール: リファレンス | Microsoft Docs"
-description: "このトピックでは、Microsoft PowerApps の列のコントロールに関する情報を示します。"
+title: '列 コントロール: リファレンス | Microsoft Docs'
+description: このトピックでは、Microsoft PowerApps の列のコントロールに関する情報を示します。
 services: powerapps
 documentationcenter: na
 author: jasongre
 manager: kfend
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
 ms.openlocfilehash: 0e9c04c4786ff4cee11d7aae75245054e93391fa
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps の列コントロール
 [**データ テーブル**](control-data-table.md) コントロールの単一フィールドに表示エクスペリエンスを指定します。

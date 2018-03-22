@@ -1,13 +1,13 @@
 ---
-title: "画面を追加し、画面間を移動する | Microsoft Docs"
-description: "PowerApps でアプリに画面を追加し、[次へ] 矢印と [戻る] 矢印を使用して画面間を移動する"
-services: 
+title: 画面を追加し、画面間を移動する | Microsoft Docs
+description: PowerApps でアプリに画面を追加し、[次へ] 矢印と [戻る] 矢印を使用して画面間を移動する
+services: ''
 suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/10/2017
 ms.author: sharik
 ms.openlocfilehash: 64c38e561be90cbebabe17f73377e4d754d99c54
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-a-screen-and-navigate-between-screens"></a>画面を追加し、画面間を移動する
 複数の画面があるアプリを作成し、ユーザーが画面間を移動するための方法を追加します。

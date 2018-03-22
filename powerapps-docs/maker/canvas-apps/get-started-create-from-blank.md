@@ -1,13 +1,13 @@
 ---
-title: "アプリを最初から作成する | Microsoft Docs"
-description: "皆さんの日々の業務を支援するデータの管理アプリを、個々の UI 要素と動作を設定して一から作成します。"
-services: 
+title: アプリを最初から作成する | Microsoft Docs
+description: 皆さんの日々の業務を支援するデータの管理アプリを、個々の UI 要素と動作を設定して一から作成します。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
 ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-app-from-scratch"></a>アプリを最初から作成する
 さまざまなデータ ソースからいずれかを選んで自分だけのアプリをゼロから作成しましょう。必要であればデータ ソースは後から追加できます。 それぞれの UI 要素には、思い描いた目的とワークフローに最適な結果が得られるよう、外観と動作を指定します。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりもかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。

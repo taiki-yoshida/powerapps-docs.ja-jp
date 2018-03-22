@@ -1,13 +1,13 @@
 ---
-title: "Round、RoundDown、および RoundUp 関数 | Microsoft Docs"
-description: "構文を含む PowerApps の Round、RoundDown、および RoundUp 関数の参照情報"
-services: 
+title: Round、RoundDown、および RoundUp 関数 | Microsoft Docs
+description: 構文を含む PowerApps の Round、RoundDown、および RoundUp 関数の参照情報
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: cfb0e8351b1e51a07962e08b2894d02203b274c7
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>PowerApps の Round、RoundDown、および RoundUp 関数
 数値を丸めます。

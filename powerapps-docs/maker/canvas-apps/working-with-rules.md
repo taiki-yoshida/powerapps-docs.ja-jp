@@ -1,13 +1,13 @@
 ---
-title: "ルールの作成 | Microsoft Docs"
-description: "ルールを作成してアプリ ロジックを構築するための詳しい手順"
-services: 
+title: ルールの作成 | Microsoft Docs
+description: ルールを作成してアプリ ロジックを構築するための詳しい手順
+services: ''
 suite: PowerApps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/10/2017
 ms.author: sharik
 ms.openlocfilehash: 30c069a65d19b965ee5c66411ca08723a6f510ae
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-rule-in-powerapps"></a>PowerApps でのルールの作成
 指定した条件に基づいてアプリを自動的に変更するためのルールを作成します。 たとえば、状態に基づいてリスト項目を赤、黄、または緑で表示したり、特定のユーザー (管理者など) に対してのみ承認ボタンを表示したりします。
