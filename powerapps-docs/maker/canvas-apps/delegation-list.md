@@ -1,13 +1,13 @@
 ---
-title: "委任可能なデータ ソース | Microsoft Docs"
-description: "サポートされるすべての委任可能なデータ ソースの一覧"
-services: 
+title: 委任可能なデータ ソース | Microsoft Docs
+description: サポートされるすべての委任可能なデータ ソースの一覧
+services: ''
 suite: powerapps
 documentationcenter: na
 author: archnair
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
 ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="delegable-data-sources"></a>委任可能なデータ ソース
 「[委任について](delegation-overview.md)」で詳しく説明しているように、委任とは、PowerApps がデータをアプリに移動してローカルで処理せずに、データの処理をデータ ソースに委任することです。

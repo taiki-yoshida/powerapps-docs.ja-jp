@@ -45,11 +45,3 @@ PowerApps の主な利点の 1 つは従来のアプリケーション コード
 次のセクションに進む前に、SharePoint を振り返って、アプリにリスト エクスペリエンスがどのように統合されたか確認しましょう。 ご覧のとおり、**FlooringApp** はリストの*ビュー*として機能するようになりました。アプリは **[Open]** (開く) をクリックすると起動します。 これにより、使いやすくカスタマイズされたエクスペリエンスでリストを簡単に管理できるようになりました。
 
 ![Sharepoint リストのビューとしてのアプリ](./media/learning-spo-app-explore-formulas/list-view.png)
-
-これで SharePoint のアプリ セクションが終了しました。ここからは学習内容をお選びいただけます。
-
-* [アプリの管理](https://docs.microsoft.com/powerapps/guided-learning/manage-apps#step-1)
-* [Common Data Service からのアプリの作成とカスタマイズ](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1)
-
-管理のセクションでは、アプリを共有しバージョン管理する方法を示し、アプリ、データ、およびその他のリソースのコンテナーとなる環境について説明します。 管理のセクションには、ある時点ですべての方が目を通すことをお勧めしますが、Common Data Service のセクションにもアプリのカスタマイズの詳細など多くの情報があります。 
-

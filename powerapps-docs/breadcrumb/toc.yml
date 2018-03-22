@@ -5,7 +5,3 @@
     - name: PowerApps
       tocHref: /powerapps/
       topicHref: /powerapps/
-      items:
-        - name: ガイド学習
-          tocHref: /powerapps/guided-learning/
-          topicHref: /powerapps/guided-learning/

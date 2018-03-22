@@ -1,13 +1,13 @@
 ---
-title: "タイマー コントロール: リファレンス | Microsoft Docs"
-description: "各種プロパティとサンプルを含むタイマー コントロールに関する情報"
-services: 
+title: 'タイマー コントロール: リファレンス | Microsoft Docs'
+description: 各種プロパティとサンプルを含むタイマー コントロールに関する情報
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。

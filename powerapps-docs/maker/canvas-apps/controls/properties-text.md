@@ -1,13 +1,13 @@
 ---
-title: "テキストのプロパティ | Microsoft Docs"
-description: "Text、Tooltip、HintText などのプロパティのリファレンス"
-services: 
+title: テキストのプロパティ | Microsoft Docs
+description: Text、Tooltip、HintText などのプロパティのリファレンス
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 6d79f5a93fd89de1c3994f43c285e9d96cb00af6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="text-properties-in-powerapps"></a>PowerApps のテキスト プロパティ
 ユーザーのデータ入力時にコントロールのツールヒントにヒントとして表示されるテキストを構成し、その他のテキストに関する特性を指定します。
