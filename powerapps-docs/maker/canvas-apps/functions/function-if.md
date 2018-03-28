@@ -71,7 +71,7 @@ ms.lasthandoff: 03/22/2018
 | **Switch( Slider1.Value, 20, "Result1", 10, "Result2", 0, "Result3", "DefaultResult" )** |スライダーの値は、チェックするどの値とも一致しません。  *DefaultResult* が指定されているため、それが返されます。 |"DefaultResult" |
 
 ### <a name="branching-in-behavior-formulas"></a>動作の数式での分岐
-次の例では、**FirstName** という名前の**[テキスト入力](../controls/control-text-input.md)**コントロールに値 "John" が入力されています。
+次の例では、**FirstName** という名前の**[Text input](../controls/control-text-input.md)**コントロールに値 "John" が入力されています。
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ ms.lasthandoff: 03/22/2018
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |**FirstName.Text** の値は "Carlos"、"Kirstin"、"John" と、この順に比較されます。 "John" との一致が見つかり、アプリは **Screen3** に移動します。 |**true**<br><br>表示が **Screen3** に変更されます。 |
 
 ### <a name="step-by-step"></a>ステップ バイ ステップ
-1. **[テキスト入力](../controls/control-text-input.md)**コントロールを追加し、**Text1** という名前を付けます (既定でその名前が付いていない場合)。
+1. **[Text input](../controls/control-text-input.md)**コントロールを追加し、**Text1** という名前を付けます (既定でその名前が付いていない場合)。
 2. **[Text1]** に「**30**」と入力します。
 3. **ラベル** コントロールを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **If( Value(Text1.Text) < 20, "Order MANY more!", Value(Text1.Text) < 40, "Order more!", Text1.Text )**
