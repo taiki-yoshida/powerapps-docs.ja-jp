@@ -1,0 +1,19 @@
+- name: 概要
+  href: overview.md
+- name: ソリューションの概要
+  href: introduction-solutions.md
+- name: Common Data Service for Apps のデータ エンティティ
+  href: entities.md
+  items:
+    - name: エンティティ メタデータ
+      href: entity-metadata.md
+    - name: 属性メタデータ
+      href: entity-attribute-metadata.md
+    - name: エンティティ リレーションシップ メタデータ
+      href: entity-relationship-metadata.md
+    - name: エンティティ参照
+      href: reference/entities/toc.yml
+- name: コードを使用したビジネス ロジックの適用
+  href: apply-business-logic-with-code.md
+- name: Common Data Service for Apps Web サービスの使用
+  href: use-web-services.md

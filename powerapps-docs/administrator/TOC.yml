@@ -1,0 +1,40 @@
+- name: PowerApp の管理
+  href: index.md
+- name: クイック スタート
+  items:
+    - name: 環境の作成
+      href: create-environment.md
+    - name: DLP ポリシーを作成する
+      href: create-dlp-policy.md
+    - name: テナント内のアクティブ ユーザーの表示
+      href: admin-view-user-licenses.md
+    - name: 環境内のアプリの表示
+      href: admin-view-apps.md
+- name: 概念
+  items:
+    - name: ライセンスの概要
+      href: pricing-billing-skus.md
+    - name: 環境の概要
+      href: environments-overview.md
+    - name: データ グループについて
+      href: introduction-to-data-groups.md
+    - name: リージョン概要
+      href: regions-overview.md
+- name: ハウツー ガイド
+  items:
+    - name: PowerApps の購入
+      href: signup-for-powerapps-admin.md
+    - name: 組織内のライセンスの管理
+      href: signup-question-and-answer.md
+    - name: DLP ポリシーの管理
+      href: prevent-data-loss.md
+    - name: データベースの作成
+      href: create-database.md
+    - name: 環境の管理
+      href: environments-administration.md
+    - name: 環境セキュリティの構成
+      href: database-security.md
+    - name: 組織内のアプリの管理
+      href: admin-manage-apps.md
+    - name: テナントまたは環境間でアプリを移動
+      href: environment-and-tenant-migration.md
