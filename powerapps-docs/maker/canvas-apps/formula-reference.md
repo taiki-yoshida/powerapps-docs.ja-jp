@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3ceb9eae42e88e7cfb78492f9e58812481a0881d
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -165,7 +165,9 @@ ms.lasthandoff: 03/22/2018
 **[Hour](functions/function-datetime-parts.md)** – 日付/時刻値の時間の部分を取得します。
 
 ## <a name="i"></a>I
-**[If](functions/function-if.md)** – 条件が true の場合とそうでない場合とで異なる値を返します。  
+**[If](functions/function-if.md)** – 条件が true の場合とそうでない場合とで異なる値を返します。 
+
+**[IfError](functions/function-iferror.md)** – エラーを検出し、代替値を提供するか、操作を実行します。 
 
 **[IsBlank](functions/function-isblank-isempty.md)** – [空白](functions/function-isblank-isempty.md)の値がないかを調べます。
 
@@ -281,6 +283,8 @@ ms.lasthandoff: 03/22/2018
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 選択した列のみが含まれたテーブルを返します。
+
+**[ShowError](functions/function-showerror.md)** – ユーザーにエラー メッセージを表示します。
 
 **[Shuffle](functions/function-shuffle.md)** – テーブルのレコードをランダムに並べ替えます。
 
