@@ -13,6 +13,10 @@
       items:
         - name: サンプル アプリを開く
           href: ./canvas-apps/open-and-run-a-sample-app.md
+        - name: アプリをテンプレートから作成する
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: SharePoint 内からアプリを構築する
+          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
         - name: アプリを生成する
           items:
             - name: Common Data Service for Apps から
@@ -21,10 +25,6 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: Excel から
               href: ./canvas-apps/get-started-create-from-data.md
-        - name: SharePoint リスト フォームをカスタマイズ
-          href: ./canvas-apps/customize-list-form.md
-        - name: SharePoint 内からアプリを構築する
-          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
     - name: チュートリアル
       items:
         - name: 生成されたアプリをカスタマイズ
@@ -79,8 +79,8 @@
               href: ./canvas-apps/dev-appsource-test-drive.md
     - name: ハウツー ガイド
       items:
-        - name: アプリをテンプレートから作成する
-          href: ./canvas-apps/get-started-test-drive.md
+        - name: SharePoint リスト フォームをカスタマイズ
+          href: ./canvas-apps/customize-list-form.md
         - name: 最初から Excel アプリを構築する
           href: ./canvas-apps/get-started-create-from-blank.md
         - name: アプリをカスタマイズする
@@ -145,6 +145,8 @@
               href: ./canvas-apps/gateway-management.md
             - name: ゲートウェイについて
               href: ./canvas-apps/gateway-reference.md
+            - name: Power Query のトラブルシューティング
+              href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
         - name: その他のテクノロジとの統合
           items:
             - name: SharePoint Online
@@ -198,8 +200,8 @@
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: モデル駆動型アプリの共有
       href: ./model-driven-apps/share-model-driven-app.md
-    - name: モバイル デバイスでモデル駆動型アプリを実行する
-      href: ./model-driven-apps/run-app-client-model-driven.md
+    - name: 開発者向け
+      href: ../developer/model-driven-apps/TOC.yml
 - name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:

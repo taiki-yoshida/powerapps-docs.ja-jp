@@ -4,6 +4,8 @@
   href: run-app-browser.md
 - name: スマートフォンで (キャンバス)
   href: run-app-client.md
+- name: スマートフォンで (モデル駆動型)
+  href: run-app-client-model-driven.md
 - name: Microsoft Teams で
   href: open-app-embedded-in-teams.md
 - name: AppSource から
