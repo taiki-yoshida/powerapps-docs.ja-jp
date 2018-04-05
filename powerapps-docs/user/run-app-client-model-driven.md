@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: cf484054928a34eb3f3383acbfc9490bc95a0aa3
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
+ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>クイックスタート: モバイル デバイスでモデル駆動型アプリを実行する
 
@@ -49,4 +49,4 @@ PowerApps にサインアップしていない場合は、このクイックス�
 このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明しました。 モバイル デバイスで、キャンバスのアプリを実行することもできます。
 
 > [!div class="nextstepaction"]
-> [モバイル デバイスでモデル駆動型アプリを実行する](run-app-client.md)
+> [キャンバス アプリをモバイル デバイスで実行する](run-app-client.md)
